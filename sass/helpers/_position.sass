@@ -1,0 +1,34 @@
+@mixin position($device: '')
+    .#{$device}relative,
+    %#{$device}relative
+        position: relative
+    .#{$device}absolute,
+    %#{$device}absolute
+        position: absolute
+    .#{$device}fixed,
+    %#{$device}fixed
+        position: fixed
+    .#{$device}static,
+    %#{$device}static
+        position: static
+    .#{$device}top-left,
+    %#{$device}top-left
+        top: 0
+        left: 0
+    .#{$device}top-right,
+    %#{$device}top-right
+        top: 0
+        right: 0
+    .#{$device}bottom-left,
+    %#{$device}bottom-left
+        bottom: 0
+        left: 0
+    .#{$device}bottom-right,
+    %#{$device}bottom-right
+        bottom: 0
+        right: 0
+
+@include position
+@each $device, $pixels in $devices
+    @media (min-width: #{$pixels}px)
+        @include position($device+"-")

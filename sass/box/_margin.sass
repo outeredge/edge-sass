@@ -1,0 +1,38 @@
+@mixin margin($size: '', $selector: '', $device: '')
+    .#{$device}#{$margin-class}#{$selector},
+    %#{$device}#{$margin-class}#{$selector}
+        margin: map-get($margin, $size)
+    .#{$device}#{$margin-class}-#{$class-left}#{$selector},
+    %#{$device}#{$margin-class}-#{$class-left}#{$selector}
+        margin-left: map-get($margin, $size)
+    .#{$device}#{$margin-class}-#{$class-right}#{$selector},
+    %#{$device}#{$margin-class}-#{$class-right}#{$selector}
+        margin-right: map-get($margin, $size)
+    .#{$device}#{$margin-class}-#{$class-top}#{$selector},
+    %#{$device}#{$margin-class}-#{$class-top}#{$selector}
+        margin-top: map-get($margin, $size)
+    .#{$device}#{$margin-class}-#{$class-bottom}#{$selector},
+    %#{$device}#{$margin-class}-#{$class-bottom}#{$selector}
+        margin-bottom: map-get($margin, $size)
+    .#{$device}#{$margin-class}-#{$class-vertical}#{$selector},
+    %#{$device}#{$margin-class}-#{$class-vertical}#{$selector}
+        margin-top: map-get($margin, $size)
+        margin-bottom: map-get($margin, $size)
+    .#{$device}#{$margin-class}-#{$class-horizontal}#{$selector},
+    %#{$device}#{$margin-class}-#{$class-horizontal}#{$selector}
+        margin-left: map-get($margin, $size)
+        margin-right: map-get($margin, $size)
+
+@each $size, $pixels in $margin
+    @if $size == default
+        @include margin($size)
+    @else
+        @include margin($size, "-"+$size)
+
+@each $device, $pixels in $devices
+    @media (min-width: #{$pixels}px)
+        @each $size, $pixels in $margin
+            @if $size == default
+                @include margin($size, '', $device+"-")
+            @else
+                @include margin($size, "-"+$size, $device+"-")

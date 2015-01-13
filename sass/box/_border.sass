@@ -1,0 +1,48 @@
+@mixin border($width, $style, $colour, $device: '')
+    .#{$device}#{$border-class},
+    %#{$device}#{$border-class}
+        border: $width $style $colour
+    .#{$device}#{$border-class}-#{$class-left},
+    %#{$device}#{$border-class}-#{$class-left}
+        border-left: $width $style $colour
+    .#{$device}#{$border-class}-#{$class-right},
+    %#{$device}#{$border-class}-#{$class-right}
+        border-right: $width $style $colour
+    .#{$device}#{$border-class}-#{$class-top},
+    %#{$device}#{$border-class}-#{$class-top}
+        border-top: $width $style $colour
+    .#{$device}#{$border-class}-#{$class-bottom},
+    %#{$device}#{$border-class}-#{$class-bottom}
+        border-bottom: $width $style $colour
+    .#{$device}#{$border-class}-none,
+    %#{$device}#{$border-class}-none
+        border: none
+    .#{$device}#{$border-class}-#{$class-left}-none,
+    %#{$device}#{$border-class}-#{$class-left}-none
+        border-left: none
+    .#{$device}#{$border-class}-#{$class-right}-none,
+    %#{$device}#{$border-class}-#{$class-right}-none
+        border-right: none
+    .#{$device}#{$border-class}-#{$class-top}-none,
+    %#{$device}#{$border-class}-#{$class-top}-none
+        border-top: none
+    .#{$device}#{$border-class}-#{$class-bottom}-none,
+    %#{$device}#{$border-class}-#{$class-bottom}-none
+        border-bottom: none
+
+@include border($border-width, $border-style, $border-colour)
+@each $device, $pixels in $devices
+    @media (min-width: #{$pixels}px)
+        @include border($border-width, $border-style, $border-colour, $device+"-")
+
+@each $name, $hex in $colours
+    .#{$border-class}-#{$name},
+    %#{$border-class}-#{$name}
+        border-color: #{$hex}
+
+@each $device, $pixels in $devices
+    @media (min-width: #{$pixels}px)
+        @each $name, $hex in $colours
+            .#{$device}-#{$border-class}-#{$name},
+            %#{$device}-#{$border-class}-#{$name}
+                border-color: #{$hex}

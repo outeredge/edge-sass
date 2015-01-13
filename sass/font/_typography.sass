@@ -1,0 +1,9 @@
+@mixin titles($device: '')
+    @each $class, $size in $titles
+        .#{$device}#{$class}
+            font-size: $size
+
+@include titles
+@each $device, $pixels in $devices
+    @media (min-width: #{$pixels}px)
+        @include titles($device+"-")

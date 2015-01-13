@@ -1,0 +1,17 @@
+@mixin transition($duration)
+    -webkit-transition: #{$duration}
+    -moz-transition: #{$duration}
+    transition: #{$duration}
+
+@mixin edge-transition($device: '')
+    .#{$device}transition,
+    %#{$device}transition
+        @include transition($transition-duration)
+    .#{$device}transition-none,
+    %#{$device}transition-none
+        @include transition(0s)
+
+@include edge-transition
+@each $device, $pixels in $devices
+    @media (min-width: #{$pixels}px)
+        @include edge-transition($device+"-")

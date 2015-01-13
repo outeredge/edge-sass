@@ -1,0 +1,27 @@
+.row,
+%row
+    width: 100%
+    max-width: #{$grid-width}px
+    margin: 0 auto
+    display: block
+    @extend %clearfix
+
+@mixin column($device, $column)
+    .#{$device}-#{$column},
+    %#{$device}-#{$column}
+        float: left
+        width: calc(100% / (#{$grid-columns} / #{$column}))
+    .#{$device}-prepend-#{$column},
+    %#{$device}-prepend-#{$column}
+        margin-left: calc(100% / (#{$grid-columns} / #{$column}))
+    .#{$device}-append-#{$column},
+    %#{$device}-append-#{$column}
+        margin-right: calc(100% / (#{$grid-columns} / #{$column}))
+
+@for $column from 1 through $grid-columns
+    @include column('column', $column)
+
+@each $device, $pixels in $devices
+    @media (min-width: #{$pixels}px)
+        @for $column from 1 through $grid-columns
+            @include column($device, $column)

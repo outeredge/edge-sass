@@ -1,0 +1,21 @@
+@mixin white-space($device: '')
+    .#{$device}wrap,
+    %#{$device}wrap
+        white-space: normal
+    .#{$device}no-wrap,
+    %#{$device}no-wrap
+        white-space: nowrap
+    .#{$device}pre,
+    %#{$device}pre
+        white-space: pre
+    .#{$device}pre-line,
+    %#{$device}pre-line
+        white-space: pre-line
+    .#{$device}pre-wrap,
+    %#{$device}pre-wrap
+        white-space: pre-wrap
+
+@include white-space
+@each $device, $pixels in $devices
+    @media (min-width: #{$pixels}px)
+        @include white-space($device+"-")

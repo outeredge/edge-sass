@@ -1,0 +1,24 @@
+@mixin overflow($device: '')
+    .#{$device}scroll,
+    %#{$device}scroll
+        overflow: scroll
+    .#{$device}overflow-hidden,
+    %#{$device}overflow-hidden
+        overflow: hidden
+    .#{$device}scroll-x,
+    %#{$device}scroll-x
+        overflow-x: scroll
+    .#{$device}overflow-x-hidden,
+    %#{$device}overflow-x-hidden
+        overflow-x: hidden
+    .#{$device}scroll-y,
+    %#{$device}scroll-y
+        overflow-y: scroll
+    .#{$device}overflow-y-hidden,
+    %#{$device}overflow-y-hidden
+        overflow-y: hidden
+
+@include overflow
+@each $device, $pixels in $devices
+    @media (min-width: #{$pixels}px)
+        @include overflow($device+"-")

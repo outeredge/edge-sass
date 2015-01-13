@@ -1,0 +1,18 @@
+@mixin display($device: '')
+    .#{$device}hide,
+    %#{$device}hide
+        display: none
+    .#{$device}block,
+    %#{$device}block
+        display: block
+    .#{$device}inline-block,
+    %#{$device}inline-block
+        display: inline-block
+    .#{$device}inline,
+    %#{$device}inline
+        display: inline
+
+@include display
+@each $device, $pixels in $devices
+    @media (min-width: #{$pixels}px)
+        @include display($device+"-")

@@ -1,0 +1,19 @@
+@mixin dimensions($device: '')
+    .#{$device}height-auto,
+    %#{$device}height-auto
+        height: auto
+    .#{$device}width-auto,
+    %#{$device}width-auto
+        width: auto
+    @for $i from 0 through 100
+        .#{$device}height-#{$i},
+        %#{$device}height-#{$i}
+            height: percentage($i / 100)
+        .#{$device}width-#{$i},
+        %#{$device}width-#{$i}
+            width: percentage($i / 100)
+
+@include dimensions
+@each $device, $pixels in $devices
+    @media (min-width: #{$pixels}px)
+        @include dimensions($device+"-")

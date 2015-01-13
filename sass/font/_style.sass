@@ -1,0 +1,36 @@
+@mixin font-style($device: '')
+    .#{$device}uppercase,
+    %#{$device}uppercase
+        text-transform: uppercase
+    .#{$device}lowercase,
+    %#{$device}lowercase
+        text-transform: lowercase
+    .#{$device}capitalize,
+    %#{$device}capitalize
+        text-transform: capitalize
+    .#{$device}italic,
+    %#{$device}italic
+        font-style: italic
+    .#{$device}ltr,
+    %#{$device}ltr
+        direction: ltr
+    .#{$device}rtl,
+    %#{$device}rtl
+        direction: rtl
+    .#{$device}underline,
+    %#{$device}underline
+        text-decoration: underline
+    .#{$device}overline,
+    %#{$device}overline
+        text-decoration: overline
+    .#{$device}line-through,
+    %#{$device}line-through
+        text-decoration: line-through
+    .#{$device}text-overflow-ellipsis,
+    %#{$device}text-overflow-ellipsis
+        text-overflow: ellipsis
+
+@include font-style
+@each $device, $pixels in $devices
+    @media (min-width: #{$pixels}px)
+        @include font-style($device+"-")

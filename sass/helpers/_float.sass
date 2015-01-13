@@ -1,0 +1,15 @@
+@mixin float($device: '')
+    .#{$device}left,
+    %#{$device}left
+        float: left
+    .#{$device}right,
+    %#{$device}right
+        float: right
+    .#{$device}float-none,
+    %#{$device}float-none
+        float: none
+
+@include float
+@each $device, $pixels in $devices
+    @media (min-width: #{$pixels}px)
+        @include float($device+"-")

@@ -1,0 +1,15 @@
+@mixin colour($name, $hex, $device: '')
+    .#{$device}text-#{$name},
+    %#{$device}text-#{$name}
+        color: #{$hex}
+    .#{$device}hover-text-#{$name}:hover,
+    %#{$device}hover-text-#{$name}:hover
+        color: #{$hex}
+
+@each $name, $hex in $colours
+    @include colour($name, $hex)
+
+@each $device, $pixels in $devices
+    @media (min-width: #{$pixels}px)
+        @each $name, $hex in $colours
+            @include colour($name, $hex, $device+"-")

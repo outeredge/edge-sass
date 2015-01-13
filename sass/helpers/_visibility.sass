@@ -1,0 +1,15 @@
+@mixin visibility($device: '')
+    .#{$device}invisible,
+    %#{$device}invisible
+        visibility: hidden
+    .#{$device}visible,
+    %#{$device}visible
+        visibility: visible
+    .#{$device}collapse,
+    %#{$device}collapse
+        visibility: collapse
+
+@include visibility
+@each $device, $pixels in $devices
+    @media (min-width: #{$pixels}px)
+        @include visibility($device+"-")

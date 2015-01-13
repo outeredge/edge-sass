@@ -1,0 +1,38 @@
+@mixin padding($size: '', $selector: '', $device: '')
+    .#{$device}#{$padding-class}#{$selector},
+    %#{$device}#{$padding-class}#{$selector}
+        padding: map-get($padding, $size)
+    .#{$device}#{$padding-class}-#{$class-left}#{$selector},
+    %#{$device}#{$padding-class}-#{$class-left}#{$selector}
+        padding-left: map-get($padding, $size)
+    .#{$device}#{$padding-class}-#{$class-right}#{$selector},
+    %#{$device}#{$padding-class}-#{$class-right}#{$selector}
+        padding-right: map-get($padding, $size)
+    .#{$device}#{$padding-class}-#{$class-top}#{$selector},
+    %#{$device}#{$padding-class}-#{$class-top}#{$selector}
+        padding-top: map-get($padding, $size)
+    .#{$device}#{$padding-class}-#{$class-bottom}#{$selector},
+    %#{$device}#{$padding-class}-#{$class-bottom}#{$selector}
+        padding-bottom: map-get($padding, $size)
+    .#{$device}#{$padding-class}-#{$class-vertical}#{$selector},
+    %#{$device}#{$padding-class}-#{$class-vertical}#{$selector}
+        padding-top: map-get($padding, $size)
+        padding-bottom: map-get($padding, $size)
+    .#{$device}#{$padding-class}-#{$class-horizontal}#{$selector},
+    %#{$device}#{$padding-class}-#{$class-horizontal}#{$selector}
+        padding-left: map-get($padding, $size)
+        padding-right: map-get($padding, $size)
+
+@each $size, $pixels in $padding
+    @if $size == default
+        @include padding($size)
+    @else
+        @include padding($size, "-"+$size)
+
+@each $device, $pixels in $devices
+    @media (min-width: #{$pixels}px)
+        @each $size, $pixels in $padding
+            @if $size == default
+                @include padding($size, '', $device+"-")
+            @else
+                @include padding($size, "-"+$size, $device+"-")

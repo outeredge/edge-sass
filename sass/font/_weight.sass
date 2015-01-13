@@ -1,0 +1,9 @@
+@mixin font-weights($device: '')
+    @each $name, $weight in $weights
+        .#{$device}#{$name}
+            font-weight: #{$weight}
+
+@include font-weights
+@each $device, $pixels in $devices
+    @media (min-width: #{$pixels}px)
+        @include font-weights($device+"-")

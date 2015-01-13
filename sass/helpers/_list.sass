@@ -1,0 +1,11 @@
+@mixin list($device: '')
+    .#{$device}not-list,
+    %#{$device}not-list
+        list-style: none
+        margin: 0
+        padding: 0
+
+@include list
+@each $device, $pixels in $devices
+    @media (min-width: #{$pixels}px)
+        @include list($device+"-")

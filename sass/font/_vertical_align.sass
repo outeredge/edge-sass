@@ -1,0 +1,15 @@
+@mixin vertical-align($device: '')
+    .#{$device}valign-#{$class-middle},
+    %#{$device}valign-#{$class-middle}
+        vertical-align: middle
+    .#{$device}valign-#{$class-bottom},
+    %#{$device}valign-#{$class-bottom}
+        vertical-align: bottom
+    .#{$device}valign-#{$class-top},
+    %#{$device}valign-#{$class-top}
+        vertical-align: top
+
+@include vertical-align
+@each $device, $pixels in $devices
+    @media (min-width: #{$pixels}px)
+        @include vertical-align($device+"-")

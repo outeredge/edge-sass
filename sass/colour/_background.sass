@@ -1,0 +1,15 @@
+@mixin background-colour($name, $hex, $device: '')
+    .#{$device}bg-#{$name},
+    %#{$device}bg-#{$name}
+        background-color: #{$hex}
+    .#{$device}hover-bg-#{$name}:hover,
+    %#{$device}hover-bg-#{$name}:hover
+        background-color: #{$hex}
+
+@each $name, $hex in $colours
+    @include background-colour($name, $hex)
+
+@each $device, $pixels in $devices
+    @media (min-width: #{$pixels}px)
+        @each $name, $hex in $colours
+            @include background-colour($name, $hex, $device+"-")

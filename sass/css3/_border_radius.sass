@@ -1,0 +1,24 @@
+@mixin border-radius($size)
+    border-radius: #{$size}
+
+@mixin edge-border-radius($device: '')
+    .#{$device}#{$border-class}-radius,
+    %#{$device}#{$border-class}-radius
+        @include border-radius($border-radius-size)
+    .#{$device}#{$border-class}-radius-#{$class-top},
+    %#{$device}#{$border-class}-radius-#{$class-top}
+        @include border-radius($border-radius-size $border-radius-size 0 0)
+    .#{$device}#{$border-class}-radius-#{$class-bottom},
+    %#{$device}#{$border-class}-radius-#{$class-bottom}
+        @include border-radius(0 0 $border-radius-size $border-radius-size)
+    .#{$device}#{$border-class}-radius-#{$class-left},
+    %#{$device}#{$border-class}-radius-#{$class-left}
+        @include border-radius($border-radius-size 0 0 $border-radius-size)
+    .#{$device}#{$border-class}-radius-#{$class-right},
+    %#{$device}#{$border-class}-radius-#{$class-right}
+        @include border-radius(0 $border-radius-size $border-radius-size 0)
+
+@include edge-border-radius
+@each $device, $pixels in $devices
+    @media (min-width: #{$pixels}px)
+        @include edge-border-radius($device+"-")

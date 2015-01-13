@@ -1,0 +1,24 @@
+@mixin font-size($device: '')
+    .#{$device}smallest,
+    %#{$device}smallest
+        font-size: 70%
+    .#{$device}smaller,
+    %#{$device}smaller
+        font-size: 80%
+    .#{$device}small,
+    %#{$device}small
+        font-size: 90%
+    .#{$device}big,
+    %#{$device}big
+        font-size: 110%
+    .#{$device}bigger,
+    %#{$device}bigger
+        font-size: 120%
+    .#{$device}biggest,
+    %#{$device}biggest
+        font-size: 130%
+
+@include font-size
+@each $device, $pixels in $devices
+    @media (min-width: #{$pixels}px)
+        @include font-size($device+"-")
