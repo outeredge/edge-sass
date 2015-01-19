@@ -1,16 +1,25 @@
-.flex
+.flex,
+%flex
     display: flex
     flex-wrap: wrap
 
-    &.flex-start
-        align-items: flex-start
-    &.flex-end
-        align-items: flex-end
-    &.flex-center
-        align-items: center
-    &.flex-stretch
-        align-items: stretch
+.flex-start,
+%flex-start
+    align-items: flex-start
 
-    &.flex-fill
-        > *
-            flex-grow: 1
+.flex-end,
+%flex-end
+    align-items: flex-end
+
+.flex-center,
+%flex-center
+    align-items: center
+
+.flex-stretch,
+%flex-stretch
+    align-items: stretch
+
+.flex-fill,
+%flex-fill
+    > *
+        flex-grow: 1

@@ -7257,15 +7257,20 @@ img {
 .flex {
   display: flex;
   flex-wrap: wrap; }
-  .flex.flex-start {
-    align-items: flex-start; }
-  .flex.flex-end {
-    align-items: flex-end; }
-  .flex.flex-center {
-    align-items: center; }
-  .flex.flex-stretch {
-    align-items: stretch; }
-  .flex.flex-fill > * {
-    flex-grow: 1; }
+
+.flex-start {
+  align-items: flex-start; }
+
+.flex-end {
+  align-items: flex-end; }
+
+.flex-center {
+  align-items: center; }
+
+.flex-stretch {
+  align-items: stretch; }
+
+.flex-fill > * {
+  flex-grow: 1; }
 
 /*# sourceMappingURL=edge.css.map */
