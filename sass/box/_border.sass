@@ -36,13 +36,13 @@
         @include border($border-width, $border-style, $border-colour, $device+"-")
 
 @each $name, $hex in $colours
-    .#{$border-class}-#{$name},
-    %#{$border-class}-#{$name}
+    .#{$border-class}-#{""+$name},
+    %#{$border-class}-#{""+$name}
         border-color: #{$hex}
 
 @each $device, $pixels in $devices
     @media (min-width: #{$pixels}px)
         @each $name, $hex in $colours
-            .#{$device}-#{$border-class}-#{$name},
-            %#{$device}-#{$border-class}-#{$name}
+            .#{$device}-#{$border-class}-#{""+$name},
+            %#{$device}-#{$border-class}-#{""+$name}
                 border-color: #{$hex}

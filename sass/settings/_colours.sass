@@ -1,3 +1,17 @@
-$colours: (transparent: "transparent", white: #ffffff, black: #000000, red: #990000, green: #009900, blue: #000099, yellow: #999900, cyan: #009999, magenta: #990099, grey: #666666, darkgrey: #333333, lightgrey: #999999, whitesmoke: #f5f5f5)
+$white: #ffffff !default
+$black: #000000 !default
+$red: #990000 !default
+$green: #009900 !default
+$blue: #000099 !default
+$yellow: #999900 !default
+$cyan: #009999 !default
+$magenta: #990099 !default
+$grey: #666666 !default
+$darkgrey: #333333 !default
+$lightgrey: #999999 !default
+$whitegrey: #eeeeee !default
+$whitesmoke: #f5f5f5 !default
 
-$primary-colour: map-get($colours, darkgrey)
+$colours: (transparent: "transparent", white: $white, black: $black, red: $red, green: $green, blue: $blue, yellow: $yellow, cyan: $cyan, magenta: $magenta, grey: $grey, darkgrey: $darkgrey, lightgrey: $lightgrey, whitegrey: $whitegrey, whitesmoke: $whitesmoke) !default
+
+$primary-colour: map-get($colours, darkgrey) !default

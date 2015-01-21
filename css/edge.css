@@ -263,6 +263,12 @@ img {
 .hover-text-lightgrey:hover {
   color: #999999; }
 
+.text-whitegrey {
+  color: #eeeeee; }
+
+.hover-text-whitegrey:hover {
+  color: #eeeeee; }
+
 .text-whitesmoke {
   color: #f5f5f5; }
 
@@ -342,6 +348,12 @@ img {
   .tablet-hover-text-lightgrey:hover {
     color: #999999; }
 
+  .tablet-text-whitegrey {
+    color: #eeeeee; }
+
+  .tablet-hover-text-whitegrey:hover {
+    color: #eeeeee; }
+
   .tablet-text-whitesmoke {
     color: #f5f5f5; }
 
@@ -420,88 +432,16 @@ img {
   .desktop-hover-text-lightgrey:hover {
     color: #999999; }
 
+  .desktop-text-whitegrey {
+    color: #eeeeee; }
+
+  .desktop-hover-text-whitegrey:hover {
+    color: #eeeeee; }
+
   .desktop-text-whitesmoke {
     color: #f5f5f5; }
 
   .desktop-hover-text-whitesmoke:hover {
-    color: #f5f5f5; } }
-@media (min-width: 769px) {
-  .ipad-text-transparent {
-    color: transparent; }
-
-  .ipad-hover-text-transparent:hover {
-    color: transparent; }
-
-  .ipad-text-white {
-    color: #ffffff; }
-
-  .ipad-hover-text-white:hover {
-    color: #ffffff; }
-
-  .ipad-text-black {
-    color: #000000; }
-
-  .ipad-hover-text-black:hover {
-    color: #000000; }
-
-  .ipad-text-red {
-    color: #990000; }
-
-  .ipad-hover-text-red:hover {
-    color: #990000; }
-
-  .ipad-text-green {
-    color: #009900; }
-
-  .ipad-hover-text-green:hover {
-    color: #009900; }
-
-  .ipad-text-blue {
-    color: #000099; }
-
-  .ipad-hover-text-blue:hover {
-    color: #000099; }
-
-  .ipad-text-yellow {
-    color: #999900; }
-
-  .ipad-hover-text-yellow:hover {
-    color: #999900; }
-
-  .ipad-text-cyan {
-    color: #009999; }
-
-  .ipad-hover-text-cyan:hover {
-    color: #009999; }
-
-  .ipad-text-magenta {
-    color: #990099; }
-
-  .ipad-hover-text-magenta:hover {
-    color: #990099; }
-
-  .ipad-text-grey {
-    color: #666666; }
-
-  .ipad-hover-text-grey:hover {
-    color: #666666; }
-
-  .ipad-text-darkgrey {
-    color: #333333; }
-
-  .ipad-hover-text-darkgrey:hover {
-    color: #333333; }
-
-  .ipad-text-lightgrey {
-    color: #999999; }
-
-  .ipad-hover-text-lightgrey:hover {
-    color: #999999; }
-
-  .ipad-text-whitesmoke {
-    color: #f5f5f5; }
-
-  .ipad-hover-text-whitesmoke:hover {
     color: #f5f5f5; } }
 .bg-transparent {
   background-color: transparent; }
@@ -574,6 +514,12 @@ img {
 
 .hover-bg-lightgrey:hover {
   background-color: #999999; }
+
+.bg-whitegrey {
+  background-color: #eeeeee; }
+
+.hover-bg-whitegrey:hover {
+  background-color: #eeeeee; }
 
 .bg-whitesmoke {
   background-color: #f5f5f5; }
@@ -654,6 +600,12 @@ img {
   .tablet-hover-bg-lightgrey:hover {
     background-color: #999999; }
 
+  .tablet-bg-whitegrey {
+    background-color: #eeeeee; }
+
+  .tablet-hover-bg-whitegrey:hover {
+    background-color: #eeeeee; }
+
   .tablet-bg-whitesmoke {
     background-color: #f5f5f5; }
 
@@ -732,88 +684,16 @@ img {
   .desktop-hover-bg-lightgrey:hover {
     background-color: #999999; }
 
+  .desktop-bg-whitegrey {
+    background-color: #eeeeee; }
+
+  .desktop-hover-bg-whitegrey:hover {
+    background-color: #eeeeee; }
+
   .desktop-bg-whitesmoke {
     background-color: #f5f5f5; }
 
   .desktop-hover-bg-whitesmoke:hover {
-    background-color: #f5f5f5; } }
-@media (min-width: 769px) {
-  .ipad-bg-transparent {
-    background-color: transparent; }
-
-  .ipad-hover-bg-transparent:hover {
-    background-color: transparent; }
-
-  .ipad-bg-white {
-    background-color: #ffffff; }
-
-  .ipad-hover-bg-white:hover {
-    background-color: #ffffff; }
-
-  .ipad-bg-black {
-    background-color: #000000; }
-
-  .ipad-hover-bg-black:hover {
-    background-color: #000000; }
-
-  .ipad-bg-red {
-    background-color: #990000; }
-
-  .ipad-hover-bg-red:hover {
-    background-color: #990000; }
-
-  .ipad-bg-green {
-    background-color: #009900; }
-
-  .ipad-hover-bg-green:hover {
-    background-color: #009900; }
-
-  .ipad-bg-blue {
-    background-color: #000099; }
-
-  .ipad-hover-bg-blue:hover {
-    background-color: #000099; }
-
-  .ipad-bg-yellow {
-    background-color: #999900; }
-
-  .ipad-hover-bg-yellow:hover {
-    background-color: #999900; }
-
-  .ipad-bg-cyan {
-    background-color: #009999; }
-
-  .ipad-hover-bg-cyan:hover {
-    background-color: #009999; }
-
-  .ipad-bg-magenta {
-    background-color: #990099; }
-
-  .ipad-hover-bg-magenta:hover {
-    background-color: #990099; }
-
-  .ipad-bg-grey {
-    background-color: #666666; }
-
-  .ipad-hover-bg-grey:hover {
-    background-color: #666666; }
-
-  .ipad-bg-darkgrey {
-    background-color: #333333; }
-
-  .ipad-hover-bg-darkgrey:hover {
-    background-color: #333333; }
-
-  .ipad-bg-lightgrey {
-    background-color: #999999; }
-
-  .ipad-hover-bg-lightgrey:hover {
-    background-color: #999999; }
-
-  .ipad-bg-whitesmoke {
-    background-color: #f5f5f5; }
-
-  .ipad-hover-bg-whitesmoke:hover {
     background-color: #f5f5f5; } }
 .padding-tiny {
   padding: 6px; }
@@ -1158,121 +1038,6 @@ img {
     padding-bottom: 0; }
 
   .desktop-padding-horizontal-none {
-    padding-left: 0;
-    padding-right: 0; } }
-@media (min-width: 769px) {
-  .ipad-padding-tiny {
-    padding: 6px; }
-
-  .ipad-padding-left-tiny {
-    padding-left: 6px; }
-
-  .ipad-padding-right-tiny {
-    padding-right: 6px; }
-
-  .ipad-padding-top-tiny {
-    padding-top: 6px; }
-
-  .ipad-padding-bottom-tiny {
-    padding-bottom: 6px; }
-
-  .ipad-padding-vertical-tiny {
-    padding-top: 6px;
-    padding-bottom: 6px; }
-
-  .ipad-padding-horizontal-tiny {
-    padding-left: 6px;
-    padding-right: 6px; }
-
-  .ipad-padding-small {
-    padding: 12px; }
-
-  .ipad-padding-left-small {
-    padding-left: 12px; }
-
-  .ipad-padding-right-small {
-    padding-right: 12px; }
-
-  .ipad-padding-top-small {
-    padding-top: 12px; }
-
-  .ipad-padding-bottom-small {
-    padding-bottom: 12px; }
-
-  .ipad-padding-vertical-small {
-    padding-top: 12px;
-    padding-bottom: 12px; }
-
-  .ipad-padding-horizontal-small {
-    padding-left: 12px;
-    padding-right: 12px; }
-
-  .ipad-padding {
-    padding: 18px; }
-
-  .ipad-padding-left {
-    padding-left: 18px; }
-
-  .ipad-padding-right {
-    padding-right: 18px; }
-
-  .ipad-padding-top {
-    padding-top: 18px; }
-
-  .ipad-padding-bottom {
-    padding-bottom: 18px; }
-
-  .ipad-padding-vertical {
-    padding-top: 18px;
-    padding-bottom: 18px; }
-
-  .ipad-padding-horizontal {
-    padding-left: 18px;
-    padding-right: 18px; }
-
-  .ipad-padding-large {
-    padding: 24px; }
-
-  .ipad-padding-left-large {
-    padding-left: 24px; }
-
-  .ipad-padding-right-large {
-    padding-right: 24px; }
-
-  .ipad-padding-top-large {
-    padding-top: 24px; }
-
-  .ipad-padding-bottom-large {
-    padding-bottom: 24px; }
-
-  .ipad-padding-vertical-large {
-    padding-top: 24px;
-    padding-bottom: 24px; }
-
-  .ipad-padding-horizontal-large {
-    padding-left: 24px;
-    padding-right: 24px; }
-
-  .ipad-padding-none {
-    padding: 0; }
-
-  .ipad-padding-left-none {
-    padding-left: 0; }
-
-  .ipad-padding-right-none {
-    padding-right: 0; }
-
-  .ipad-padding-top-none {
-    padding-top: 0; }
-
-  .ipad-padding-bottom-none {
-    padding-bottom: 0; }
-
-  .ipad-padding-vertical-none {
-    padding-top: 0;
-    padding-bottom: 0; }
-
-  .ipad-padding-horizontal-none {
     padding-left: 0;
     padding-right: 0; } }
 .margin-tiny {
@@ -1620,121 +1385,6 @@ img {
   .desktop-margin-horizontal-none {
     margin-left: 0;
     margin-right: 0; } }
-@media (min-width: 769px) {
-  .ipad-margin-tiny {
-    margin: 6px; }
-
-  .ipad-margin-left-tiny {
-    margin-left: 6px; }
-
-  .ipad-margin-right-tiny {
-    margin-right: 6px; }
-
-  .ipad-margin-top-tiny {
-    margin-top: 6px; }
-
-  .ipad-margin-bottom-tiny {
-    margin-bottom: 6px; }
-
-  .ipad-margin-vertical-tiny {
-    margin-top: 6px;
-    margin-bottom: 6px; }
-
-  .ipad-margin-horizontal-tiny {
-    margin-left: 6px;
-    margin-right: 6px; }
-
-  .ipad-margin-small {
-    margin: 12px; }
-
-  .ipad-margin-left-small {
-    margin-left: 12px; }
-
-  .ipad-margin-right-small {
-    margin-right: 12px; }
-
-  .ipad-margin-top-small {
-    margin-top: 12px; }
-
-  .ipad-margin-bottom-small {
-    margin-bottom: 12px; }
-
-  .ipad-margin-vertical-small {
-    margin-top: 12px;
-    margin-bottom: 12px; }
-
-  .ipad-margin-horizontal-small {
-    margin-left: 12px;
-    margin-right: 12px; }
-
-  .ipad-margin {
-    margin: 18px; }
-
-  .ipad-margin-left {
-    margin-left: 18px; }
-
-  .ipad-margin-right {
-    margin-right: 18px; }
-
-  .ipad-margin-top {
-    margin-top: 18px; }
-
-  .ipad-margin-bottom {
-    margin-bottom: 18px; }
-
-  .ipad-margin-vertical {
-    margin-top: 18px;
-    margin-bottom: 18px; }
-
-  .ipad-margin-horizontal {
-    margin-left: 18px;
-    margin-right: 18px; }
-
-  .ipad-margin-large {
-    margin: 24px; }
-
-  .ipad-margin-left-large {
-    margin-left: 24px; }
-
-  .ipad-margin-right-large {
-    margin-right: 24px; }
-
-  .ipad-margin-top-large {
-    margin-top: 24px; }
-
-  .ipad-margin-bottom-large {
-    margin-bottom: 24px; }
-
-  .ipad-margin-vertical-large {
-    margin-top: 24px;
-    margin-bottom: 24px; }
-
-  .ipad-margin-horizontal-large {
-    margin-left: 24px;
-    margin-right: 24px; }
-
-  .ipad-margin-none {
-    margin: 0; }
-
-  .ipad-margin-left-none {
-    margin-left: 0; }
-
-  .ipad-margin-right-none {
-    margin-right: 0; }
-
-  .ipad-margin-top-none {
-    margin-top: 0; }
-
-  .ipad-margin-bottom-none {
-    margin-bottom: 0; }
-
-  .ipad-margin-vertical-none {
-    margin-top: 0;
-    margin-bottom: 0; }
-
-  .ipad-margin-horizontal-none {
-    margin-left: 0;
-    margin-right: 0; } }
 .border {
   border: 1px solid #cccccc; }
 
@@ -1825,36 +1475,6 @@ img {
 
   .desktop-border-bottom-none {
     border-bottom: none; } }
-@media (min-width: 769px) {
-  .ipad-border {
-    border: 1px solid #cccccc; }
-
-  .ipad-border-left {
-    border-left: 1px solid #cccccc; }
-
-  .ipad-border-right {
-    border-right: 1px solid #cccccc; }
-
-  .ipad-border-top {
-    border-top: 1px solid #cccccc; }
-
-  .ipad-border-bottom {
-    border-bottom: 1px solid #cccccc; }
-
-  .ipad-border-none {
-    border: none; }
-
-  .ipad-border-left-none {
-    border-left: none; }
-
-  .ipad-border-right-none {
-    border-right: none; }
-
-  .ipad-border-top-none {
-    border-top: none; }
-
-  .ipad-border-bottom-none {
-    border-bottom: none; } }
 .border-transparent {
   border-color: transparent; }
 
@@ -1890,6 +1510,9 @@ img {
 
 .border-lightgrey {
   border-color: #999999; }
+
+.border-whitegrey {
+  border-color: #eeeeee; }
 
 .border-whitesmoke {
   border-color: #f5f5f5; }
@@ -1931,6 +1554,9 @@ img {
   .tablet-border-lightgrey {
     border-color: #999999; }
 
+  .tablet-border-whitegrey {
+    border-color: #eeeeee; }
+
   .tablet-border-whitesmoke {
     border-color: #f5f5f5; } }
 @media (min-width: 1025px) {
@@ -1970,46 +1596,10 @@ img {
   .desktop-border-lightgrey {
     border-color: #999999; }
 
+  .desktop-border-whitegrey {
+    border-color: #eeeeee; }
+
   .desktop-border-whitesmoke {
-    border-color: #f5f5f5; } }
-@media (min-width: 769px) {
-  .ipad-border-transparent {
-    border-color: transparent; }
-
-  .ipad-border-white {
-    border-color: #ffffff; }
-
-  .ipad-border-black {
-    border-color: #000000; }
-
-  .ipad-border-red {
-    border-color: #990000; }
-
-  .ipad-border-green {
-    border-color: #009900; }
-
-  .ipad-border-blue {
-    border-color: #000099; }
-
-  .ipad-border-yellow {
-    border-color: #999900; }
-
-  .ipad-border-cyan {
-    border-color: #009999; }
-
-  .ipad-border-magenta {
-    border-color: #990099; }
-
-  .ipad-border-grey {
-    border-color: #666666; }
-
-  .ipad-border-darkgrey {
-    border-color: #333333; }
-
-  .ipad-border-lightgrey {
-    border-color: #999999; }
-
-  .ipad-border-whitesmoke {
     border-color: #f5f5f5; } }
 .border-radius {
   border-radius: 5px; }
@@ -2055,21 +1645,6 @@ img {
     border-radius: 5px 0 0 5px; }
 
   .desktop-border-radius-right {
-    border-radius: 0 5px 5px 0; } }
-@media (min-width: 769px) {
-  .ipad-border-radius {
-    border-radius: 5px; }
-
-  .ipad-border-radius-top {
-    border-radius: 5px 5px 0 0; }
-
-  .ipad-border-radius-bottom {
-    border-radius: 0 0 5px 5px; }
-
-  .ipad-border-radius-left {
-    border-radius: 5px 0 0 5px; }
-
-  .ipad-border-radius-right {
     border-radius: 0 5px 5px 0; } }
 .rotate-45 {
   -webkit-transform: rotate(45deg);
@@ -2191,46 +1766,6 @@ img {
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
     transform: rotate(360deg); } }
-@media (min-width: 769px) {
-  .ipad-rotate-45 {
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    transform: rotate(45deg); }
-
-  .ipad-rotate-90 {
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    transform: rotate(90deg); }
-
-  .ipad-rotate-135 {
-    -webkit-transform: rotate(135deg);
-    -moz-transform: rotate(135deg);
-    transform: rotate(135deg); }
-
-  .ipad-rotate-180 {
-    -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    transform: rotate(180deg); }
-
-  .ipad-rotate-225 {
-    -webkit-transform: rotate(225deg);
-    -moz-transform: rotate(225deg);
-    transform: rotate(225deg); }
-
-  .ipad-rotate-270 {
-    -webkit-transform: rotate(270deg);
-    -moz-transform: rotate(270deg);
-    transform: rotate(270deg); }
-
-  .ipad-rotate-315 {
-    -webkit-transform: rotate(315deg);
-    -moz-transform: rotate(315deg);
-    transform: rotate(315deg); }
-
-  .ipad-rotate-360 {
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    transform: rotate(360deg); } }
 .transition {
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
@@ -2258,16 +1793,6 @@ img {
     transition: 0.5s; }
 
   .desktop-transition-none {
-    -webkit-transition: 0s;
-    -moz-transition: 0s;
-    transition: 0s; } }
-@media (min-width: 769px) {
-  .ipad-transition {
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    transition: 0.5s; }
-
-  .ipad-transition-none {
     -webkit-transition: 0s;
     -moz-transition: 0s;
     transition: 0s; } }
@@ -2307,18 +1832,6 @@ img {
 
   .desktop-h4 {
     font-size: 16px; } }
-@media (min-width: 769px) {
-  .ipad-h1 {
-    font-size: 40px; }
-
-  .ipad-h2 {
-    font-size: 32px; }
-
-  .ipad-h3 {
-    font-size: 24px; }
-
-  .ipad-h4 {
-    font-size: 16px; } }
 .text-left {
   text-align: left; }
 
@@ -2354,18 +1867,6 @@ img {
     text-align: center; }
 
   .desktop-text-justify {
-    text-align: justify; } }
-@media (min-width: 769px) {
-  .ipad-text-left {
-    text-align: left; }
-
-  .ipad-text-right {
-    text-align: right; }
-
-  .ipad-text-center {
-    text-align: center; }
-
-  .ipad-text-justify {
     text-align: justify; } }
 .uppercase {
   text-transform: uppercase; }
@@ -2457,36 +1958,6 @@ img {
 
   .desktop-text-overflow-ellipsis {
     text-overflow: ellipsis; } }
-@media (min-width: 769px) {
-  .ipad-uppercase {
-    text-transform: uppercase; }
-
-  .ipad-lowercase {
-    text-transform: lowercase; }
-
-  .ipad-capitalize {
-    text-transform: capitalize; }
-
-  .ipad-italic {
-    font-style: italic; }
-
-  .ipad-ltr {
-    direction: ltr; }
-
-  .ipad-rtl {
-    direction: rtl; }
-
-  .ipad-underline {
-    text-decoration: underline; }
-
-  .ipad-overline {
-    text-decoration: overline; }
-
-  .ipad-line-through {
-    text-decoration: line-through; }
-
-  .ipad-text-overflow-ellipsis {
-    text-overflow: ellipsis; } }
 .light {
   font-weight: 300; }
 
@@ -2513,15 +1984,6 @@ img {
     font-weight: 500; }
 
   .desktop-bold {
-    font-weight: 700; } }
-@media (min-width: 769px) {
-  .ipad-light {
-    font-weight: 300; }
-
-  .ipad-not-bold {
-    font-weight: 500; }
-
-  .ipad-bold {
     font-weight: 700; } }
 .smallest {
   font-size: 70%; }
@@ -2577,24 +2039,6 @@ img {
 
   .desktop-biggest {
     font-size: 130%; } }
-@media (min-width: 769px) {
-  .ipad-smallest {
-    font-size: 70%; }
-
-  .ipad-smaller {
-    font-size: 80%; }
-
-  .ipad-small {
-    font-size: 90%; }
-
-  .ipad-big {
-    font-size: 110%; }
-
-  .ipad-bigger {
-    font-size: 120%; }
-
-  .ipad-biggest {
-    font-size: 130%; } }
 .wrap {
   white-space: normal; }
 
@@ -2640,21 +2084,6 @@ img {
 
   .desktop-pre-wrap {
     white-space: pre-wrap; } }
-@media (min-width: 769px) {
-  .ipad-wrap {
-    white-space: normal; }
-
-  .ipad-no-wrap {
-    white-space: nowrap; }
-
-  .ipad-pre {
-    white-space: pre; }
-
-  .ipad-pre-line {
-    white-space: pre-line; }
-
-  .ipad-pre-wrap {
-    white-space: pre-wrap; } }
 .valign-middle {
   vertical-align: middle; }
 
@@ -2681,15 +2110,6 @@ img {
     vertical-align: bottom; }
 
   .desktop-valign-top {
-    vertical-align: top; } }
-@media (min-width: 769px) {
-  .ipad-valign-middle {
-    vertical-align: middle; }
-
-  .ipad-valign-bottom {
-    vertical-align: bottom; }
-
-  .ipad-valign-top {
     vertical-align: top; } }
 .button {
   background-color: #333333;
@@ -2732,12 +2152,6 @@ img {
     cursor: pointer; }
 
   .desktop-cursor-default {
-    cursor: default; } }
-@media (min-width: 769px) {
-  .ipad-cursor-pointer {
-    cursor: pointer; }
-
-  .ipad-cursor-default {
     cursor: default; } }
 .height-auto {
   height: auto; }
@@ -4575,618 +3989,6 @@ img {
 
   .desktop-width-100 {
     width: 100%; } }
-@media (min-width: 769px) {
-  .ipad-height-auto {
-    height: auto; }
-
-  .ipad-width-auto {
-    width: auto; }
-
-  .ipad-height-0 {
-    height: 0%; }
-
-  .ipad-width-0 {
-    width: 0%; }
-
-  .ipad-height-1 {
-    height: 1%; }
-
-  .ipad-width-1 {
-    width: 1%; }
-
-  .ipad-height-2 {
-    height: 2%; }
-
-  .ipad-width-2 {
-    width: 2%; }
-
-  .ipad-height-3 {
-    height: 3%; }
-
-  .ipad-width-3 {
-    width: 3%; }
-
-  .ipad-height-4 {
-    height: 4%; }
-
-  .ipad-width-4 {
-    width: 4%; }
-
-  .ipad-height-5 {
-    height: 5%; }
-
-  .ipad-width-5 {
-    width: 5%; }
-
-  .ipad-height-6 {
-    height: 6%; }
-
-  .ipad-width-6 {
-    width: 6%; }
-
-  .ipad-height-7 {
-    height: 7.0%; }
-
-  .ipad-width-7 {
-    width: 7.0%; }
-
-  .ipad-height-8 {
-    height: 8%; }
-
-  .ipad-width-8 {
-    width: 8%; }
-
-  .ipad-height-9 {
-    height: 9%; }
-
-  .ipad-width-9 {
-    width: 9%; }
-
-  .ipad-height-10 {
-    height: 10%; }
-
-  .ipad-width-10 {
-    width: 10%; }
-
-  .ipad-height-11 {
-    height: 11%; }
-
-  .ipad-width-11 {
-    width: 11%; }
-
-  .ipad-height-12 {
-    height: 12%; }
-
-  .ipad-width-12 {
-    width: 12%; }
-
-  .ipad-height-13 {
-    height: 13%; }
-
-  .ipad-width-13 {
-    width: 13%; }
-
-  .ipad-height-14 {
-    height: 14.0%; }
-
-  .ipad-width-14 {
-    width: 14.0%; }
-
-  .ipad-height-15 {
-    height: 15%; }
-
-  .ipad-width-15 {
-    width: 15%; }
-
-  .ipad-height-16 {
-    height: 16%; }
-
-  .ipad-width-16 {
-    width: 16%; }
-
-  .ipad-height-17 {
-    height: 17%; }
-
-  .ipad-width-17 {
-    width: 17%; }
-
-  .ipad-height-18 {
-    height: 18%; }
-
-  .ipad-width-18 {
-    width: 18%; }
-
-  .ipad-height-19 {
-    height: 19%; }
-
-  .ipad-width-19 {
-    width: 19%; }
-
-  .ipad-height-20 {
-    height: 20%; }
-
-  .ipad-width-20 {
-    width: 20%; }
-
-  .ipad-height-21 {
-    height: 21%; }
-
-  .ipad-width-21 {
-    width: 21%; }
-
-  .ipad-height-22 {
-    height: 22%; }
-
-  .ipad-width-22 {
-    width: 22%; }
-
-  .ipad-height-23 {
-    height: 23%; }
-
-  .ipad-width-23 {
-    width: 23%; }
-
-  .ipad-height-24 {
-    height: 24%; }
-
-  .ipad-width-24 {
-    width: 24%; }
-
-  .ipad-height-25 {
-    height: 25%; }
-
-  .ipad-width-25 {
-    width: 25%; }
-
-  .ipad-height-26 {
-    height: 26%; }
-
-  .ipad-width-26 {
-    width: 26%; }
-
-  .ipad-height-27 {
-    height: 27%; }
-
-  .ipad-width-27 {
-    width: 27%; }
-
-  .ipad-height-28 {
-    height: 28.0%; }
-
-  .ipad-width-28 {
-    width: 28.0%; }
-
-  .ipad-height-29 {
-    height: 29.0%; }
-
-  .ipad-width-29 {
-    width: 29.0%; }
-
-  .ipad-height-30 {
-    height: 30%; }
-
-  .ipad-width-30 {
-    width: 30%; }
-
-  .ipad-height-31 {
-    height: 31%; }
-
-  .ipad-width-31 {
-    width: 31%; }
-
-  .ipad-height-32 {
-    height: 32%; }
-
-  .ipad-width-32 {
-    width: 32%; }
-
-  .ipad-height-33 {
-    height: 33%; }
-
-  .ipad-width-33 {
-    width: 33%; }
-
-  .ipad-height-34 {
-    height: 34%; }
-
-  .ipad-width-34 {
-    width: 34%; }
-
-  .ipad-height-35 {
-    height: 35%; }
-
-  .ipad-width-35 {
-    width: 35%; }
-
-  .ipad-height-36 {
-    height: 36%; }
-
-  .ipad-width-36 {
-    width: 36%; }
-
-  .ipad-height-37 {
-    height: 37%; }
-
-  .ipad-width-37 {
-    width: 37%; }
-
-  .ipad-height-38 {
-    height: 38%; }
-
-  .ipad-width-38 {
-    width: 38%; }
-
-  .ipad-height-39 {
-    height: 39%; }
-
-  .ipad-width-39 {
-    width: 39%; }
-
-  .ipad-height-40 {
-    height: 40%; }
-
-  .ipad-width-40 {
-    width: 40%; }
-
-  .ipad-height-41 {
-    height: 41%; }
-
-  .ipad-width-41 {
-    width: 41%; }
-
-  .ipad-height-42 {
-    height: 42%; }
-
-  .ipad-width-42 {
-    width: 42%; }
-
-  .ipad-height-43 {
-    height: 43%; }
-
-  .ipad-width-43 {
-    width: 43%; }
-
-  .ipad-height-44 {
-    height: 44%; }
-
-  .ipad-width-44 {
-    width: 44%; }
-
-  .ipad-height-45 {
-    height: 45%; }
-
-  .ipad-width-45 {
-    width: 45%; }
-
-  .ipad-height-46 {
-    height: 46%; }
-
-  .ipad-width-46 {
-    width: 46%; }
-
-  .ipad-height-47 {
-    height: 47%; }
-
-  .ipad-width-47 {
-    width: 47%; }
-
-  .ipad-height-48 {
-    height: 48%; }
-
-  .ipad-width-48 {
-    width: 48%; }
-
-  .ipad-height-49 {
-    height: 49%; }
-
-  .ipad-width-49 {
-    width: 49%; }
-
-  .ipad-height-50 {
-    height: 50%; }
-
-  .ipad-width-50 {
-    width: 50%; }
-
-  .ipad-height-51 {
-    height: 51%; }
-
-  .ipad-width-51 {
-    width: 51%; }
-
-  .ipad-height-52 {
-    height: 52%; }
-
-  .ipad-width-52 {
-    width: 52%; }
-
-  .ipad-height-53 {
-    height: 53%; }
-
-  .ipad-width-53 {
-    width: 53%; }
-
-  .ipad-height-54 {
-    height: 54%; }
-
-  .ipad-width-54 {
-    width: 54%; }
-
-  .ipad-height-55 {
-    height: 55.0%; }
-
-  .ipad-width-55 {
-    width: 55.0%; }
-
-  .ipad-height-56 {
-    height: 56.0%; }
-
-  .ipad-width-56 {
-    width: 56.0%; }
-
-  .ipad-height-57 {
-    height: 57.0%; }
-
-  .ipad-width-57 {
-    width: 57.0%; }
-
-  .ipad-height-58 {
-    height: 58.0%; }
-
-  .ipad-width-58 {
-    width: 58.0%; }
-
-  .ipad-height-59 {
-    height: 59%; }
-
-  .ipad-width-59 {
-    width: 59%; }
-
-  .ipad-height-60 {
-    height: 60%; }
-
-  .ipad-width-60 {
-    width: 60%; }
-
-  .ipad-height-61 {
-    height: 61%; }
-
-  .ipad-width-61 {
-    width: 61%; }
-
-  .ipad-height-62 {
-    height: 62%; }
-
-  .ipad-width-62 {
-    width: 62%; }
-
-  .ipad-height-63 {
-    height: 63%; }
-
-  .ipad-width-63 {
-    width: 63%; }
-
-  .ipad-height-64 {
-    height: 64%; }
-
-  .ipad-width-64 {
-    width: 64%; }
-
-  .ipad-height-65 {
-    height: 65%; }
-
-  .ipad-width-65 {
-    width: 65%; }
-
-  .ipad-height-66 {
-    height: 66%; }
-
-  .ipad-width-66 {
-    width: 66%; }
-
-  .ipad-height-67 {
-    height: 67%; }
-
-  .ipad-width-67 {
-    width: 67%; }
-
-  .ipad-height-68 {
-    height: 68%; }
-
-  .ipad-width-68 {
-    width: 68%; }
-
-  .ipad-height-69 {
-    height: 69%; }
-
-  .ipad-width-69 {
-    width: 69%; }
-
-  .ipad-height-70 {
-    height: 70%; }
-
-  .ipad-width-70 {
-    width: 70%; }
-
-  .ipad-height-71 {
-    height: 71%; }
-
-  .ipad-width-71 {
-    width: 71%; }
-
-  .ipad-height-72 {
-    height: 72%; }
-
-  .ipad-width-72 {
-    width: 72%; }
-
-  .ipad-height-73 {
-    height: 73%; }
-
-  .ipad-width-73 {
-    width: 73%; }
-
-  .ipad-height-74 {
-    height: 74%; }
-
-  .ipad-width-74 {
-    width: 74%; }
-
-  .ipad-height-75 {
-    height: 75%; }
-
-  .ipad-width-75 {
-    width: 75%; }
-
-  .ipad-height-76 {
-    height: 76%; }
-
-  .ipad-width-76 {
-    width: 76%; }
-
-  .ipad-height-77 {
-    height: 77%; }
-
-  .ipad-width-77 {
-    width: 77%; }
-
-  .ipad-height-78 {
-    height: 78%; }
-
-  .ipad-width-78 {
-    width: 78%; }
-
-  .ipad-height-79 {
-    height: 79%; }
-
-  .ipad-width-79 {
-    width: 79%; }
-
-  .ipad-height-80 {
-    height: 80%; }
-
-  .ipad-width-80 {
-    width: 80%; }
-
-  .ipad-height-81 {
-    height: 81%; }
-
-  .ipad-width-81 {
-    width: 81%; }
-
-  .ipad-height-82 {
-    height: 82%; }
-
-  .ipad-width-82 {
-    width: 82%; }
-
-  .ipad-height-83 {
-    height: 83%; }
-
-  .ipad-width-83 {
-    width: 83%; }
-
-  .ipad-height-84 {
-    height: 84%; }
-
-  .ipad-width-84 {
-    width: 84%; }
-
-  .ipad-height-85 {
-    height: 85%; }
-
-  .ipad-width-85 {
-    width: 85%; }
-
-  .ipad-height-86 {
-    height: 86%; }
-
-  .ipad-width-86 {
-    width: 86%; }
-
-  .ipad-height-87 {
-    height: 87%; }
-
-  .ipad-width-87 {
-    width: 87%; }
-
-  .ipad-height-88 {
-    height: 88%; }
-
-  .ipad-width-88 {
-    width: 88%; }
-
-  .ipad-height-89 {
-    height: 89%; }
-
-  .ipad-width-89 {
-    width: 89%; }
-
-  .ipad-height-90 {
-    height: 90%; }
-
-  .ipad-width-90 {
-    width: 90%; }
-
-  .ipad-height-91 {
-    height: 91%; }
-
-  .ipad-width-91 {
-    width: 91%; }
-
-  .ipad-height-92 {
-    height: 92%; }
-
-  .ipad-width-92 {
-    width: 92%; }
-
-  .ipad-height-93 {
-    height: 93%; }
-
-  .ipad-width-93 {
-    width: 93%; }
-
-  .ipad-height-94 {
-    height: 94%; }
-
-  .ipad-width-94 {
-    width: 94%; }
-
-  .ipad-height-95 {
-    height: 95%; }
-
-  .ipad-width-95 {
-    width: 95%; }
-
-  .ipad-height-96 {
-    height: 96%; }
-
-  .ipad-width-96 {
-    width: 96%; }
-
-  .ipad-height-97 {
-    height: 97%; }
-
-  .ipad-width-97 {
-    width: 97%; }
-
-  .ipad-height-98 {
-    height: 98%; }
-
-  .ipad-width-98 {
-    width: 98%; }
-
-  .ipad-height-99 {
-    height: 99%; }
-
-  .ipad-width-99 {
-    width: 99%; }
-
-  .ipad-height-100 {
-    height: 100%; }
-
-  .ipad-width-100 {
-    width: 100%; } }
 .hide {
   display: none; }
 
@@ -5223,18 +4025,6 @@ img {
 
   .desktop-inline {
     display: inline; } }
-@media (min-width: 769px) {
-  .ipad-hide {
-    display: none; }
-
-  .ipad-block {
-    display: block; }
-
-  .ipad-inline-block {
-    display: inline-block; }
-
-  .ipad-inline {
-    display: inline; } }
 .left {
   float: left; }
 
@@ -5261,15 +4051,6 @@ img {
     float: right; }
 
   .desktop-float-none {
-    float: none; } }
-@media (min-width: 769px) {
-  .ipad-left {
-    float: left; }
-
-  .ipad-right {
-    float: right; }
-
-  .ipad-float-none {
     float: none; } }
 .translucent {
   opacity: 0; }
@@ -6180,309 +4961,6 @@ img {
 
   .desktop-opaque {
     opacity: 1; } }
-@media (min-width: 769px) {
-  .ipad-translucent {
-    opacity: 0; }
-
-  .ipad-opacity-01 {
-    opacity: .01; }
-
-  .ipad-opacity-02 {
-    opacity: .02; }
-
-  .ipad-opacity-03 {
-    opacity: .03; }
-
-  .ipad-opacity-04 {
-    opacity: .04; }
-
-  .ipad-opacity-05 {
-    opacity: .05; }
-
-  .ipad-opacity-06 {
-    opacity: .06; }
-
-  .ipad-opacity-07 {
-    opacity: .07; }
-
-  .ipad-opacity-08 {
-    opacity: .08; }
-
-  .ipad-opacity-09 {
-    opacity: .09; }
-
-  .ipad-opacity-10 {
-    opacity: .10; }
-
-  .ipad-opacity-11 {
-    opacity: .11; }
-
-  .ipad-opacity-12 {
-    opacity: .12; }
-
-  .ipad-opacity-13 {
-    opacity: .13; }
-
-  .ipad-opacity-14 {
-    opacity: .14; }
-
-  .ipad-opacity-15 {
-    opacity: .15; }
-
-  .ipad-opacity-16 {
-    opacity: .16; }
-
-  .ipad-opacity-17 {
-    opacity: .17; }
-
-  .ipad-opacity-18 {
-    opacity: .18; }
-
-  .ipad-opacity-19 {
-    opacity: .19; }
-
-  .ipad-opacity-20 {
-    opacity: .20; }
-
-  .ipad-opacity-21 {
-    opacity: .21; }
-
-  .ipad-opacity-22 {
-    opacity: .22; }
-
-  .ipad-opacity-23 {
-    opacity: .23; }
-
-  .ipad-opacity-24 {
-    opacity: .24; }
-
-  .ipad-opacity-25 {
-    opacity: .25; }
-
-  .ipad-opacity-26 {
-    opacity: .26; }
-
-  .ipad-opacity-27 {
-    opacity: .27; }
-
-  .ipad-opacity-28 {
-    opacity: .28; }
-
-  .ipad-opacity-29 {
-    opacity: .29; }
-
-  .ipad-opacity-30 {
-    opacity: .30; }
-
-  .ipad-opacity-31 {
-    opacity: .31; }
-
-  .ipad-opacity-32 {
-    opacity: .32; }
-
-  .ipad-opacity-33 {
-    opacity: .33; }
-
-  .ipad-opacity-34 {
-    opacity: .34; }
-
-  .ipad-opacity-35 {
-    opacity: .35; }
-
-  .ipad-opacity-36 {
-    opacity: .36; }
-
-  .ipad-opacity-37 {
-    opacity: .37; }
-
-  .ipad-opacity-38 {
-    opacity: .38; }
-
-  .ipad-opacity-39 {
-    opacity: .39; }
-
-  .ipad-opacity-40 {
-    opacity: .40; }
-
-  .ipad-opacity-41 {
-    opacity: .41; }
-
-  .ipad-opacity-42 {
-    opacity: .42; }
-
-  .ipad-opacity-43 {
-    opacity: .43; }
-
-  .ipad-opacity-44 {
-    opacity: .44; }
-
-  .ipad-opacity-45 {
-    opacity: .45; }
-
-  .ipad-opacity-46 {
-    opacity: .46; }
-
-  .ipad-opacity-47 {
-    opacity: .47; }
-
-  .ipad-opacity-48 {
-    opacity: .48; }
-
-  .ipad-opacity-49 {
-    opacity: .49; }
-
-  .ipad-opacity-50 {
-    opacity: .50; }
-
-  .ipad-opacity-51 {
-    opacity: .51; }
-
-  .ipad-opacity-52 {
-    opacity: .52; }
-
-  .ipad-opacity-53 {
-    opacity: .53; }
-
-  .ipad-opacity-54 {
-    opacity: .54; }
-
-  .ipad-opacity-55 {
-    opacity: .55; }
-
-  .ipad-opacity-56 {
-    opacity: .56; }
-
-  .ipad-opacity-57 {
-    opacity: .57; }
-
-  .ipad-opacity-58 {
-    opacity: .58; }
-
-  .ipad-opacity-59 {
-    opacity: .59; }
-
-  .ipad-opacity-60 {
-    opacity: .60; }
-
-  .ipad-opacity-61 {
-    opacity: .61; }
-
-  .ipad-opacity-62 {
-    opacity: .62; }
-
-  .ipad-opacity-63 {
-    opacity: .63; }
-
-  .ipad-opacity-64 {
-    opacity: .64; }
-
-  .ipad-opacity-65 {
-    opacity: .65; }
-
-  .ipad-opacity-66 {
-    opacity: .66; }
-
-  .ipad-opacity-67 {
-    opacity: .67; }
-
-  .ipad-opacity-68 {
-    opacity: .68; }
-
-  .ipad-opacity-69 {
-    opacity: .69; }
-
-  .ipad-opacity-70 {
-    opacity: .70; }
-
-  .ipad-opacity-71 {
-    opacity: .71; }
-
-  .ipad-opacity-72 {
-    opacity: .72; }
-
-  .ipad-opacity-73 {
-    opacity: .73; }
-
-  .ipad-opacity-74 {
-    opacity: .74; }
-
-  .ipad-opacity-75 {
-    opacity: .75; }
-
-  .ipad-opacity-76 {
-    opacity: .76; }
-
-  .ipad-opacity-77 {
-    opacity: .77; }
-
-  .ipad-opacity-78 {
-    opacity: .78; }
-
-  .ipad-opacity-79 {
-    opacity: .79; }
-
-  .ipad-opacity-80 {
-    opacity: .80; }
-
-  .ipad-opacity-81 {
-    opacity: .81; }
-
-  .ipad-opacity-82 {
-    opacity: .82; }
-
-  .ipad-opacity-83 {
-    opacity: .83; }
-
-  .ipad-opacity-84 {
-    opacity: .84; }
-
-  .ipad-opacity-85 {
-    opacity: .85; }
-
-  .ipad-opacity-86 {
-    opacity: .86; }
-
-  .ipad-opacity-87 {
-    opacity: .87; }
-
-  .ipad-opacity-88 {
-    opacity: .88; }
-
-  .ipad-opacity-89 {
-    opacity: .89; }
-
-  .ipad-opacity-90 {
-    opacity: .90; }
-
-  .ipad-opacity-91 {
-    opacity: .91; }
-
-  .ipad-opacity-92 {
-    opacity: .92; }
-
-  .ipad-opacity-93 {
-    opacity: .93; }
-
-  .ipad-opacity-94 {
-    opacity: .94; }
-
-  .ipad-opacity-95 {
-    opacity: .95; }
-
-  .ipad-opacity-96 {
-    opacity: .96; }
-
-  .ipad-opacity-97 {
-    opacity: .97; }
-
-  .ipad-opacity-98 {
-    opacity: .98; }
-
-  .ipad-opacity-99 {
-    opacity: .99; }
-
-  .ipad-opaque {
-    opacity: 1; } }
 .scroll {
   overflow: scroll; }
 
@@ -6536,24 +5014,6 @@ img {
     overflow-y: scroll; }
 
   .desktop-overflow-y-hidden {
-    overflow-y: hidden; } }
-@media (min-width: 769px) {
-  .ipad-scroll {
-    overflow: scroll; }
-
-  .ipad-overflow-hidden {
-    overflow: hidden; }
-
-  .ipad-scroll-x {
-    overflow-x: scroll; }
-
-  .ipad-overflow-x-hidden {
-    overflow-x: hidden; }
-
-  .ipad-scroll-y {
-    overflow-y: scroll; }
-
-  .ipad-overflow-y-hidden {
     overflow-y: hidden; } }
 .relative {
   position: relative; }
@@ -6639,34 +5099,6 @@ img {
   .desktop-bottom-right {
     bottom: 0;
     right: 0; } }
-@media (min-width: 769px) {
-  .ipad-relative {
-    position: relative; }
-
-  .ipad-absolute {
-    position: absolute; }
-
-  .ipad-fixed {
-    position: fixed; }
-
-  .ipad-static {
-    position: static; }
-
-  .ipad-top-left {
-    top: 0;
-    left: 0; }
-
-  .ipad-top-right {
-    top: 0;
-    right: 0; }
-
-  .ipad-bottom-left {
-    bottom: 0;
-    left: 0; }
-
-  .ipad-bottom-right {
-    bottom: 0;
-    right: 0; } }
 .invisible {
   visibility: hidden; }
 
@@ -6694,15 +5126,6 @@ img {
 
   .desktop-collapse {
     visibility: collapse; } }
-@media (min-width: 769px) {
-  .ipad-invisible {
-    visibility: hidden; }
-
-  .ipad-visible {
-    visibility: visible; }
-
-  .ipad-collapse {
-    visibility: collapse; } }
 .not-list {
   list-style: none;
   margin: 0;
@@ -6715,11 +5138,6 @@ img {
     padding: 0; } }
 @media (min-width: 1025px) {
   .desktop-not-list {
-    list-style: none;
-    margin: 0;
-    padding: 0; } }
-@media (min-width: 769px) {
-  .ipad-not-list {
     list-style: none;
     margin: 0;
     padding: 0; } }
@@ -6758,15 +5176,6 @@ img {
     clear: left; }
 
   .desktop-clear-right {
-    clear: right; } }
-@media (min-width: 769px) {
-  .ipad-clear {
-    clear: both; }
-
-  .ipad-clear-left {
-    clear: left; }
-
-  .ipad-clear-right {
     clear: right; } }
 .row {
   width: 100%;
@@ -7133,126 +5542,6 @@ img {
     margin-left: calc(100% / (12 / 12)); }
 
   .desktop-append-12 {
-    margin-right: calc(100% / (12 / 12)); } }
-@media (min-width: 769px) {
-  .ipad-1 {
-    float: left;
-    width: calc(100% / (12 / 1)); }
-
-  .ipad-prepend-1 {
-    margin-left: calc(100% / (12 / 1)); }
-
-  .ipad-append-1 {
-    margin-right: calc(100% / (12 / 1)); }
-
-  .ipad-2 {
-    float: left;
-    width: calc(100% / (12 / 2)); }
-
-  .ipad-prepend-2 {
-    margin-left: calc(100% / (12 / 2)); }
-
-  .ipad-append-2 {
-    margin-right: calc(100% / (12 / 2)); }
-
-  .ipad-3 {
-    float: left;
-    width: calc(100% / (12 / 3)); }
-
-  .ipad-prepend-3 {
-    margin-left: calc(100% / (12 / 3)); }
-
-  .ipad-append-3 {
-    margin-right: calc(100% / (12 / 3)); }
-
-  .ipad-4 {
-    float: left;
-    width: calc(100% / (12 / 4)); }
-
-  .ipad-prepend-4 {
-    margin-left: calc(100% / (12 / 4)); }
-
-  .ipad-append-4 {
-    margin-right: calc(100% / (12 / 4)); }
-
-  .ipad-5 {
-    float: left;
-    width: calc(100% / (12 / 5)); }
-
-  .ipad-prepend-5 {
-    margin-left: calc(100% / (12 / 5)); }
-
-  .ipad-append-5 {
-    margin-right: calc(100% / (12 / 5)); }
-
-  .ipad-6 {
-    float: left;
-    width: calc(100% / (12 / 6)); }
-
-  .ipad-prepend-6 {
-    margin-left: calc(100% / (12 / 6)); }
-
-  .ipad-append-6 {
-    margin-right: calc(100% / (12 / 6)); }
-
-  .ipad-7 {
-    float: left;
-    width: calc(100% / (12 / 7)); }
-
-  .ipad-prepend-7 {
-    margin-left: calc(100% / (12 / 7)); }
-
-  .ipad-append-7 {
-    margin-right: calc(100% / (12 / 7)); }
-
-  .ipad-8 {
-    float: left;
-    width: calc(100% / (12 / 8)); }
-
-  .ipad-prepend-8 {
-    margin-left: calc(100% / (12 / 8)); }
-
-  .ipad-append-8 {
-    margin-right: calc(100% / (12 / 8)); }
-
-  .ipad-9 {
-    float: left;
-    width: calc(100% / (12 / 9)); }
-
-  .ipad-prepend-9 {
-    margin-left: calc(100% / (12 / 9)); }
-
-  .ipad-append-9 {
-    margin-right: calc(100% / (12 / 9)); }
-
-  .ipad-10 {
-    float: left;
-    width: calc(100% / (12 / 10)); }
-
-  .ipad-prepend-10 {
-    margin-left: calc(100% / (12 / 10)); }
-
-  .ipad-append-10 {
-    margin-right: calc(100% / (12 / 10)); }
-
-  .ipad-11 {
-    float: left;
-    width: calc(100% / (12 / 11)); }
-
-  .ipad-prepend-11 {
-    margin-left: calc(100% / (12 / 11)); }
-
-  .ipad-append-11 {
-    margin-right: calc(100% / (12 / 11)); }
-
-  .ipad-12 {
-    float: left;
-    width: calc(100% / (12 / 12)); }
-
-  .ipad-prepend-12 {
-    margin-left: calc(100% / (12 / 12)); }
-
-  .ipad-append-12 {
     margin-right: calc(100% / (12 / 12)); } }
 .flex {
   display: flex;
