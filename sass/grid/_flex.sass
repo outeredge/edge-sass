@@ -1,25 +1,31 @@
-.flex,
-%flex
-    display: flex
-    flex-wrap: wrap
+@mixin edge-flex($device: '')
+    .#{$device}flex,
+    %#{$device}flex
+        display: flex
+        flex-wrap: wrap
 
-.flex-start,
-%flex-start
-    align-items: flex-start
+    .#{$device}flex-start,
+    %#{$device}flex-start
+        align-items: flex-start
 
-.flex-end,
-%flex-end
-    align-items: flex-end
+    .#{$device}flex-end,
+    %#{$device}flex-end
+        align-items: flex-end
 
-.flex-center,
-%flex-center
-    align-items: center
+    .#{$device}flex-center,
+    %#{$device}flex-center
+        align-items: center
 
-.flex-stretch,
-%flex-stretch
-    align-items: stretch
+    .#{$device}flex-stretch,
+    %#{$device}flex-stretch
+        align-items: stretch
 
-.flex-fill,
-%flex-fill
-    > *
-        flex-grow: 1
+    .#{$device}flex-fill,
+    %#{$device}flex-fill
+        > *
+            flex-grow: 1
+
+@include edge-flex
+@each $device, $pixels in $devices
+    @media (min-width: #{$pixels}px)
+        @include edge-flex($device+"-")

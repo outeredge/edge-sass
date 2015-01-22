@@ -5562,4 +5562,43 @@ img {
 .flex-fill > * {
   flex-grow: 1; }
 
+@media (min-width: 541px) {
+  .tablet-flex {
+    display: flex;
+    flex-wrap: wrap; }
+
+  .tablet-flex-start {
+    align-items: flex-start; }
+
+  .tablet-flex-end {
+    align-items: flex-end; }
+
+  .tablet-flex-center {
+    align-items: center; }
+
+  .tablet-flex-stretch {
+    align-items: stretch; }
+
+  .tablet-flex-fill > * {
+    flex-grow: 1; } }
+@media (min-width: 1025px) {
+  .desktop-flex {
+    display: flex;
+    flex-wrap: wrap; }
+
+  .desktop-flex-start {
+    align-items: flex-start; }
+
+  .desktop-flex-end {
+    align-items: flex-end; }
+
+  .desktop-flex-center {
+    align-items: center; }
+
+  .desktop-flex-stretch {
+    align-items: stretch; }
+
+  .desktop-flex-fill > * {
+    flex-grow: 1; } }
+
 /*# sourceMappingURL=edge.css.map */
