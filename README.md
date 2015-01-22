@@ -1,5 +1,7 @@
 # Edge SASS (MobileFirst &amp; Flexbox)
 
+To add specific colour palette for each site, create a $siteColours map (name: hex, name: hex) which will be automatically added to the base colours.
+
 #### Devices
 $devices: (tablet: 541, desktop: 1025)
 
