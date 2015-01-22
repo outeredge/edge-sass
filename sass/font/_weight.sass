@@ -1,6 +1,7 @@
 @mixin font-weights($device: '')
     @each $name, $weight in $weights
-        .#{$device}#{$name}
+        .#{$device}#{$name},
+        %#{$device}#{$name}
             font-weight: #{$weight}
 
 @include font-weights
