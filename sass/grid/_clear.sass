@@ -1,11 +1,12 @@
-.clearfix,
-%clearfix
-    &:after,
-    &:before
-        content: ' '
-        display: table
-    &:after
-        clear: both
+@mixin clearfix($device: '')
+    .#{$device}clearfix,
+    %#{$device}clearfix
+        &:after,
+        &:before
+            content: ' '
+            display: table
+        &:after
+            clear: both
 
 @mixin clear($device: '')
     .#{$device}clear,
@@ -19,6 +20,8 @@
         clear: right
 
 @include clear
+@include clearfix
 @each $device, $pixels in $devices
     @media (min-width: #{$pixels}px)
-        @include clear($device + "-")
+        @include clear($device+"-")
+        @include clearfix($device+"-")
