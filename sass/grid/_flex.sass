@@ -2,23 +2,50 @@
     .#{$device}flex,
     %#{$device}flex
         display: flex
+
+    .#{$device}flex-wrap,
+    %#{$device}flex-wrap
         flex-wrap: wrap
 
-    .#{$device}flex-start,
-    %#{$device}flex-start
+    .#{$device}flex-horizontal-start,
+    %#{$device}flex-horizontal-start
+        justify-content: flex-start
+
+    .#{$device}flex-horizontal-end,
+    %#{$device}flex-horizontal-end
+        justify-content: flex-end
+
+    .#{$device}flex-horizontal-center,
+    %#{$device}flex-horizontal-center
+        justify-content: center
+
+    .#{$device}flex-horizontal-space-between,
+    %#{$device}flex-horizontal-space-between
+        justify-content: space-between
+
+    .#{$device}flex-horizontal-space-around,
+    %#{$device}flex-horizontal-space-around
+        justify-content: space-around
+
+    .#{$device}flex-vertical-start,
+    %#{$device}flex-vertical-start
         align-items: flex-start
 
-    .#{$device}flex-end,
-    %#{$device}flex-end
+    .#{$device}flex-vertical-end,
+    %#{$device}flex-vertical-end
         align-items: flex-end
 
-    .#{$device}flex-center,
-    %#{$device}flex-center
+    .#{$device}flex-vertical-center,
+    %#{$device}flex-vertical-center
         align-items: center
 
-    .#{$device}flex-stretch,
-    %#{$device}flex-stretch
+    .#{$device}flex-vertical-stretch,
+    %#{$device}flex-vertical-stretch
         align-items: stretch
+
+    .#{$device}flex-vertical-baseline,
+    %#{$device}flex-vertical-baseline
+        align-items: baseline
 
     .#{$device}flex-fill,
     %#{$device}flex-fill

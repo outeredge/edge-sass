@@ -5556,59 +5556,119 @@ img {
   .desktop-append-12 {
     margin-right: calc(100% / (12 / 12)); } }
 .flex {
-  display: flex;
+  display: flex; }
+
+.flex-wrap {
   flex-wrap: wrap; }
 
-.flex-start {
+.flex-horizontal-start {
+  justify-content: flex-start; }
+
+.flex-horizontal-end {
+  justify-content: flex-end; }
+
+.flex-horizontal-center {
+  justify-content: center; }
+
+.flex-horizontal-space-between {
+  justify-content: space-between; }
+
+.flex-horizontal-space-around {
+  justify-content: space-around; }
+
+.flex-vertical-start {
   align-items: flex-start; }
 
-.flex-end {
+.flex-vertical-end {
   align-items: flex-end; }
 
-.flex-center {
+.flex-vertical-center {
   align-items: center; }
 
-.flex-stretch {
+.flex-vertical-stretch {
   align-items: stretch; }
+
+.flex-vertical-baseline {
+  align-items: baseline; }
 
 .flex-fill > * {
   flex-grow: 1; }
 
 @media (min-width: 541px) {
   .tablet-flex {
-    display: flex;
+    display: flex; }
+
+  .tablet-flex-wrap {
     flex-wrap: wrap; }
 
-  .tablet-flex-start {
+  .tablet-flex-horizontal-start {
+    justify-content: flex-start; }
+
+  .tablet-flex-horizontal-end {
+    justify-content: flex-end; }
+
+  .tablet-flex-horizontal-center {
+    justify-content: center; }
+
+  .tablet-flex-horizontal-space-between {
+    justify-content: space-between; }
+
+  .tablet-flex-horizontal-space-around {
+    justify-content: space-around; }
+
+  .tablet-flex-vertical-start {
     align-items: flex-start; }
 
-  .tablet-flex-end {
+  .tablet-flex-vertical-end {
     align-items: flex-end; }
 
-  .tablet-flex-center {
+  .tablet-flex-vertical-center {
     align-items: center; }
 
-  .tablet-flex-stretch {
+  .tablet-flex-vertical-stretch {
     align-items: stretch; }
+
+  .tablet-flex-vertical-baseline {
+    align-items: baseline; }
 
   .tablet-flex-fill > * {
     flex-grow: 1; } }
 @media (min-width: 1025px) {
   .desktop-flex {
-    display: flex;
+    display: flex; }
+
+  .desktop-flex-wrap {
     flex-wrap: wrap; }
 
-  .desktop-flex-start {
+  .desktop-flex-horizontal-start {
+    justify-content: flex-start; }
+
+  .desktop-flex-horizontal-end {
+    justify-content: flex-end; }
+
+  .desktop-flex-horizontal-center {
+    justify-content: center; }
+
+  .desktop-flex-horizontal-space-between {
+    justify-content: space-between; }
+
+  .desktop-flex-horizontal-space-around {
+    justify-content: space-around; }
+
+  .desktop-flex-vertical-start {
     align-items: flex-start; }
 
-  .desktop-flex-end {
+  .desktop-flex-vertical-end {
     align-items: flex-end; }
 
-  .desktop-flex-center {
+  .desktop-flex-vertical-center {
     align-items: center; }
 
-  .desktop-flex-stretch {
+  .desktop-flex-vertical-stretch {
     align-items: stretch; }
+
+  .desktop-flex-vertical-baseline {
+    align-items: baseline; }
 
   .desktop-flex-fill > * {
     flex-grow: 1; } }
