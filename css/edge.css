@@ -5150,6 +5150,9 @@ img {
 .clear-right {
   clear: right; }
 
+.clear-none {
+  clear: none; }
+
 .clearfix:after, .clearfix:before,
 .row:after,
 .row:before {
@@ -5169,6 +5172,9 @@ img {
   .tablet-clear-right {
     clear: right; }
 
+  .tablet-clear-none {
+    clear: none; }
+
   .tablet-clearfix:after, .tablet-clearfix:before {
     content: " ";
     display: table; }
@@ -5183,6 +5189,9 @@ img {
 
   .desktop-clear-right {
     clear: right; }
+
+  .desktop-clear-none {
+    clear: none; }
 
   .desktop-clearfix:after, .desktop-clearfix:before {
     content: " ";
