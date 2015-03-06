@@ -18,10 +18,21 @@
     %#{$device}-append-#{$column}
         margin-right: calc(100% / (#{$grid-columns} / #{$column}))
 
+@mixin row($device: '')
+    .#{$device}row,
+    %#{$device}row
+        width: 100%
+        max-width: #{$grid-width}px
+        margin: 0 auto
+        display: block
+        @extend %#{$device}clearfix
+
 @for $column from 1 through $grid-columns
     @include column('column', $column)
+@include row
 
 @each $device, $pixels in $devices
     @media (min-width: #{$pixels}px)
         @for $column from 1 through $grid-columns
             @include column($device, $column)
+        @include row($device+"-")
