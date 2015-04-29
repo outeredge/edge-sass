@@ -167,6 +167,13 @@
             -ms-flex-positive: 1
             flex-grow: 1
 
+@mixin flex-order($order)
+    -webkit-box-ordinal-group: $order
+    -webkit-order: $order
+    -moz-order: $order
+    -ms-flex-order: $order
+    order: $order
+
 @include edge-flex
 @each $device, $pixels in $devices
     @media (min-width: #{$pixels}px)
