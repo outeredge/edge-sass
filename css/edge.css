@@ -2147,7 +2147,11 @@ img {
   -webkit-flex-grow: 1;
   -moz-flex-grow: 1;
   -ms-flex-positive: 1;
-  flex-grow: 1; }
+  flex-grow: 1;
+  -webkit-flex-basis: 0;
+  -moz-flex-basis: 0;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0; }
 
 @media (min-width: 541px) {
   .tablet-text-transparent {
@@ -4076,7 +4080,11 @@ img {
     -webkit-flex-grow: 1;
     -moz-flex-grow: 1;
     -ms-flex-positive: 1;
-    flex-grow: 1; } }
+    flex-grow: 1;
+    -webkit-flex-basis: 0;
+    -moz-flex-basis: 0;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0; } }
 
 @media (min-width: 1025px) {
   .desktop-text-transparent {
@@ -6005,6 +6013,10 @@ img {
     -webkit-flex-grow: 1;
     -moz-flex-grow: 1;
     -ms-flex-positive: 1;
-    flex-grow: 1; } }
+    flex-grow: 1;
+    -webkit-flex-basis: 0;
+    -moz-flex-basis: 0;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0; } }
 
 /*# sourceMappingURL=edge.css.map */
