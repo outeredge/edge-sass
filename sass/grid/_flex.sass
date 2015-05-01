@@ -158,6 +158,10 @@
         -ms-flex-negative: 1
         flex-shrink: 1
 
+    .#{$device}flex-center,
+    %#{$device}flex-center
+        @extend %#{$device}flex-vertical-center, %#{$device}flex-horizontal-center
+
     .#{$device}flex-fill,
     %#{$device}flex-fill
         > *
