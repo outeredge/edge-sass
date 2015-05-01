@@ -2139,11 +2139,24 @@ img {
   -ms-flex-positive: 1;
   flex-grow: 1; }
 
+.flex-grow-none {
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -moz-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0; }
+
 .flex-shrink {
   -webkit-flex-shrink: 1;
   -moz-flex-shrink: 1;
   -ms-flex-negative: 1;
   flex-shrink: 1; }
+
+.flex-shrink-none {
+  -webkit-flex-shrink: 0;
+  -moz-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0; }
 
 .flex-fill-equal > *, .flex-fill > * {
   -webkit-box-flex: 1;
@@ -4076,11 +4089,24 @@ img {
     -ms-flex-positive: 1;
     flex-grow: 1; }
 
+  .tablet-flex-grow-none {
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -moz-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0; }
+
   .tablet-flex-shrink {
     -webkit-flex-shrink: 1;
     -moz-flex-shrink: 1;
     -ms-flex-negative: 1;
     flex-shrink: 1; }
+
+  .tablet-flex-shrink-none {
+    -webkit-flex-shrink: 0;
+    -moz-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0; }
 
   .tablet-flex-fill-equal > *, .tablet-flex-fill > * {
     -webkit-box-flex: 1;
@@ -6013,11 +6039,24 @@ img {
     -ms-flex-positive: 1;
     flex-grow: 1; }
 
+  .desktop-flex-grow-none {
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -moz-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0; }
+
   .desktop-flex-shrink {
     -webkit-flex-shrink: 1;
     -moz-flex-shrink: 1;
     -ms-flex-negative: 1;
     flex-shrink: 1; }
+
+  .desktop-flex-shrink-none {
+    -webkit-flex-shrink: 0;
+    -moz-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0; }
 
   .desktop-flex-fill-equal > *, .desktop-flex-fill > * {
     -webkit-box-flex: 1;

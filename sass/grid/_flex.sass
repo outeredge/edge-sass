@@ -132,11 +132,24 @@
         -ms-flex-positive: 1
         flex-grow: 1
 
+    %#{$device}flex-grow-none
+        -webkit-box-flex: 0
+        -webkit-flex-grow: 0
+        -moz-flex-grow: 0
+        -ms-flex-positive: 0
+        flex-grow: 0
+
     %#{$device}flex-shrink
         -webkit-flex-shrink: 1
         -moz-flex-shrink: 1
         -ms-flex-negative: 1
         flex-shrink: 1
+
+    %#{$device}flex-shrink-none
+        -webkit-flex-shrink: 0
+        -moz-flex-shrink: 0
+        -ms-flex-negative: 0
+        flex-shrink: 0
 
     %#{$device}flex-center
         @extend %#{$device}flex-vertical-center, %#{$device}flex-horizontal-center
@@ -215,8 +228,14 @@
         .#{$device}flex-grow
             @extend %#{$device}flex-grow
 
+        .#{$device}flex-grow-none
+            @extend %#{$device}flex-grow-none
+
         .#{$device}flex-shrink
             @extend %#{$device}flex-shrink
+
+        .#{$device}flex-shrink-none
+            @extend %#{$device}flex-shrink-none
 
         .#{$device}flex-center
             @extend %#{$device}flex-center
