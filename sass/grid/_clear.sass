@@ -1,5 +1,4 @@
 @mixin clearfix($device: '')
-    .#{$device}clearfix,
     %#{$device}clearfix
         &:after,
         &:before
@@ -8,19 +7,29 @@
         &:after
             clear: both
 
+    @if $classes
+        .#{$device}clearfix
+            @extend %#{$device}clearfix
+
 @mixin clear($device: '')
-    .#{$device}clear,
     %#{$device}clear
         clear: both
-    .#{$device}clear-left,
     %#{$device}clear-left
         clear: left
-    .#{$device}clear-right,
     %#{$device}clear-right
         clear: right
-    .#{$device}clear-none,
     %#{$device}clear-none
         clear: none
+
+    @if $classes
+        .#{$device}clear
+            @extend %#{$device}clear
+        .#{$device}clear-left
+            @extend %#{$device}clear-left
+        .#{$device}clear-right
+            @extend %#{$device}clear-right
+        .#{$device}clear-none
+            @extend %#{$device}clear-none
 
 @include clear
 @include clearfix

@@ -1,8 +1,11 @@
 @mixin titles($device: '')
     @each $class, $size in $titles
-        .#{$device}#{$class},
         %#{$device}#{$class}
             font-size: $size
+
+        @if $classes
+            .#{$device}#{$class}
+                @extend %#{$device}#{$class}
 
 @include titles
 @each $device, $pixels in $devices

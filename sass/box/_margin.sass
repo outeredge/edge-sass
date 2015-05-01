@@ -1,27 +1,36 @@
 @mixin margin($size: '', $selector: '', $device: '')
-    .#{$device}#{$margin-class}#{$selector},
     %#{$device}#{$margin-class}#{$selector}
         margin: map-get($margin, $size)
-    .#{$device}#{$margin-class}-#{$class-left}#{$selector},
     %#{$device}#{$margin-class}-#{$class-left}#{$selector}
         margin-left: map-get($margin, $size)
-    .#{$device}#{$margin-class}-#{$class-right}#{$selector},
     %#{$device}#{$margin-class}-#{$class-right}#{$selector}
         margin-right: map-get($margin, $size)
-    .#{$device}#{$margin-class}-#{$class-top}#{$selector},
     %#{$device}#{$margin-class}-#{$class-top}#{$selector}
         margin-top: map-get($margin, $size)
-    .#{$device}#{$margin-class}-#{$class-bottom}#{$selector},
     %#{$device}#{$margin-class}-#{$class-bottom}#{$selector}
         margin-bottom: map-get($margin, $size)
-    .#{$device}#{$margin-class}-#{$class-vertical}#{$selector},
     %#{$device}#{$margin-class}-#{$class-vertical}#{$selector}
         margin-top: map-get($margin, $size)
         margin-bottom: map-get($margin, $size)
-    .#{$device}#{$margin-class}-#{$class-horizontal}#{$selector},
     %#{$device}#{$margin-class}-#{$class-horizontal}#{$selector}
         margin-left: map-get($margin, $size)
         margin-right: map-get($margin, $size)
+
+    @if $classes
+        .#{$device}#{$margin-class}#{$selector}
+            @extend %#{$device}#{$margin-class}#{$selector}
+        .#{$device}#{$margin-class}-#{$class-left}#{$selector}
+            @extend %#{$device}#{$margin-class}-#{$class-left}#{$selector}
+        .#{$device}#{$margin-class}-#{$class-right}#{$selector}
+            @extend %#{$device}#{$margin-class}-#{$class-right}#{$selector}
+        .#{$device}#{$margin-class}-#{$class-top}#{$selector}
+            @extend %#{$device}#{$margin-class}-#{$class-top}#{$selector}
+        .#{$device}#{$margin-class}-#{$class-bottom}#{$selector}
+            @extend %#{$device}#{$margin-class}-#{$class-bottom}#{$selector}
+        .#{$device}#{$margin-class}-#{$class-vertical}#{$selector}
+            @extend %#{$device}#{$margin-class}-#{$class-vertical}#{$selector}
+        .#{$device}#{$margin-class}-#{$class-horizontal}#{$selector}
+            @extend %#{$device}#{$margin-class}-#{$class-horizontal}#{$selector}
 
 @each $size, $pixels in $margin
     @if $size == default

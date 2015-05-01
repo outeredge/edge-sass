@@ -1,8 +1,11 @@
 @mixin font-weights($device: '')
     @each $name, $weight in $weights
-        .#{$device}#{$name},
         %#{$device}#{$name}
             font-weight: #{$weight}
+
+        @if $classes
+            .#{$device}#{$name}
+                @extend %#{$device}#{$name}
 
 @include font-weights
 @each $device, $pixels in $devices

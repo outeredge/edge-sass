@@ -4,12 +4,16 @@
     transition: #{$duration}
 
 @mixin edge-transition($device: '')
-    .#{$device}transition,
     %#{$device}transition
         @include transition($transition-duration)
-    .#{$device}transition-none,
     %#{$device}transition-none
         @include transition(0s)
+
+    @if $classes
+        .#{$device}transition
+            @extend %#{$device}transition
+        .#{$device}transition-none
+            @extend %#{$device}transition-none
 
 @include edge-transition
 @each $device, $pixels in $devices

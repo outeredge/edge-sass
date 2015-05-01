@@ -1,19 +1,26 @@
 @mixin white-space($device: '')
-    .#{$device}wrap,
     %#{$device}wrap
         white-space: normal
-    .#{$device}no-wrap,
     %#{$device}no-wrap
         white-space: nowrap
-    .#{$device}pre,
     %#{$device}pre
         white-space: pre
-    .#{$device}pre-line,
     %#{$device}pre-line
         white-space: pre-line
-    .#{$device}pre-wrap,
     %#{$device}pre-wrap
         white-space: pre-wrap
+
+    @if $classes
+        .#{$device}wrap
+            @extend %#{$device}wrap
+        .#{$device}no-wrap
+            @extend %#{$device}no-wrap
+        .#{$device}pre
+            @extend %#{$device}pre
+        .#{$device}pre-line
+            @extend %#{$device}pre-line
+        .#{$device}pre-wrap
+            @extend %#{$device}pre-wrap
 
 @include white-space
 @each $device, $pixels in $devices

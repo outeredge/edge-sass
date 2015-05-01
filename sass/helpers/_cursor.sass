@@ -1,10 +1,14 @@
 @mixin cursor($device: '')
-    .#{$device}cursor-pointer,
     %#{$device}cursor-pointer
         cursor: pointer
-    .#{$device}cursor-default,
     %#{$device}cursor-default
         cursor: default
+
+    @if $classes
+        .#{$device}cursor-pointer
+            @extend %#{$device}cursor-pointer
+        .#{$device}cursor-default
+            @extend %#{$device}cursor-default
 
 @include cursor
 @each $device, $pixels in $devices

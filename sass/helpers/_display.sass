@@ -1,16 +1,22 @@
 @mixin display($device: '')
-    .#{$device}hide,
     %#{$device}hide
         display: none
-    .#{$device}block,
     %#{$device}block
         display: block
-    .#{$device}inline-block,
     %#{$device}inline-block
         display: inline-block
-    .#{$device}inline,
     %#{$device}inline
         display: inline
+
+    @if $classes
+        .#{$device}hide
+            @extend %#{$device}hide
+        .#{$device}block
+            @extend %#{$device}block
+        .#{$device}inline-block
+            @extend %#{$device}inline-block
+        .#{$device}inline
+            @extend %#{$device}inline
 
 @include display
 @each $device, $pixels in $devices

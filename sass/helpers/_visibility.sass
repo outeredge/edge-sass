@@ -1,13 +1,18 @@
 @mixin visibility($device: '')
-    .#{$device}invisible,
     %#{$device}invisible
         visibility: hidden
-    .#{$device}visible,
     %#{$device}visible
         visibility: visible
-    .#{$device}collapse,
     %#{$device}collapse
         visibility: collapse
+
+    @if $classes
+        .#{$device}invisible
+            @extend %#{$device}invisible
+        .#{$device}visible
+            @extend %#{$device}visible
+        .#{$device}collapse
+            @extend %#{$device}collapse
 
 @include visibility
 @each $device, $pixels in $devices

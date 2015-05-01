@@ -2,21 +2,28 @@
     border-radius: #{$size}
 
 @mixin edge-border-radius($device: '')
-    .#{$device}#{$border-class}-radius,
     %#{$device}#{$border-class}-radius
         @include border-radius($border-radius-size)
-    .#{$device}#{$border-class}-radius-#{$class-top},
     %#{$device}#{$border-class}-radius-#{$class-top}
         @include border-radius($border-radius-size $border-radius-size 0 0)
-    .#{$device}#{$border-class}-radius-#{$class-bottom},
     %#{$device}#{$border-class}-radius-#{$class-bottom}
         @include border-radius(0 0 $border-radius-size $border-radius-size)
-    .#{$device}#{$border-class}-radius-#{$class-left},
     %#{$device}#{$border-class}-radius-#{$class-left}
         @include border-radius($border-radius-size 0 0 $border-radius-size)
-    .#{$device}#{$border-class}-radius-#{$class-right},
     %#{$device}#{$border-class}-radius-#{$class-right}
         @include border-radius(0 $border-radius-size $border-radius-size 0)
+
+    @if $classes
+        .#{$device}#{$border-class}-radius
+            @extend %#{$device}#{$border-class}-radius
+        .#{$device}#{$border-class}-radius-#{$class-top}
+            @extend %#{$device}#{$border-class}-radius-#{$class-top}
+        .#{$device}#{$border-class}-radius-#{$class-bottom}
+            @extend %#{$device}#{$border-class}-radius-#{$class-bottom}
+        .#{$device}#{$border-class}-radius-#{$class-left}
+            @extend %#{$device}#{$border-class}-radius-#{$class-left}
+        .#{$device}#{$border-class}-radius-#{$class-right}
+            @extend %#{$device}#{$border-class}-radius-#{$class-right}
 
 @include edge-border-radius
 @each $device, $pixels in $devices

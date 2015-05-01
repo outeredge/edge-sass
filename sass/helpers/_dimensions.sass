@@ -1,17 +1,29 @@
 @mixin dimensions($device: '')
-    .#{$device}height-auto,
     %#{$device}height-auto
         height: auto
-    .#{$device}width-auto,
     %#{$device}width-auto
         width: auto
+    %#{$device}fill
+        height: 100%
+        width: 100%
     @for $i from 0 through 100
-        .#{$device}height-#{$i},
         %#{$device}height-#{$i}
             height: percentage($i / 100)
-        .#{$device}width-#{$i},
         %#{$device}width-#{$i}
             width: percentage($i / 100)
+
+    @if $classes
+        .#{$device}height-auto
+            @extend %#{$device}height-auto
+        .#{$device}width-auto
+            @extend %#{$device}width-auto
+        .#{$device}fill
+            @extend %#{$device}fill
+        @for $i from 0 through 100
+            .#{$device}height-#{$i}
+                @extend %#{$device}height-#{$i}
+            .#{$device}width-#{$i}
+                @extend %#{$device}width-#{$i}
 
 @include dimensions
 @each $device, $pixels in $devices

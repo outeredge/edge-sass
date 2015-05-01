@@ -1,10 +1,14 @@
 @mixin background-colour($name, $hex, $device: '')
-    .#{$device}bg-#{""+$name},
     %#{$device}bg-#{""+$name}
         background-color: #{$hex}
-    .#{$device}hover-bg-#{""+$name}:hover,
     %#{$device}hover-bg-#{""+$name}:hover
         background-color: #{$hex}
+
+    @if $classes
+        .#{$device}bg-#{""+$name}
+            @extend %#{$device}bg-#{""+$name}
+        .#{$device}hover-bg-#{""+$name}:hover
+            @extend %#{$device}hover-bg-#{""+$name}:hover
 
 @each $name, $hex in $colours
     @include background-colour($name, $hex)

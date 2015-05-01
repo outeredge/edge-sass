@@ -1,10 +1,14 @@
 @mixin colour($name, $hex, $device: '')
-    .#{$device}text-#{""+$name},
     %#{$device}text-#{""+$name}
         color: #{$hex}
-    .#{$device}hover-text-#{""+$name}:hover,
     %#{$device}hover-text-#{""+$name}:hover
         color: #{$hex}
+
+    @if $classes
+        .#{$device}text-#{""+$name}
+            @extend %#{$device}text-#{""+$name}
+        .#{$device}hover-text-#{""+$name}:hover
+            @extend %#{$device}hover-text-#{""+$name}:hover
 
 @each $name, $hex in $colours
     @include colour($name, $hex)

@@ -1,5 +1,4 @@
 @mixin edge-flex($device: '')
-    .#{$device}flex,
     %#{$device}flex
         display: -webkit-box
         display: -webkit-flex
@@ -7,28 +6,24 @@
         display: -ms-flexbox
         display: flex
 
-    .#{$device}flex-wrap-none,
     %#{$device}flex-wrap-none
         -webkit-flex-wrap: nowrap
         -moz-flex-wrap: nowrap
         -ms-flex-wrap: none
         flex-wrap: nowrap
 
-    .#{$device}flex-wrap,
     %#{$device}flex-wrap
         -webkit-flex-wrap: wrap
         -moz-flex-wrap: wrap
         -ms-flex-wrap: wrap
         flex-wrap: wrap
 
-    .#{$device}flex-wrap-reverse,
     %#{$device}flex-wrap-reverse
         -webkit-flex-wrap: wrap-reverse
         -moz-flex-wrap: wrap-reverse
         -ms-flex-wrap: wrap-reverse
         flex-wrap: wrap-reverse
 
-    .#{$device}flex-row,
     %#{$device}flex-row
         -webkit-box-direction: normal
         -webkit-box-orient: horizontal
@@ -37,7 +32,6 @@
         -ms-flex-direction: row
         flex-direction: row
 
-    .#{$device}flex-row-reverse,
     %#{$device}flex-row-reverse
         -webkit-box-direction: reverse
         -webkit-box-orient: horizontal
@@ -46,7 +40,6 @@
         -ms-flex-direction: row-reverse
         flex-direction: row-reverse
 
-    .#{$device}flex-column,
     %#{$device}flex-column
         -webkit-box-direction: normal
         -webkit-box-orient: vertical
@@ -55,7 +48,6 @@
         -ms-flex-direction: column
         flex-direction: column
 
-    .#{$device}flex-column-reverse,
     %#{$device}flex-column-reverse
         -webkit-box-direction: reverse
         -webkit-box-orient: vertical
@@ -64,7 +56,6 @@
         -ms-flex-direction: column-reverse
         flex-direction: column-reverse
 
-    .#{$device}flex-horizontal-start,
     %#{$device}flex-horizontal-start
         -webkit-box-pack: start
         -ms-flex-pack: start
@@ -72,7 +63,6 @@
         -moz-justify-content: flex-start
         justify-content: flex-start
 
-    .#{$device}flex-horizontal-end,
     %#{$device}flex-horizontal-end
         -webkit-box-pack: end
         -ms-flex-pack: end
@@ -80,7 +70,6 @@
         -moz-justify-content: flex-end
         justify-content: flex-end
 
-    .#{$device}flex-horizontal-center,
     %#{$device}flex-horizontal-center
         -webkit-box-pack: center
         -ms-flex-pack: center
@@ -88,7 +77,6 @@
         -moz-justify-content: center
         justify-content: center
 
-    .#{$device}flex-horizontal-space-between,
     %#{$device}flex-horizontal-space-between
         -webkit-box-pack: justify
         -ms-flex-pack: justify
@@ -96,14 +84,12 @@
         -moz-justify-content: space-between
         justify-content: space-between
 
-    .#{$device}flex-horizontal-space-around,
     %#{$device}flex-horizontal-space-around
         -ms-flex-pack: distribute
         -webkit-justify-content: space-around
         -moz-justify-content: space-around
         justify-content: space-around
 
-    .#{$device}flex-vertical-start,
     %#{$device}flex-vertical-start
         -webkit-box-align: start
         -ms-flex-align: start
@@ -111,7 +97,6 @@
         -moz-align-items: flex-start
         align-items: flex-start
 
-    .#{$device}flex-vertical-end,
     %#{$device}flex-vertical-end
         -webkit-box-align: end
         -ms-flex-align: end
@@ -119,7 +104,6 @@
         -moz-align-items: flex-end
         align-items: flex-end
 
-    .#{$device}flex-vertical-center,
     %#{$device}flex-vertical-center
         -webkit-box-align: center
         -ms-flex-align: center
@@ -127,7 +111,6 @@
         -moz-align-items: center
         align-items: center
 
-    .#{$device}flex-vertical-stretch,
     %#{$device}flex-vertical-stretch
         -webkit-box-align: stretch
         -ms-flex-align: stretch
@@ -135,7 +118,6 @@
         -moz-align-items: stretch
         align-items: stretch
 
-    .#{$device}flex-vertical-baseline,
     %#{$device}flex-vertical-baseline
         -webkit-box-align: baseline
         -ms-flex-align: baseline
@@ -143,7 +125,6 @@
         -moz-align-items: baseline
         align-items: baseline
 
-    .#{$device}flex-grow,
     %#{$device}flex-grow
         -webkit-box-flex: 1
         -webkit-flex-grow: 1
@@ -151,18 +132,15 @@
         -ms-flex-positive: 1
         flex-grow: 1
 
-    .#{$device}flex-shrink,
     %#{$device}flex-shrink
         -webkit-flex-shrink: 1
         -moz-flex-shrink: 1
         -ms-flex-negative: 1
         flex-shrink: 1
 
-    .#{$device}flex-center,
     %#{$device}flex-center
         @extend %#{$device}flex-vertical-center, %#{$device}flex-horizontal-center
 
-    .#{$device}flex-fill,
     %#{$device}flex-fill
         > *
             -webkit-box-flex: 1
@@ -171,7 +149,6 @@
             -ms-flex-positive: 1
             flex-grow: 1
 
-    .#{$device}flex-fill-equal,
     %#{$device}flex-fill-equal
         @extend %#{$device}flex-fill
         > *
@@ -179,6 +156,76 @@
             -moz-flex-basis: 0
             -ms-flex-preferred-size: 0
             flex-basis: 0
+
+    @if $classes
+        .#{$device}flex
+            @extend %#{$device}flex
+
+        .#{$device}flex-wrap-none
+            @extend %#{$device}flex-wrap-none
+
+        .#{$device}flex-wrap
+            @extend %#{$device}flex-wrap
+
+        .#{$device}flex-wrap-reverse
+            @extend %#{$device}flex-wrap-reverse
+
+        .#{$device}flex-row
+            @extend %#{$device}flex-row
+
+        .#{$device}flex-row-reverse
+            @extend %#{$device}flex-row-reverse
+
+        .#{$device}flex-column
+            @extend %#{$device}flex-column
+
+        .#{$device}flex-column-reverse
+            @extend %#{$device}flex-column-reverse
+
+        .#{$device}flex-horizontal-start
+            @extend %#{$device}flex-horizontal-start
+
+        .#{$device}flex-horizontal-end
+            @extend %#{$device}flex-horizontal-end
+
+        .#{$device}flex-horizontal-center
+            @extend %#{$device}flex-horizontal-center
+
+        .#{$device}flex-horizontal-space-between
+            @extend %#{$device}flex-horizontal-space-between
+
+        .#{$device}flex-horizontal-space-around
+            @extend %#{$device}flex-horizontal-space-around
+
+        .#{$device}flex-vertical-start
+            @extend %#{$device}flex-vertical-start
+
+        .#{$device}flex-vertical-end
+            @extend %#{$device}flex-vertical-end
+
+        .#{$device}flex-vertical-center
+            @extend %#{$device}flex-vertical-center
+
+        .#{$device}flex-vertical-stretch
+            @extend %#{$device}flex-vertical-stretch
+
+        .#{$device}flex-vertical-baseline
+            @extend %#{$device}flex-vertical-baseline
+
+        .#{$device}flex-grow
+            @extend %#{$device}flex-grow
+
+        .#{$device}flex-shrink
+            @extend %#{$device}flex-shrink
+
+        .#{$device}flex-center
+            @extend %#{$device}flex-center
+
+        .#{$device}flex-fill
+            @extend %#{$device}flex-fill
+
+        .#{$device}flex-fill-equal
+            @extend %#{$device}flex-fill-equal
 
 @mixin flex-order($order)
     -webkit-box-ordinal-group: $order

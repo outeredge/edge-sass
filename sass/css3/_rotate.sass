@@ -1,9 +1,12 @@
 $rotations: 45 90 135 180 225 270 315 360 !default
 
 @mixin rotate($rotation, $device: '')
-    .#{$device}rotate-#{$rotation},
     %#{$device}rotate-#{$rotation}
         @include transform(rotate(#{$rotation}deg))
+
+    @if $classes
+        .#{$device}rotate-#{$rotation}
+            @extend %#{$device}rotate-#{$rotation}
 
 @each $rotation in $rotations
     @include rotate($rotation)

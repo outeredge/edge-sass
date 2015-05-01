@@ -1,25 +1,34 @@
 @mixin line-height($device: '')
-    .#{$device}line-height-100,
     %#{$device}line-height-100
         line-height: 100%
-    .#{$device}line-height-125,
     %#{$device}line-height-125
         line-height: 125%
-    .#{$device}line-height-150,
     %#{$device}line-height-150
         line-height: 150%
-    .#{$device}line-height-175,
     %#{$device}line-height-175
         line-height: 175%
-    .#{$device}line-height-200,
     %#{$device}line-height-200
         line-height: 200%
-    .#{$device}line-height-225,
     %#{$device}line-height-225
         line-height: 225%
-    .#{$device}line-height-250,
     %#{$device}line-height-250
         line-height: 250%
+
+    @if $classes
+        .#{$device}line-height-100
+            @extend %#{$device}line-height-100
+        .#{$device}line-height-125
+            @extend %#{$device}line-height-125
+        .#{$device}line-height-150
+            @extend %#{$device}line-height-150
+        .#{$device}line-height-175
+            @extend %#{$device}line-height-175
+        .#{$device}line-height-200
+            @extend %#{$device}line-height-200
+        .#{$device}line-height-225
+            @extend %#{$device}line-height-225
+        .#{$device}line-height-250
+            @extend %#{$device}line-height-250
 
 @include line-height
 @each $device, $pixels in $devices

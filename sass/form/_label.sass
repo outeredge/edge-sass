@@ -1,3 +1,6 @@
-.label,
 %label
     display: $label-display
+
+@if $classes
+    .label
+        @extend %label
