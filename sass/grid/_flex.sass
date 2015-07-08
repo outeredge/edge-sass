@@ -125,6 +125,31 @@
         -moz-align-items: baseline
         align-items: baseline
 
+    %#{$device}flex-align-self-start
+        -webkit-align-self: flex-start
+        -ms-flex-item-align: start
+        align-self: flex-start
+
+    %#{$device}flex-align-self-end
+        -webkit-align-self: flex-end
+        -ms-flex-item-align: end
+        align-self: flex-end
+
+    %#{$device}flex-align-self-center
+        -webkit-align-self: center
+        -ms-flex-item-align: center
+        align-self: center
+
+    %#{$device}flex-align-self-stretch
+        -webkit-align-self: stretch
+        -ms-flex-item-align: stretch
+        align-self: stretch
+
+    %#{$device}flex-align-self-baseline
+        -webkit-align-self: baseline
+        -ms-flex-item-align: baseline
+        align-self: baseline
+
     %#{$device}flex-grow
         -webkit-box-flex: 1
         -webkit-flex-grow: 1
@@ -224,6 +249,21 @@
 
         .#{$device}flex-vertical-baseline
             @extend %#{$device}flex-vertical-baseline
+
+        .#{$device}flex-align-self-start
+            @extend %#{$device}flex-align-self-start
+
+        .#{$device}flex-align-self-end
+            @extend %#{$device}flex-align-self-end
+
+        .#{$device}flex-align-self-center
+            @extend %#{$device}flex-align-self-center
+
+        .#{$device}flex-align-self-stretch
+            @extend %#{$device}flex-align-self-stretch
+
+        .#{$device}flex-align-self-baseline
+            @extend %#{$device}flex-align-self-baseline
 
         .#{$device}flex-grow
             @extend %#{$device}flex-grow

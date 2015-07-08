@@ -2143,6 +2143,31 @@ img {
   -moz-align-items: baseline;
   align-items: baseline; }
 
+.flex-align-self-start {
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: start;
+  align-self: flex-start; }
+
+.flex-align-self-end {
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end; }
+
+.flex-align-self-center {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center; }
+
+.flex-align-self-stretch {
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch; }
+
+.flex-align-self-baseline {
+  -webkit-align-self: baseline;
+  -ms-flex-item-align: baseline;
+  align-self: baseline; }
+
 .flex-grow {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
@@ -4102,6 +4127,31 @@ img {
     -moz-align-items: baseline;
     align-items: baseline; }
 
+  .tablet-flex-align-self-start {
+    -webkit-align-self: flex-start;
+    -ms-flex-item-align: start;
+    align-self: flex-start; }
+
+  .tablet-flex-align-self-end {
+    -webkit-align-self: flex-end;
+    -ms-flex-item-align: end;
+    align-self: flex-end; }
+
+  .tablet-flex-align-self-center {
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center; }
+
+  .tablet-flex-align-self-stretch {
+    -webkit-align-self: stretch;
+    -ms-flex-item-align: stretch;
+    align-self: stretch; }
+
+  .tablet-flex-align-self-baseline {
+    -webkit-align-self: baseline;
+    -ms-flex-item-align: baseline;
+    align-self: baseline; }
+
   .tablet-flex-grow {
     -webkit-box-flex: 1;
     -webkit-flex-grow: 1;
@@ -6060,6 +6110,31 @@ img {
     -webkit-align-items: baseline;
     -moz-align-items: baseline;
     align-items: baseline; }
+
+  .desktop-flex-align-self-start {
+    -webkit-align-self: flex-start;
+    -ms-flex-item-align: start;
+    align-self: flex-start; }
+
+  .desktop-flex-align-self-end {
+    -webkit-align-self: flex-end;
+    -ms-flex-item-align: end;
+    align-self: flex-end; }
+
+  .desktop-flex-align-self-center {
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center; }
+
+  .desktop-flex-align-self-stretch {
+    -webkit-align-self: stretch;
+    -ms-flex-item-align: stretch;
+    align-self: stretch; }
+
+  .desktop-flex-align-self-baseline {
+    -webkit-align-self: baseline;
+    -ms-flex-item-align: baseline;
+    align-self: baseline; }
 
   .desktop-flex-grow {
     -webkit-box-flex: 1;
