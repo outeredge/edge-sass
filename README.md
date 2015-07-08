@@ -1,5 +1,12 @@
 # Edge SASS (MobileFirst &amp; Flexbox)
 
+## Build
+sass --require sass-media_query_combiner sass/edge.sass:css/edge.css  
+
+Uses https://github.com/aaronjensen/sass-media_query_combiner to ensure tablet/desktop styles are more important than base mobile styles.
+
+## Settings
+
 To add specific colour palette for each site, create a $siteColours map (name: hex, name: hex) which will be automatically added to the base colours.
 
 #### Devices
