@@ -765,6 +765,9 @@ img {
 .overline {
   text-decoration: overline; }
 
+.text-decoration-none {
+  text-decoration: none; }
+
 .line-through {
   text-decoration: line-through; }
 
@@ -817,6 +820,12 @@ img {
 
 .valign-top {
   vertical-align: top; }
+
+.valign-text-top {
+  vertical-align: text-top; }
+
+.valign-text-bottom {
+  vertical-align: text-bottom; }
 .line-height-100 {
   line-height: 100%; }
 
@@ -2746,6 +2755,9 @@ img {
   .tablet-overline {
     text-decoration: overline; }
 
+  .tablet-text-decoration-none {
+    text-decoration: none; }
+
   .tablet-line-through {
     text-decoration: line-through; }
 
@@ -2797,7 +2809,13 @@ img {
     vertical-align: bottom; }
 
   .tablet-valign-top {
-    vertical-align: top; } 
+    vertical-align: top; }
+
+  .tablet-valign-text-top {
+    vertical-align: text-top; }
+
+  .tablet-valign-text-bottom {
+    vertical-align: text-bottom; } 
   .tablet-line-height-100 {
     line-height: 100%; }
 
@@ -4696,6 +4714,9 @@ img {
   .desktop-overline {
     text-decoration: overline; }
 
+  .desktop-text-decoration-none {
+    text-decoration: none; }
+
   .desktop-line-through {
     text-decoration: line-through; }
 
@@ -4747,7 +4768,13 @@ img {
     vertical-align: bottom; }
 
   .desktop-valign-top {
-    vertical-align: top; } 
+    vertical-align: top; }
+
+  .desktop-valign-text-top {
+    vertical-align: text-top; }
+
+  .desktop-valign-text-bottom {
+    vertical-align: text-bottom; } 
   .desktop-line-height-100 {
     line-height: 100%; }
 

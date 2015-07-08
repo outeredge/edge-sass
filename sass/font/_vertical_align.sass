@@ -5,6 +5,10 @@
         vertical-align: bottom
     %#{$device}valign-#{$class-top}
         vertical-align: top
+    %#{$device}valign-text-#{$class-top}
+        vertical-align: text-top
+    %#{$device}valign-text-#{$class-bottom}
+        vertical-align: text-bottom
 
     @if $classes
         .#{$device}valign-#{$class-middle}
@@ -13,6 +17,10 @@
             @extend %#{$device}valign-#{$class-bottom}
         .#{$device}valign-#{$class-top}
             @extend %#{$device}valign-#{$class-top}
+        .#{$device}valign-text-#{$class-top}
+            @extend %#{$device}valign-text-#{$class-top}
+        .#{$device}valign-text-#{$class-bottom}
+            @extend %#{$device}valign-text-#{$class-bottom}
 
 @include vertical-align
 @each $device, $pixels in $devices
