@@ -12,7 +12,7 @@ $lightgrey: #999999 !default
 $whitegrey: #eeeeee !default
 $whitesmoke: #f5f5f5 !default
 
-$colours: (transparent: "transparent", white: $white, black: $black, red: $red, green: $green, blue: $blue, yellow: $yellow, cyan: $cyan, magenta: $magenta, grey: $grey, darkgrey: $darkgrey, lightgrey: $lightgrey, whitegrey: $whitegrey, whitesmoke: $whitesmoke) !default
+$colours: ("transparent": "transparent", "white": $white, "black": $black, "red": $red, "green": $green, "blue": $blue, "yellow": $yellow, "cyan": $cyan, "magenta": $magenta, "grey": $grey, "darkgrey": $darkgrey, "lightgrey": $lightgrey, "whitegrey": $whitegrey, "whitesmoke": $whitesmoke) !default
 
 @if variable-exists(siteColours)
     $colours: map-merge($colours, $siteColours)
