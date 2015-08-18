@@ -17,4 +17,4 @@ $colours: ("transparent": "transparent", "white": $white, "black": $black, "red"
 @if variable-exists(siteColours)
     $colours: map-merge($colours, $siteColours)
 
-$primary-colour: map-get($colours, darkgrey) !default
+$primary-colour: map-get($colours, "darkgrey") !default
