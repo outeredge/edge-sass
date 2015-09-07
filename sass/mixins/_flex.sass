@@ -1,0 +1,19 @@
+@mixin flex-grow($flex-grow)
+    -webkit-box-flex: #{$flex-grow}
+    -webkit-flex-grow: #{$flex-grow}
+    -moz-flex-grow: #{$flex-grow}
+    -ms-flex-positive: #{$flex-grow}
+    flex-grow: #{$flex-grow}
+
+@mixin flex-shrink($flex-shrink)
+    -webkit-flex-shrink: #{$flex-shrink}
+    -moz-flex-shrink: #{$flex-shrink}
+    -ms-flex-negative: #{$flex-shrink}
+    flex-shrink: #{$flex-shrink}
+
+@mixin flex-order($flex-order)
+    -webkit-box-ordinal-group: #{$flex-order}
+    -webkit-order: #{$flex-order}
+    -moz-order: #{$flex-order}
+    -ms-flex-order: #{$flex-order}
+    order: #{$flex-order}
