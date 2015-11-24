@@ -1,0 +1,21 @@
+@mixin fill($device: '')
+    %#{$device}fill
+        height: 100%
+        width: 100%
+    %#{$device}fixed-fill
+        @extend %#{$device}fixed, %#{$device}top-left, %#{$device}bottom-right, %#{$device}fill
+    %#{$device}absolute-fill
+        @extend %#{$device}absolute, %#{$device}top-left, %#{$device}bottom-right, %#{$device}fill
+
+    @if $classes
+        .#{$device}fill
+            @extend %#{$device}fill
+        .#{$device}fixed-fill
+            @extend %#{$device}fixed-fill
+        .#{$device}absolute-fill
+            @extend %#{$device}absolute-fill
+
+@include fill
+@each $device, $pixels in $devices
+    @media (min-width: #{$pixels}px)
+        @include fill($device+"-")
