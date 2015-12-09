@@ -6,6 +6,13 @@
         display: -ms-flexbox
         display: flex
 
+    %#{$device}flex-inline
+        display: -webkit-inline-box
+        display: -webkit-inline-flex
+        display: -moz-inline-box
+        display: -ms-inline-flexbox
+        display: inline-flex
+
     %#{$device}flex-wrap-none
         -webkit-flex-wrap: nowrap
         -moz-flex-wrap: nowrap
@@ -159,6 +166,9 @@
     @if $classes
         .#{$device}flex
             @extend %#{$device}flex
+
+        .#{$device}flex-inline
+            @extend %#{$device}flex-inline
 
         .#{$device}flex-wrap-none
             @extend %#{$device}flex-wrap-none
