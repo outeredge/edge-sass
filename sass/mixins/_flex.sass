@@ -1,3 +1,10 @@
+@mixin flex($flex-options)
+    -webkit-box-flex: #{$flex-options}
+    -moz-box-flex: #{$flex-options}
+    -webkit-flex: #{$flex-options}
+    -ms-flex: #{$flex-options}
+    flex: #{$flex-options}
+
 @mixin flex-grow($flex-grow)
     -webkit-box-flex: #{$flex-grow}
     -webkit-flex-grow: #{$flex-grow}
