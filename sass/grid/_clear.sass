@@ -34,6 +34,9 @@
 @include clear
 @include clearfix
 @each $device, $pixels in $devices
-    @media (min-width: #{$pixels}px)
+    @include media($device)
         @include clear($device+"-")
         @include clearfix($device+"-")
+@include mobile
+    @include clear("mobile-")
+    @include clearfix("mobile-")

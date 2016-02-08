@@ -14,6 +14,10 @@
     @include colour($name, $hex)
 
 @each $device, $pixels in $devices
-    @media (min-width: #{$pixels}px)
+    @include media($device)
         @each $name, $hex in $colours
             @include colour($name, $hex, $device+"-")
+
+@include mobile
+    @each $name, $hex in $colours
+        @include colour($name, $hex, "mobile-")

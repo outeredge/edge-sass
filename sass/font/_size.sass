@@ -28,5 +28,7 @@
 
 @include font-size
 @each $device, $pixels in $devices
-    @media (min-width: #{$pixels}px)
+    @include media($device)
         @include font-size($device+"-")
+@include mobile
+    @include font-size("mobile-")

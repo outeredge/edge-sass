@@ -16,5 +16,7 @@
 
 @include float
 @each $device, $pixels in $devices
-    @media (min-width: #{$pixels}px)
+    @include media($device)
         @include float($device+"-")
+@include mobile
+    @include float("mobile-")

@@ -20,5 +20,7 @@
 
 @include text-align
 @each $device, $pixels in $devices
-    @media (min-width: #{$pixels}px)
+    @include media($device)
         @include text-align($device+"-")
+@include mobile
+    @include text-align("mobile-")

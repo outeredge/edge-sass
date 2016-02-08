@@ -259,5 +259,7 @@
 
 @include edge-flex
 @each $device, $pixels in $devices
-    @media (min-width: #{$pixels}px)
+    @include media($device)
         @include edge-flex($device+"-")
+@include mobile
+    @include edge-flex("mobile-")

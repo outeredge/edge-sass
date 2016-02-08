@@ -24,5 +24,7 @@
 
 @include white-space
 @each $device, $pixels in $devices
-    @media (min-width: #{$pixels}px)
+    @include media($device)
         @include white-space($device+"-")
+@include mobile
+    @include white-space("mobile-")

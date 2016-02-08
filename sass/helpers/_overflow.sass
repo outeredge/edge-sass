@@ -28,5 +28,7 @@
 
 @include overflow
 @each $device, $pixels in $devices
-    @media (min-width: #{$pixels}px)
+    @include media($device)
         @include overflow($device+"-")
+@include mobile
+    @include overflow("mobile-")

@@ -10,5 +10,7 @@
 
 @include list
 @each $device, $pixels in $devices
-    @media (min-width: #{$pixels}px)
+    @include media($device)
         @include list($device+"-")
+@include mobile
+    @include list("mobile-")

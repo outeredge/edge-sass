@@ -9,5 +9,7 @@
 
 @include font-weights
 @each $device, $pixels in $devices
-    @media (min-width: #{$pixels}px)
+    @include media($device)
         @include font-weights($device+"-")
+@include mobile
+    @include font-weights("mobile-")

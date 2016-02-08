@@ -32,5 +32,7 @@
 
 @include line-height
 @each $device, $pixels in $devices
-    @media (min-width: #{$pixels}px)
+    @include media($device)
         @include line-height($device+"-")
+@include mobile
+    @include line-height("mobile-")

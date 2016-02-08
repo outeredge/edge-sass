@@ -12,6 +12,10 @@ $rotations: 45 90 135 180 225 270 315 360 !default
     @include rotate($rotation)
 
 @each $device, $pixels in $devices
-    @media (min-width: #{$pixels}px)
+    @include media($device)
         @each $rotation in $rotations
             @include rotate($rotation, $device+"-")
+
+@include mobile
+    @each $rotation in $rotations
+        @include rotate($rotation, "mobile-")

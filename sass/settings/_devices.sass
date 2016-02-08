@@ -3,3 +3,12 @@ $devices: (tablet: 541, desktop: 1025) !default
 @mixin media($type)
     @media (min-width: map-get($devices,$type)+"px")
         @content
+
+
+@function smallest-device-pixel($devices)
+    @each $device, $pixels in $devices
+        @return $pixels - 1
+
+@mixin mobile
+    @media (max-width: #{smallest-device-pixel($devices)}px)
+        @content

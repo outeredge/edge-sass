@@ -39,9 +39,16 @@
         @include margin($size, "-"+$size)
 
 @each $device, $pixels in $devices
-    @media (min-width: #{$pixels}px)
+    @include media($device)
         @each $size, $pixels in $margin
             @if $size == default
                 @include margin($size, '', $device+"-")
             @else
                 @include margin($size, "-"+$size, $device+"-")
+
+@include mobile
+    @each $size, $pixels in $margin
+        @if $size == default
+            @include margin($size, '', "mobile-")
+        @else
+            @include margin($size, "-"+$size, "mobile-")

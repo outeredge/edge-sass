@@ -20,5 +20,7 @@
 
 @include display
 @each $device, $pixels in $devices
-    @media (min-width: #{$pixels}px)
+    @include media($device)
         @include display($device+"-")
+@include mobile
+    @include display("mobile-")

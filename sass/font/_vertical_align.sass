@@ -24,5 +24,7 @@
 
 @include vertical-align
 @each $device, $pixels in $devices
-    @media (min-width: #{$pixels}px)
+    @include media($device)
         @include vertical-align($device+"-")
+@include mobile
+    @include vertical-align("mobile-")

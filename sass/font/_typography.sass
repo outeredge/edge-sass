@@ -9,5 +9,7 @@
 
 @include titles
 @each $device, $pixels in $devices
-    @media (min-width: #{$pixels}px)
+    @include media($device)
         @include titles($device+"-")
+@include mobile
+    @include titles("mobile-")

@@ -17,5 +17,7 @@
 
 @include fill
 @each $device, $pixels in $devices
-    @media (min-width: #{$pixels}px)
+    @include media($device)
         @include fill($device+"-")
+@include mobile
+    @include fill("mobile-")

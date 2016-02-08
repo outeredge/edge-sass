@@ -39,9 +39,16 @@
         @include padding($size, "-"+$size)
 
 @each $device, $pixels in $devices
-    @media (min-width: #{$pixels}px)
+    @include media($device)
         @each $size, $pixels in $padding
             @if $size == default
                 @include padding($size, '', $device+"-")
             @else
                 @include padding($size, "-"+$size, $device+"-")
+
+@include mobile
+    @each $size, $pixels in $padding
+        @if $size == default
+            @include padding($size, '', "mobile-")
+        @else
+            @include padding($size, "-"+$size, "mobile-")

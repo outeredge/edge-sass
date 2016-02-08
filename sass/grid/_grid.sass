@@ -41,11 +41,16 @@
             @extend %#{$device}row
 
 @for $column from 1 through $grid-columns
-    @include column('column', $column)
+    @include column("column", $column)
 @include row
 
 @each $device, $pixels in $devices
-    @media (min-width: #{$pixels}px)
+    @include media($device)
         @for $column from 1 through $grid-columns
             @include column($device, $column)
         @include row($device+"-")
+
+@include mobile
+    @for $column from 1 through $grid-columns
+        @include column("mobile", $column)
+    @include row("mobile-")

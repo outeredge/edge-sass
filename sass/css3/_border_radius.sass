@@ -27,5 +27,7 @@
 
 @include edge-border-radius
 @each $device, $pixels in $devices
-    @media (min-width: #{$pixels}px)
+    @include media($device)
         @include edge-border-radius($device+"-")
+@include mobile
+    @include edge-border-radius("mobile-")

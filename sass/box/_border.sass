@@ -44,8 +44,11 @@
 
 @include border($border-width, $border-style, $border-colour)
 @each $device, $pixels in $devices
-    @media (min-width: #{$pixels}px)
+    @include media($device)
         @include border($border-width, $border-style, $border-colour, $device+"-")
+@include mobile
+    @include border($border-width, $border-style, $border-colour, "mobile-")
+
 
 @each $name, $hex in $colours
     %#{$border-class}-#{""+$name}
@@ -56,11 +59,20 @@
             @extend %#{$border-class}-#{""+$name}
 
 @each $device, $pixels in $devices
-    @media (min-width: #{$pixels}px)
+    @include media($device)
         @each $name, $hex in $colours
             %#{$device}-#{$border-class}-#{""+$name}
                 border-color: #{$hex}
 
             @if $classes
                 .#{$device}-#{$border-class}-#{""+$name}
-                    @extend %#{$device}-#{$border-class}-#{""+$name},
+                    @extend %#{$device}-#{$border-class}-#{""+$name}
+
+@include mobile
+    @each $name, $hex in $colours
+        %mobile-#{$border-class}-#{""+$name}
+            border-color: #{$hex}
+
+        @if $classes
+            .mobile-#{$border-class}-#{""+$name}
+                @extend %mobile-#{$border-class}-#{""+$name}

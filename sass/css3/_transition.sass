@@ -17,5 +17,7 @@
 
 @include edge-transition
 @each $device, $pixels in $devices
-    @media (min-width: #{$pixels}px)
+    @include media($device)
         @include edge-transition($device+"-")
+@include mobile
+    @include edge-transition("mobile-")

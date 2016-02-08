@@ -12,5 +12,7 @@
 
 @include cursor
 @each $device, $pixels in $devices
-    @media (min-width: #{$pixels}px)
+    @include media($device)
         @include cursor($device+"-")
+@include mobile
+    @include cursor("mobile-")
