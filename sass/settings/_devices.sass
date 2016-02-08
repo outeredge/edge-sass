@@ -5,10 +5,13 @@ $devices: (tablet: 541, desktop: 1025) !default
         @content
 
 
-@function smallest-device-pixel($devices)
+@function smallest-device-pixel()
+    $smallest: 100000000
     @each $device, $pixels in $devices
-        @return $pixels - 1
+        @if $pixels < $smallest
+            $smallest: $pixels
+    @return $smallest - 1
 
 @mixin mobile
-    @media (max-width: #{smallest-device-pixel($devices)}px)
+    @media (max-width: #{smallest-device-pixel()}px)
         @content
