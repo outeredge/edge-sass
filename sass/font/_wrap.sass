@@ -9,6 +9,10 @@
         white-space: pre-line
     %#{$device}pre-wrap
         white-space: pre-wrap
+    %#{$device}word-wrap
+        word-wrap: break-word
+    %#{$device}word-wrap-none
+        word-wrap: normal
 
     @if $classes
         .#{$device}wrap
@@ -21,6 +25,10 @@
             @extend %#{$device}pre-line
         .#{$device}pre-wrap
             @extend %#{$device}pre-wrap
+        .#{$device}word-wrap
+            @extend %#{$device}word-wrap
+        .#{$device}word-wrap-none
+            @extend %#{$device}word-wrap-none
 
 @include white-space
 @each $device, $pixels in $devices
