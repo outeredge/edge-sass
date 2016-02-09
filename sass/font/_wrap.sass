@@ -13,6 +13,10 @@
         word-wrap: break-word
     %#{$device}word-wrap-none
         word-wrap: normal
+    %#{$device}word-break
+        word-break: break-all
+    %#{$device}word-break-none
+        word-break: normal
 
     @if $classes
         .#{$device}wrap
@@ -29,6 +33,10 @@
             @extend %#{$device}word-wrap
         .#{$device}word-wrap-none
             @extend %#{$device}word-wrap-none
+        .#{$device}word-break
+            @extend %#{$device}word-break
+        .#{$device}word-break-none
+            @extend %#{$device}word-break-none
 
 @include white-space
 @each $device, $pixels in $devices

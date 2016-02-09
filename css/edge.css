@@ -827,6 +827,12 @@ img {
 
 .word-wrap-none {
   word-wrap: normal; }
+
+.word-break {
+  word-break: break-all; }
+
+.word-break-none {
+  word-break: normal; }
 .valign-middle {
   vertical-align: middle; }
 
@@ -2853,7 +2859,13 @@ img {
     word-wrap: break-word; }
 
   .tablet-word-wrap-none {
-    word-wrap: normal; } 
+    word-wrap: normal; }
+
+  .tablet-word-break {
+    word-break: break-all; }
+
+  .tablet-word-break-none {
+    word-break: normal; } 
   .tablet-valign-middle {
     vertical-align: middle; }
 
@@ -4849,7 +4861,13 @@ img {
     word-wrap: break-word; }
 
   .desktop-word-wrap-none {
-    word-wrap: normal; } 
+    word-wrap: normal; }
+
+  .desktop-word-break {
+    word-break: break-all; }
+
+  .desktop-word-break-none {
+    word-break: normal; } 
   .desktop-valign-middle {
     vertical-align: middle; }
 
@@ -6845,7 +6863,13 @@ img {
     word-wrap: break-word; }
 
   .mobile-word-wrap-none {
-    word-wrap: normal; } 
+    word-wrap: normal; }
+
+  .mobile-word-break {
+    word-break: break-all; }
+
+  .mobile-word-break-none {
+    word-break: normal; } 
   .mobile-valign-middle {
     vertical-align: middle; }
 
