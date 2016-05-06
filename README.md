@@ -11,7 +11,7 @@ Uses https://github.com/aaronjensen/sass-media_query_combiner to ensure tablet/d
 To add specific colour palette for each site, create a $siteColours map (name: hex, name: hex) which will be automatically added to the base colours.
 
 #### Devices
-$devices: (tablet: 541px, desktop: 1025px)
+$devices: (tablet: 541px, desktop: 1025px)  
 
 #### Grid
 $grid-width: 1280px
