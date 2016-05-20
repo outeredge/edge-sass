@@ -828,8 +828,11 @@ img {
 .word-wrap-none {
   word-wrap: normal; }
 
-.word-break {
+.word-break-all {
   word-break: break-all; }
+
+.word-break-word {
+  word-break: break-word; }
 
 .word-break-none {
   word-break: normal; }
@@ -2879,8 +2882,11 @@ img {
   .tablet-word-wrap-none {
     word-wrap: normal; }
 
-  .tablet-word-break {
+  .tablet-word-break-all {
     word-break: break-all; }
+
+  .tablet-word-break-word {
+    word-break: break-word; }
 
   .tablet-word-break-none {
     word-break: normal; } 
@@ -4899,8 +4905,11 @@ img {
   .desktop-word-wrap-none {
     word-wrap: normal; }
 
-  .desktop-word-break {
+  .desktop-word-break-all {
     word-break: break-all; }
+
+  .desktop-word-break-word {
+    word-break: break-word; }
 
   .desktop-word-break-none {
     word-break: normal; } 
@@ -6919,8 +6928,11 @@ img {
   .mobile-word-wrap-none {
     word-wrap: normal; }
 
-  .mobile-word-break {
+  .mobile-word-break-all {
     word-break: break-all; }
+
+  .mobile-word-break-word {
+    word-break: break-word; }
 
   .mobile-word-break-none {
     word-break: normal; } 

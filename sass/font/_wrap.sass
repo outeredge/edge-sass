@@ -13,8 +13,10 @@
         word-wrap: break-word
     %#{$device}word-wrap-none
         word-wrap: normal
-    %#{$device}word-break
+    %#{$device}word-break-all
         word-break: break-all
+    %#{$device}word-break-word
+        word-break: break-word
     %#{$device}word-break-none
         word-break: normal
 
@@ -33,8 +35,10 @@
             @extend %#{$device}word-wrap
         .#{$device}word-wrap-none
             @extend %#{$device}word-wrap-none
-        .#{$device}word-break
-            @extend %#{$device}word-break
+        .#{$device}word-break-all
+            @extend %#{$device}word-break-all
+        .#{$device}word-break-word
+            @extend %#{$device}word-break-word
         .#{$device}word-break-none
             @extend %#{$device}word-break-none
 
