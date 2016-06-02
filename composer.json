@@ -1,6 +1,6 @@
 {
-    "name": "edge/sass",
-    "description": "Edge SASS (MF & Flex)",
+    "name": "outeredge/sass",
+    "description": "OuterEdge SASS",
     "authors": [
         {
             "name": "outer/edge",

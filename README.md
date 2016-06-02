@@ -1,4 +1,4 @@
-# Edge SASS
+# OuterEdge SASS
 
 ## Build
 sass --require sass-media_query_combiner sass/edge.sass:css/edge.css
@@ -11,7 +11,7 @@ Uses https://github.com/aaronjensen/sass-media_query_combiner to ensure tablet/d
 To add specific colour palette for each site, create a $siteColours map (name: hex, name: hex) which will be automatically added to the base colours.
 
 #### Devices
-$devices: (tablet: 541px, desktop: 1025px)  
+$devices: (tablet: 541px, desktop: 1025px)
 
 #### Grid
 $grid-width: 1280px
@@ -22,7 +22,7 @@ $global-line-height: 100%
 
 $body-background-colour: map-get($colours, white)
 $body-text-colour: map-get($colours, darkgrey)
-$body-font-size: 12px 2
+$body-font-size: 12px
 $body-font-family: Arial, Helvetica, sans-serif
 
 #### Class Names
