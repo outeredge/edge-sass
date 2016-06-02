@@ -680,6 +680,9 @@ img {
 
 .border-radius-right {
   border-radius: 0 5px 5px 0; }
+
+.rounded {
+  border-radius: 50%; }
 .rotate-45 {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -2733,7 +2736,10 @@ img {
     border-radius: 5px 0 0 5px; }
 
   .tablet-border-radius-right {
-    border-radius: 0 5px 5px 0; } 
+    border-radius: 0 5px 5px 0; }
+
+  .tablet-rounded {
+    border-radius: 50%; } 
   .tablet-rotate-45 {
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
@@ -4756,7 +4762,10 @@ img {
     border-radius: 5px 0 0 5px; }
 
   .desktop-border-radius-right {
-    border-radius: 0 5px 5px 0; } 
+    border-radius: 0 5px 5px 0; }
+
+  .desktop-rounded {
+    border-radius: 50%; } 
   .desktop-rotate-45 {
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
@@ -6779,7 +6788,10 @@ img {
     border-radius: 5px 0 0 5px; }
 
   .mobile-border-radius-right {
-    border-radius: 0 5px 5px 0; } 
+    border-radius: 0 5px 5px 0; }
+
+  .mobile-rounded {
+    border-radius: 50%; } 
   .mobile-rotate-45 {
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);

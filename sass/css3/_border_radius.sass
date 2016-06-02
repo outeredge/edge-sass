@@ -12,6 +12,8 @@
         @include border-radius($border-radius-size 0 0 $border-radius-size)
     %#{$device}#{$border-class}-radius-#{$class-right}
         @include border-radius(0 $border-radius-size $border-radius-size 0)
+    %#{$device}rounded
+        @include border-radius(50%)
 
     @if $classes
         .#{$device}#{$border-class}-radius
@@ -24,6 +26,8 @@
             @extend %#{$device}#{$border-class}-radius-#{$class-left}
         .#{$device}#{$border-class}-radius-#{$class-right}
             @extend %#{$device}#{$border-class}-radius-#{$class-right}
+        .#{$device}rounded
+            @extend %#{$device}rounded
 
 @include edge-border-radius
 @each $device, $pixels in $devices
