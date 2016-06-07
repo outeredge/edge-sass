@@ -1,4 +1,4 @@
-# OuterEdge SASS
+# outer/edge SASS
 
 ## Build
 sass --require sass-media_query_combiner sass/edge.sass:css/edge.css
