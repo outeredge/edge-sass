@@ -1858,17 +1858,26 @@ img {
 .overflow-hidden {
   overflow: hidden; }
 
+.overflow-auto {
+  overflow: auto; }
+
 .scroll-x {
   overflow-x: scroll; }
 
 .overflow-x-hidden {
   overflow-x: hidden; }
 
+.overflow-x-auto {
+  overflow-x: auto; }
+
 .scroll-y {
   overflow-y: scroll; }
 
 .overflow-y-hidden {
   overflow-y: hidden; }
+
+.overflow-y-auto {
+  overflow-y: auto; }
 .relative {
   position: relative; }
 
@@ -3891,17 +3900,26 @@ img {
   .tablet-overflow-hidden {
     overflow: hidden; }
 
+  .tablet-overflow-auto {
+    overflow: auto; }
+
   .tablet-scroll-x {
     overflow-x: scroll; }
 
   .tablet-overflow-x-hidden {
     overflow-x: hidden; }
 
+  .tablet-overflow-x-auto {
+    overflow-x: auto; }
+
   .tablet-scroll-y {
     overflow-y: scroll; }
 
   .tablet-overflow-y-hidden {
-    overflow-y: hidden; } 
+    overflow-y: hidden; }
+
+  .tablet-overflow-y-auto {
+    overflow-y: auto; } 
   .tablet-relative {
     position: relative; }
 
@@ -5917,17 +5935,26 @@ img {
   .desktop-overflow-hidden {
     overflow: hidden; }
 
+  .desktop-overflow-auto {
+    overflow: auto; }
+
   .desktop-scroll-x {
     overflow-x: scroll; }
 
   .desktop-overflow-x-hidden {
     overflow-x: hidden; }
 
+  .desktop-overflow-x-auto {
+    overflow-x: auto; }
+
   .desktop-scroll-y {
     overflow-y: scroll; }
 
   .desktop-overflow-y-hidden {
-    overflow-y: hidden; } 
+    overflow-y: hidden; }
+
+  .desktop-overflow-y-auto {
+    overflow-y: auto; } 
   .desktop-relative {
     position: relative; }
 
@@ -7943,17 +7970,26 @@ img {
   .mobile-overflow-hidden {
     overflow: hidden; }
 
+  .mobile-overflow-auto {
+    overflow: auto; }
+
   .mobile-scroll-x {
     overflow-x: scroll; }
 
   .mobile-overflow-x-hidden {
     overflow-x: hidden; }
 
+  .mobile-overflow-x-auto {
+    overflow-x: auto; }
+
   .mobile-scroll-y {
     overflow-y: scroll; }
 
   .mobile-overflow-y-hidden {
-    overflow-y: hidden; } 
+    overflow-y: hidden; }
+
+  .mobile-overflow-y-auto {
+    overflow-y: auto; } 
   .mobile-relative {
     position: relative; }
 
