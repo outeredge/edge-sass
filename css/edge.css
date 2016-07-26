@@ -285,6 +285,12 @@ img {
 
 .hover-text-whitesmoke:hover {
   color: #f5f5f5; }
+
+.text-inherit {
+  color: inherit; }
+
+.hover-text-inherit:hover {
+  color: inherit; }
 .bg-transparent {
   background-color: transparent; }
 
@@ -368,6 +374,12 @@ img {
 
 .hover-bg-whitesmoke:hover {
   background-color: #f5f5f5; }
+
+.bg-inherit {
+  background-color: inherit; }
+
+.hover-bg-inherit:hover {
+  background-color: inherit; }
 .padding-tiny {
   padding: 6px; }
 
@@ -666,6 +678,9 @@ img {
 
 .border-whitesmoke {
   border-color: #f5f5f5; }
+
+.border-inherit {
+  border-color: inherit; }
 .border-radius {
   border-radius: 5px; }
 
@@ -2350,7 +2365,13 @@ img {
     color: #f5f5f5; }
 
   .tablet-hover-text-whitesmoke:hover {
-    color: #f5f5f5; } 
+    color: #f5f5f5; }
+
+  .tablet-text-inherit {
+    color: inherit; }
+
+  .tablet-hover-text-inherit:hover {
+    color: inherit; } 
   .tablet-bg-transparent {
     background-color: transparent; }
 
@@ -2433,7 +2454,13 @@ img {
     background-color: #f5f5f5; }
 
   .tablet-hover-bg-whitesmoke:hover {
-    background-color: #f5f5f5; } 
+    background-color: #f5f5f5; }
+
+  .tablet-bg-inherit {
+    background-color: inherit; }
+
+  .tablet-hover-bg-inherit:hover {
+    background-color: inherit; } 
   .tablet-padding-tiny {
     padding: 6px; }
 
@@ -2731,7 +2758,10 @@ img {
     border-color: #eeeeee; }
 
   .tablet-border-whitesmoke {
-    border-color: #f5f5f5; } 
+    border-color: #f5f5f5; }
+
+  .tablet-border-inherit {
+    border-color: inherit; } 
   .tablet-border-radius {
     border-radius: 5px; }
 
@@ -4385,7 +4415,13 @@ img {
     color: #f5f5f5; }
 
   .desktop-hover-text-whitesmoke:hover {
-    color: #f5f5f5; } 
+    color: #f5f5f5; }
+
+  .desktop-text-inherit {
+    color: inherit; }
+
+  .desktop-hover-text-inherit:hover {
+    color: inherit; } 
   .desktop-bg-transparent {
     background-color: transparent; }
 
@@ -4468,7 +4504,13 @@ img {
     background-color: #f5f5f5; }
 
   .desktop-hover-bg-whitesmoke:hover {
-    background-color: #f5f5f5; } 
+    background-color: #f5f5f5; }
+
+  .desktop-bg-inherit {
+    background-color: inherit; }
+
+  .desktop-hover-bg-inherit:hover {
+    background-color: inherit; } 
   .desktop-padding-tiny {
     padding: 6px; }
 
@@ -4766,7 +4808,10 @@ img {
     border-color: #eeeeee; }
 
   .desktop-border-whitesmoke {
-    border-color: #f5f5f5; } 
+    border-color: #f5f5f5; }
+
+  .desktop-border-inherit {
+    border-color: inherit; } 
   .desktop-border-radius {
     border-radius: 5px; }
 
@@ -6420,7 +6465,13 @@ img {
     color: #f5f5f5; }
 
   .mobile-hover-text-whitesmoke:hover {
-    color: #f5f5f5; } 
+    color: #f5f5f5; }
+
+  .mobile-text-inherit {
+    color: inherit; }
+
+  .mobile-hover-text-inherit:hover {
+    color: inherit; } 
   .mobile-bg-transparent {
     background-color: transparent; }
 
@@ -6503,7 +6554,13 @@ img {
     background-color: #f5f5f5; }
 
   .mobile-hover-bg-whitesmoke:hover {
-    background-color: #f5f5f5; } 
+    background-color: #f5f5f5; }
+
+  .mobile-bg-inherit {
+    background-color: inherit; }
+
+  .mobile-hover-bg-inherit:hover {
+    background-color: inherit; } 
   .mobile-padding-tiny {
     padding: 6px; }
 
@@ -6801,7 +6858,10 @@ img {
     border-color: #eeeeee; }
 
   .mobile-border-whitesmoke {
-    border-color: #f5f5f5; } 
+    border-color: #f5f5f5; }
+
+  .mobile-border-inherit {
+    border-color: inherit; } 
   .mobile-border-radius {
     border-radius: 5px; }
 
