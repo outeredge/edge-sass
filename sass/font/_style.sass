@@ -1,4 +1,8 @@
 @mixin font-style($device: '')
+    %#{$device}font-style-normal
+        font-style: normal
+    %#{$device}text-transform-none
+        text-transform: none
     %#{$device}uppercase
         text-transform: uppercase
     %#{$device}lowercase
@@ -23,6 +27,10 @@
         text-overflow: ellipsis
 
     @if $classes
+        .#{$device}font-style-normal
+            @extend %#{$device}font-style-normal
+        .#{$device}text-transform-none
+            @extend %#{$device}text-transform-none
         .#{$device}uppercase
             @extend %#{$device}uppercase
         .#{$device}lowercase

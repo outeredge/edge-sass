@@ -876,6 +876,12 @@ img {
 
 .text-justify {
   text-align: justify; }
+.font-style-normal {
+  font-style: normal; }
+
+.text-transform-none {
+  text-transform: none; }
+
 .uppercase {
   text-transform: uppercase; }
 
@@ -3084,6 +3090,12 @@ textarea, .appearance-none {
 
   .tablet-text-justify {
     text-align: justify; } 
+  .tablet-font-style-normal {
+    font-style: normal; }
+
+  .tablet-text-transform-none {
+    text-transform: none; }
+
   .tablet-uppercase {
     text-transform: uppercase; }
 
@@ -5260,6 +5272,12 @@ textarea, .appearance-none {
 
   .desktop-text-justify {
     text-align: justify; } 
+  .desktop-font-style-normal {
+    font-style: normal; }
+
+  .desktop-text-transform-none {
+    text-transform: none; }
+
   .desktop-uppercase {
     text-transform: uppercase; }
 
@@ -7436,6 +7454,12 @@ textarea, .appearance-none {
 
   .mobile-text-justify {
     text-align: justify; } 
+  .mobile-font-style-normal {
+    font-style: normal; }
+
+  .mobile-text-transform-none {
+    text-transform: none; }
+
   .mobile-uppercase {
     text-transform: uppercase; }
 
