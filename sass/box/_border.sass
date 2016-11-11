@@ -9,6 +9,12 @@
         border-top: $width $style $colour
     %#{$device}#{$border-class}-#{$class-bottom}
         border-bottom: $width $style $colour
+    %#{$device}#{$border-class}-#{$class-vertical}
+        border-top: $width $style $colour
+        border-bottom: $width $style $colour
+    %#{$device}#{$border-class}-#{$class-horizontal}
+        border-left: $width $style $colour
+        border-right: $width $style $colour
     %#{$device}#{$border-class}-none
         border: none
     %#{$device}#{$border-class}-#{$class-left}-none
@@ -19,6 +25,12 @@
         border-top: none
     %#{$device}#{$border-class}-#{$class-bottom}-none
         border-bottom: none
+    %#{$device}#{$border-class}-#{$class-vertical}-none
+        border-top: none
+        border-bottom: none
+    %#{$device}#{$border-class}-#{$class-horizontal}-none
+        border-left: none
+        border-right: none
 
     @if $classes
         .#{$device}#{$border-class}
@@ -31,6 +43,10 @@
             @extend %#{$device}#{$border-class}-#{$class-top}
         .#{$device}#{$border-class}-#{$class-bottom}
             @extend %#{$device}#{$border-class}-#{$class-bottom}
+        .#{$device}#{$border-class}-#{$class-vertical}
+            @extend %#{$device}#{$border-class}-#{$class-vertical}
+        .#{$device}#{$border-class}-#{$class-horizontal}
+            @extend %#{$device}#{$border-class}-#{$class-horizontal}
         .#{$device}#{$border-class}-none
             @extend %#{$device}#{$border-class}-none
         .#{$device}#{$border-class}-#{$class-left}-none
@@ -41,6 +57,10 @@
             @extend %#{$device}#{$border-class}-#{$class-top}-none
         .#{$device}#{$border-class}-#{$class-bottom}-none
             @extend %#{$device}#{$border-class}-#{$class-bottom}-none
+        .#{$device}#{$border-class}-#{$class-vertical}-none
+            @extend %#{$device}#{$border-class}-#{$class-vertical}-none
+        .#{$device}#{$border-class}-#{$class-horizontal}-none
+            @extend %#{$device}#{$border-class}-#{$class-horizontal}-none
 
 @include border($border-width, $border-style, $border-colour)
 @each $device, $pixels in $devices

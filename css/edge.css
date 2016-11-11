@@ -623,6 +623,14 @@ img {
 .border-bottom {
   border-bottom: 1px solid #cccccc; }
 
+.border-vertical {
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc; }
+
+.border-horizontal {
+  border-left: 1px solid #cccccc;
+  border-right: 1px solid #cccccc; }
+
 .border-none {
   border: none; }
 
@@ -637,6 +645,14 @@ img {
 
 .border-bottom-none {
   border-bottom: none; }
+
+.border-vertical-none {
+  border-top: none;
+  border-bottom: none; }
+
+.border-horizontal-none {
+  border-left: none;
+  border-right: none; }
 .border-transparent {
   border-color: transparent; }
 
@@ -2704,6 +2720,14 @@ img {
   .tablet-border-bottom {
     border-bottom: 1px solid #cccccc; }
 
+  .tablet-border-vertical {
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc; }
+
+  .tablet-border-horizontal {
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc; }
+
   .tablet-border-none {
     border: none; }
 
@@ -2717,7 +2741,15 @@ img {
     border-top: none; }
 
   .tablet-border-bottom-none {
-    border-bottom: none; } 
+    border-bottom: none; }
+
+  .tablet-border-vertical-none {
+    border-top: none;
+    border-bottom: none; }
+
+  .tablet-border-horizontal-none {
+    border-left: none;
+    border-right: none; } 
   .tablet-border-transparent {
     border-color: transparent; }
 
@@ -4754,6 +4786,14 @@ img {
   .desktop-border-bottom {
     border-bottom: 1px solid #cccccc; }
 
+  .desktop-border-vertical {
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc; }
+
+  .desktop-border-horizontal {
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc; }
+
   .desktop-border-none {
     border: none; }
 
@@ -4767,7 +4807,15 @@ img {
     border-top: none; }
 
   .desktop-border-bottom-none {
-    border-bottom: none; } 
+    border-bottom: none; }
+
+  .desktop-border-vertical-none {
+    border-top: none;
+    border-bottom: none; }
+
+  .desktop-border-horizontal-none {
+    border-left: none;
+    border-right: none; } 
   .desktop-border-transparent {
     border-color: transparent; }
 
@@ -6804,6 +6852,14 @@ img {
   .mobile-border-bottom {
     border-bottom: 1px solid #cccccc; }
 
+  .mobile-border-vertical {
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc; }
+
+  .mobile-border-horizontal {
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc; }
+
   .mobile-border-none {
     border: none; }
 
@@ -6817,7 +6873,15 @@ img {
     border-top: none; }
 
   .mobile-border-bottom-none {
-    border-bottom: none; } 
+    border-bottom: none; }
+
+  .mobile-border-vertical-none {
+    border-top: none;
+    border-bottom: none; }
+
+  .mobile-border-horizontal-none {
+    border-left: none;
+    border-right: none; } 
   .mobile-border-transparent {
     border-color: transparent; }
 
