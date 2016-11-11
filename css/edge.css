@@ -930,6 +930,11 @@ img {
 
 .outline-none {
   outline: none; }
+input[type=text],
+textarea, .appearance-none {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
 .cursor-pointer {
   cursor: pointer; }
 
@@ -3017,6 +3022,10 @@ img {
     line-height: 250%; } 
   .tablet-outline-none {
     outline: none; } 
+  .tablet-appearance-none {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; } 
   .tablet-cursor-pointer {
     cursor: pointer; }
 
@@ -5097,6 +5106,10 @@ img {
     line-height: 250%; } 
   .desktop-outline-none {
     outline: none; } 
+  .desktop-appearance-none {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; } 
   .desktop-cursor-pointer {
     cursor: pointer; }
 
@@ -7177,6 +7190,10 @@ img {
     line-height: 250%; } 
   .mobile-outline-none {
     outline: none; } 
+  .mobile-appearance-none {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; } 
   .mobile-cursor-pointer {
     cursor: pointer; }
 
