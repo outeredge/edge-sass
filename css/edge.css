@@ -936,8 +936,20 @@ img {
 .height-auto {
   height: auto; }
 
+.min-height-auto {
+  min-height: auto; }
+
+.max-height-auto {
+  max-height: auto; }
+
 .width-auto {
   width: auto; }
+
+.min-width-auto {
+  min-width: auto; }
+
+.max-width-auto {
+  max-width: auto; }
 
 .height-0 {
   height: 0%; }
@@ -3009,8 +3021,20 @@ img {
   .tablet-height-auto {
     height: auto; }
 
+  .tablet-min-height-auto {
+    min-height: auto; }
+
+  .tablet-max-height-auto {
+    max-height: auto; }
+
   .tablet-width-auto {
     width: auto; }
+
+  .tablet-min-width-auto {
+    min-width: auto; }
+
+  .tablet-max-width-auto {
+    max-width: auto; }
 
   .tablet-height-0 {
     height: 0%; }
@@ -5075,8 +5099,20 @@ img {
   .desktop-height-auto {
     height: auto; }
 
+  .desktop-min-height-auto {
+    min-height: auto; }
+
+  .desktop-max-height-auto {
+    max-height: auto; }
+
   .desktop-width-auto {
     width: auto; }
+
+  .desktop-min-width-auto {
+    min-width: auto; }
+
+  .desktop-max-width-auto {
+    max-width: auto; }
 
   .desktop-height-0 {
     height: 0%; }
@@ -7141,8 +7177,20 @@ img {
   .mobile-height-auto {
     height: auto; }
 
+  .mobile-min-height-auto {
+    min-height: auto; }
+
+  .mobile-max-height-auto {
+    max-height: auto; }
+
   .mobile-width-auto {
     width: auto; }
+
+  .mobile-min-width-auto {
+    min-width: auto; }
+
+  .mobile-max-width-auto {
+    max-width: auto; }
 
   .mobile-height-0 {
     height: 0%; }
