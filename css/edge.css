@@ -928,6 +928,8 @@ img {
 .label {
   display: block; }
 
+.outline-none {
+  outline: none; }
 .cursor-pointer {
   cursor: pointer; }
 
@@ -3013,6 +3015,8 @@ img {
 
   .tablet-line-height-250 {
     line-height: 250%; } 
+  .tablet-outline-none {
+    outline: none; } 
   .tablet-cursor-pointer {
     cursor: pointer; }
 
@@ -5091,6 +5095,8 @@ img {
 
   .desktop-line-height-250 {
     line-height: 250%; } 
+  .desktop-outline-none {
+    outline: none; } 
   .desktop-cursor-pointer {
     cursor: pointer; }
 
@@ -7169,6 +7175,8 @@ img {
 
   .mobile-line-height-250 {
     line-height: 250%; } 
+  .mobile-outline-none {
+    outline: none; } 
   .mobile-cursor-pointer {
     cursor: pointer; }
 
