@@ -517,6 +517,29 @@ img {
   margin-left: 6px;
   margin-right: 6px; }
 
+.minus-margin-tiny {
+  margin: -6px; }
+
+.minus-margin-left-tiny {
+  margin-left: -6px; }
+
+.minus-margin-right-tiny {
+  margin-right: -6px; }
+
+.minus-margin-top-tiny {
+  margin-top: -6px; }
+
+.minus-margin-bottom-tiny {
+  margin-bottom: -6px; }
+
+.minus-margin-vertical-tiny {
+  margin-top: -6px;
+  margin-bottom: -6px; }
+
+.minus-margin-horizontal-tiny {
+  margin-left: -6px;
+  margin-right: -6px; }
+
 .margin-small {
   margin: 12px; }
 
@@ -539,6 +562,29 @@ img {
 .margin-horizontal-small {
   margin-left: 12px;
   margin-right: 12px; }
+
+.minus-margin-small {
+  margin: -12px; }
+
+.minus-margin-left-small {
+  margin-left: -12px; }
+
+.minus-margin-right-small {
+  margin-right: -12px; }
+
+.minus-margin-top-small {
+  margin-top: -12px; }
+
+.minus-margin-bottom-small {
+  margin-bottom: -12px; }
+
+.minus-margin-vertical-small {
+  margin-top: -12px;
+  margin-bottom: -12px; }
+
+.minus-margin-horizontal-small {
+  margin-left: -12px;
+  margin-right: -12px; }
 
 .margin {
   margin: 18px; }
@@ -563,6 +609,29 @@ img {
   margin-left: 18px;
   margin-right: 18px; }
 
+.minus-margin {
+  margin: -18px; }
+
+.minus-margin-left {
+  margin-left: -18px; }
+
+.minus-margin-right {
+  margin-right: -18px; }
+
+.minus-margin-top {
+  margin-top: -18px; }
+
+.minus-margin-bottom {
+  margin-bottom: -18px; }
+
+.minus-margin-vertical {
+  margin-top: -18px;
+  margin-bottom: -18px; }
+
+.minus-margin-horizontal {
+  margin-left: -18px;
+  margin-right: -18px; }
+
 .margin-large {
   margin: 24px; }
 
@@ -585,6 +654,29 @@ img {
 .margin-horizontal-large {
   margin-left: 24px;
   margin-right: 24px; }
+
+.minus-margin-large {
+  margin: -24px; }
+
+.minus-margin-left-large {
+  margin-left: -24px; }
+
+.minus-margin-right-large {
+  margin-right: -24px; }
+
+.minus-margin-top-large {
+  margin-top: -24px; }
+
+.minus-margin-bottom-large {
+  margin-bottom: -24px; }
+
+.minus-margin-vertical-large {
+  margin-top: -24px;
+  margin-bottom: -24px; }
+
+.minus-margin-horizontal-large {
+  margin-left: -24px;
+  margin-right: -24px; }
 
 .margin-none {
   margin: 0; }
@@ -2633,6 +2725,29 @@ textarea, .appearance-none {
     margin-left: 6px;
     margin-right: 6px; }
 
+  .tablet-minus-margin-tiny {
+    margin: -6px; }
+
+  .tablet-minus-margin-left-tiny {
+    margin-left: -6px; }
+
+  .tablet-minus-margin-right-tiny {
+    margin-right: -6px; }
+
+  .tablet-minus-margin-top-tiny {
+    margin-top: -6px; }
+
+  .tablet-minus-margin-bottom-tiny {
+    margin-bottom: -6px; }
+
+  .tablet-minus-margin-vertical-tiny {
+    margin-top: -6px;
+    margin-bottom: -6px; }
+
+  .tablet-minus-margin-horizontal-tiny {
+    margin-left: -6px;
+    margin-right: -6px; }
+
   .tablet-margin-small {
     margin: 12px; }
 
@@ -2655,6 +2770,29 @@ textarea, .appearance-none {
   .tablet-margin-horizontal-small {
     margin-left: 12px;
     margin-right: 12px; }
+
+  .tablet-minus-margin-small {
+    margin: -12px; }
+
+  .tablet-minus-margin-left-small {
+    margin-left: -12px; }
+
+  .tablet-minus-margin-right-small {
+    margin-right: -12px; }
+
+  .tablet-minus-margin-top-small {
+    margin-top: -12px; }
+
+  .tablet-minus-margin-bottom-small {
+    margin-bottom: -12px; }
+
+  .tablet-minus-margin-vertical-small {
+    margin-top: -12px;
+    margin-bottom: -12px; }
+
+  .tablet-minus-margin-horizontal-small {
+    margin-left: -12px;
+    margin-right: -12px; }
 
   .tablet-margin {
     margin: 18px; }
@@ -2679,6 +2817,29 @@ textarea, .appearance-none {
     margin-left: 18px;
     margin-right: 18px; }
 
+  .tablet-minus-margin {
+    margin: -18px; }
+
+  .tablet-minus-margin-left {
+    margin-left: -18px; }
+
+  .tablet-minus-margin-right {
+    margin-right: -18px; }
+
+  .tablet-minus-margin-top {
+    margin-top: -18px; }
+
+  .tablet-minus-margin-bottom {
+    margin-bottom: -18px; }
+
+  .tablet-minus-margin-vertical {
+    margin-top: -18px;
+    margin-bottom: -18px; }
+
+  .tablet-minus-margin-horizontal {
+    margin-left: -18px;
+    margin-right: -18px; }
+
   .tablet-margin-large {
     margin: 24px; }
 
@@ -2701,6 +2862,29 @@ textarea, .appearance-none {
   .tablet-margin-horizontal-large {
     margin-left: 24px;
     margin-right: 24px; }
+
+  .tablet-minus-margin-large {
+    margin: -24px; }
+
+  .tablet-minus-margin-left-large {
+    margin-left: -24px; }
+
+  .tablet-minus-margin-right-large {
+    margin-right: -24px; }
+
+  .tablet-minus-margin-top-large {
+    margin-top: -24px; }
+
+  .tablet-minus-margin-bottom-large {
+    margin-bottom: -24px; }
+
+  .tablet-minus-margin-vertical-large {
+    margin-top: -24px;
+    margin-bottom: -24px; }
+
+  .tablet-minus-margin-horizontal-large {
+    margin-left: -24px;
+    margin-right: -24px; }
 
   .tablet-margin-none {
     margin: 0; }
@@ -4717,6 +4901,29 @@ textarea, .appearance-none {
     margin-left: 6px;
     margin-right: 6px; }
 
+  .desktop-minus-margin-tiny {
+    margin: -6px; }
+
+  .desktop-minus-margin-left-tiny {
+    margin-left: -6px; }
+
+  .desktop-minus-margin-right-tiny {
+    margin-right: -6px; }
+
+  .desktop-minus-margin-top-tiny {
+    margin-top: -6px; }
+
+  .desktop-minus-margin-bottom-tiny {
+    margin-bottom: -6px; }
+
+  .desktop-minus-margin-vertical-tiny {
+    margin-top: -6px;
+    margin-bottom: -6px; }
+
+  .desktop-minus-margin-horizontal-tiny {
+    margin-left: -6px;
+    margin-right: -6px; }
+
   .desktop-margin-small {
     margin: 12px; }
 
@@ -4739,6 +4946,29 @@ textarea, .appearance-none {
   .desktop-margin-horizontal-small {
     margin-left: 12px;
     margin-right: 12px; }
+
+  .desktop-minus-margin-small {
+    margin: -12px; }
+
+  .desktop-minus-margin-left-small {
+    margin-left: -12px; }
+
+  .desktop-minus-margin-right-small {
+    margin-right: -12px; }
+
+  .desktop-minus-margin-top-small {
+    margin-top: -12px; }
+
+  .desktop-minus-margin-bottom-small {
+    margin-bottom: -12px; }
+
+  .desktop-minus-margin-vertical-small {
+    margin-top: -12px;
+    margin-bottom: -12px; }
+
+  .desktop-minus-margin-horizontal-small {
+    margin-left: -12px;
+    margin-right: -12px; }
 
   .desktop-margin {
     margin: 18px; }
@@ -4763,6 +4993,29 @@ textarea, .appearance-none {
     margin-left: 18px;
     margin-right: 18px; }
 
+  .desktop-minus-margin {
+    margin: -18px; }
+
+  .desktop-minus-margin-left {
+    margin-left: -18px; }
+
+  .desktop-minus-margin-right {
+    margin-right: -18px; }
+
+  .desktop-minus-margin-top {
+    margin-top: -18px; }
+
+  .desktop-minus-margin-bottom {
+    margin-bottom: -18px; }
+
+  .desktop-minus-margin-vertical {
+    margin-top: -18px;
+    margin-bottom: -18px; }
+
+  .desktop-minus-margin-horizontal {
+    margin-left: -18px;
+    margin-right: -18px; }
+
   .desktop-margin-large {
     margin: 24px; }
 
@@ -4785,6 +5038,29 @@ textarea, .appearance-none {
   .desktop-margin-horizontal-large {
     margin-left: 24px;
     margin-right: 24px; }
+
+  .desktop-minus-margin-large {
+    margin: -24px; }
+
+  .desktop-minus-margin-left-large {
+    margin-left: -24px; }
+
+  .desktop-minus-margin-right-large {
+    margin-right: -24px; }
+
+  .desktop-minus-margin-top-large {
+    margin-top: -24px; }
+
+  .desktop-minus-margin-bottom-large {
+    margin-bottom: -24px; }
+
+  .desktop-minus-margin-vertical-large {
+    margin-top: -24px;
+    margin-bottom: -24px; }
+
+  .desktop-minus-margin-horizontal-large {
+    margin-left: -24px;
+    margin-right: -24px; }
 
   .desktop-margin-none {
     margin: 0; }
@@ -6801,6 +7077,29 @@ textarea, .appearance-none {
     margin-left: 6px;
     margin-right: 6px; }
 
+  .mobile-minus-margin-tiny {
+    margin: -6px; }
+
+  .mobile-minus-margin-left-tiny {
+    margin-left: -6px; }
+
+  .mobile-minus-margin-right-tiny {
+    margin-right: -6px; }
+
+  .mobile-minus-margin-top-tiny {
+    margin-top: -6px; }
+
+  .mobile-minus-margin-bottom-tiny {
+    margin-bottom: -6px; }
+
+  .mobile-minus-margin-vertical-tiny {
+    margin-top: -6px;
+    margin-bottom: -6px; }
+
+  .mobile-minus-margin-horizontal-tiny {
+    margin-left: -6px;
+    margin-right: -6px; }
+
   .mobile-margin-small {
     margin: 12px; }
 
@@ -6823,6 +7122,29 @@ textarea, .appearance-none {
   .mobile-margin-horizontal-small {
     margin-left: 12px;
     margin-right: 12px; }
+
+  .mobile-minus-margin-small {
+    margin: -12px; }
+
+  .mobile-minus-margin-left-small {
+    margin-left: -12px; }
+
+  .mobile-minus-margin-right-small {
+    margin-right: -12px; }
+
+  .mobile-minus-margin-top-small {
+    margin-top: -12px; }
+
+  .mobile-minus-margin-bottom-small {
+    margin-bottom: -12px; }
+
+  .mobile-minus-margin-vertical-small {
+    margin-top: -12px;
+    margin-bottom: -12px; }
+
+  .mobile-minus-margin-horizontal-small {
+    margin-left: -12px;
+    margin-right: -12px; }
 
   .mobile-margin {
     margin: 18px; }
@@ -6847,6 +7169,29 @@ textarea, .appearance-none {
     margin-left: 18px;
     margin-right: 18px; }
 
+  .mobile-minus-margin {
+    margin: -18px; }
+
+  .mobile-minus-margin-left {
+    margin-left: -18px; }
+
+  .mobile-minus-margin-right {
+    margin-right: -18px; }
+
+  .mobile-minus-margin-top {
+    margin-top: -18px; }
+
+  .mobile-minus-margin-bottom {
+    margin-bottom: -18px; }
+
+  .mobile-minus-margin-vertical {
+    margin-top: -18px;
+    margin-bottom: -18px; }
+
+  .mobile-minus-margin-horizontal {
+    margin-left: -18px;
+    margin-right: -18px; }
+
   .mobile-margin-large {
     margin: 24px; }
 
@@ -6869,6 +7214,29 @@ textarea, .appearance-none {
   .mobile-margin-horizontal-large {
     margin-left: 24px;
     margin-right: 24px; }
+
+  .mobile-minus-margin-large {
+    margin: -24px; }
+
+  .mobile-minus-margin-left-large {
+    margin-left: -24px; }
+
+  .mobile-minus-margin-right-large {
+    margin-right: -24px; }
+
+  .mobile-minus-margin-top-large {
+    margin-top: -24px; }
+
+  .mobile-minus-margin-bottom-large {
+    margin-bottom: -24px; }
+
+  .mobile-minus-margin-vertical-large {
+    margin-top: -24px;
+    margin-bottom: -24px; }
+
+  .mobile-minus-margin-horizontal-large {
+    margin-left: -24px;
+    margin-right: -24px; }
 
   .mobile-margin-none {
     margin: 0; }
