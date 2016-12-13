@@ -1,14 +1,14 @@
 # outer/edge SASS
 
 ## Build
-- sass --require sass-media_query_combiner sass/edge.sass:css/edge.css
-- sass --require sass-media_query_combiner --watch sass/edge.sass:css/edge.css
+- `sass --require sass-media_query_combiner sass/edge.sass:css/edge.css`
+- `sass --require sass-media_query_combiner --watch sass/edge.sass:css/edge.css`
 
 Uses https://github.com/aaronjensen/sass-media_query_combiner to ensure tablet/desktop styles are more important than base mobile styles.
 
 ## Settings
 
-To add specific colour palette for each site, create a $siteColours map (name: hex, name: hex) which will be automatically added to the base colours.
+To add specific colour palette for each site, create a `$siteColours` map (name: hex, name: hex) which will be automatically added to the base colours.
 
 #### Devices
 - $devices: (tablet: 541px, desktop: 1025px)
@@ -19,6 +19,7 @@ To add specific colour palette for each site, create a $siteColours map (name: h
 
 #### Global
 - $global-line-height: 100%
+
 
 - $body-background-colour: map-get($colours, white)
 - $body-text-colour: map-get($colours, darkgrey)
@@ -38,6 +39,7 @@ To add specific colour palette for each site, create a $siteColours map (name: h
 #### Padding / Margin
 - $padding-class: padding
 - $padding: (tiny: 6px, small: 12px, default: 18px, large: 24px, none: 0)
+
 
 - $margin-class: margin
 - $margin: (tiny: 6px, small: 12px, default: 18px, large: 24px, none: 0)
@@ -61,6 +63,7 @@ To add specific colour palette for each site, create a $siteColours map (name: h
 - $button-background-colour-hover: darken($button-background-colour, 10)
 - $button-text-colour-hover: darken($button-text-colour, 10)
 - $button-border-hover: 1px solid darken($primary-colour, 10)
+
 
 - $field-background-colour: map-get($colours, whitesmoke)
 - $field-text-colour: map-get($colours, darkgrey)
@@ -87,6 +90,7 @@ To add specific colour palette for each site, create a $siteColours map (name: h
 - $lightgrey: #999999
 - $whitegrey: #eeeeee
 - $whitesmoke: #f5f5f5
+
 
 - $primary-colour: map-get($colours, darkgrey)
 
