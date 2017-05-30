@@ -1,8 +1,12 @@
 $devices: (tablet: 541px, desktop: 1025px) !default
 
 @mixin media($type)
-    @media (min-width: map-get($devices,$type))
-        @content
+    @if ($type == "print")
+        @media only print and (min-width: 0)
+            @content
+    @else
+        @media (min-width: map-get($devices,$type))
+            @content
 
 
 @function smallest-device-pixel()
