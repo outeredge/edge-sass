@@ -1,0 +1,17 @@
+{
+  "name": "outeredge-sass",
+  "version": "1.0.0",
+  "description": "SASS Library by outer/edge",
+  "main": "index.js",
+  "repository": "git@github.com:outeredge/sass.git",
+  "author": "minlare <mike@outeredgeuk.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-group-css-media-queries": "^1.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1"
+  }
+}
