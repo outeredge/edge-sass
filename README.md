@@ -1,10 +1,6 @@
 # outer/edge SASS
 
-## Build
-- `sass --require sass-media_query_combiner sass/edge.sass:css/edge.css`
-- `sass --require sass-media_query_combiner --watch sass/edge.sass:css/edge.css`
-
-Uses https://github.com/aaronjensen/sass-media_query_combiner to ensure tablet/desktop styles are more important than base mobile styles.
+Uses [yarn](https://yarnpkg.com/en/) to manage dependencies and [gulp](https://gulpjs.com/) to build css
 
 ## Settings
 
@@ -92,3 +88,5 @@ To add specific colour palette for each site, create a `$siteColours` map (name:
 Includes some basic icons in SVG format
 
 - info.svg
+- search.svg
+
