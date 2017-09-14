@@ -60,7 +60,6 @@ To add specific colour palette for each site, create a `$siteColours` map (name:
 - `$field-border`: 1px solid map-get($colours, lightgrey)
 - `$field-padding`: map-get($padding, tiny)
 - `$field-width`: 100%
-
 - `$label-display`: block
 
 #### CSS 3
