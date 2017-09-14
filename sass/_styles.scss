@@ -3,14 +3,14 @@
 @import "reset/form";
 
 body {
-  background-color: $body-background-colour;
-  color: $body-text-colour;
-  font-size: $body-font-size;
-  font-family: $body-font-family;
+    background-color: $body-background-colour;
+    color: $body-text-colour;
+    font-size: $body-font-size;
+    font-family: $body-font-family;
 }
 
 img {
-  max-width: 100%;
+    max-width: 100%;
 }
 
 @import "colour/font";

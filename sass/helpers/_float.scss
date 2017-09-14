@@ -1,39 +1,39 @@
 @mixin float($device: "") {
-  %#{$device}left {
-    float: left;
-  }
-
-  %#{$device}right {
-    float: right;
-  }
-
-  %#{$device}float-none {
-    float: none;
-  }
-
-  @if $classes {
-    .#{$device}left {
-      @extend %#{$device}left;
+    %#{$device}left {
+        float: left;
     }
 
-    .#{$device}right {
-      @extend %#{$device}right;
+    %#{$device}right {
+        float: right;
     }
 
-    .#{$device}float-none {
-      @extend %#{$device}float-none;
+    %#{$device}float-none {
+        float: none;
     }
-  }
+
+    @if $classes {
+        .#{$device}left {
+            @extend %#{$device}left;
+        }
+
+        .#{$device}right {
+            @extend %#{$device}right;
+        }
+
+        .#{$device}float-none {
+            @extend %#{$device}float-none;
+        }
+    }
 }
 
 @include float;
 
 @each $device, $pixels in $devices {
-  @include media($device) {
-    @include float($device + "-");
-  }
+    @include media($device) {
+        @include float($device + "-");
+    }
 }
 
 @include mobile {
-  @include float("mobile-");
+    @include float("mobile-");
 }

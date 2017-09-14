@@ -1,23 +1,23 @@
 %input,
 %textarea,
 %select {
-  background-color: $field-background-colour;
-  color: $field-text-colour;
-  border: $field-border;
-  padding: $field-padding;
-  width: $field-width;
+    background-color: $field-background-colour;
+    color: $field-text-colour;
+    border: $field-border;
+    padding: $field-padding;
+    width: $field-width;
 }
 
 @if $classes {
-  .input {
-    @extend %input;
-  }
+    .input {
+        @extend %input;
+    }
 
-  .textarea {
-    @extend %textarea;
-  }
+    .textarea {
+        @extend %textarea;
+    }
 
-  .select {
-    @extend %select;
-  }
+    .select {
+        @extend %select;
+    }
 }

@@ -1,119 +1,119 @@
 @mixin font-style($device: "") {
-  %#{$device}font-style-normal {
-    font-style: normal;
-  }
-
-  %#{$device}text-transform-none {
-    text-transform: none;
-  }
-
-  %#{$device}uppercase {
-    text-transform: uppercase;
-  }
-
-  %#{$device}lowercase {
-    text-transform: lowercase;
-  }
-
-  %#{$device}capitalize {
-    text-transform: capitalize;
-  }
-
-  %#{$device}italic {
-    font-style: italic;
-  }
-
-  %#{$device}ltr {
-    direction: ltr;
-  }
-
-  %#{$device}rtl {
-    direction: rtl;
-  }
-
-  %#{$device}underline {
-    text-decoration: underline;
-  }
-
-  %#{$device}overline {
-    text-decoration: overline;
-  }
-
-  %#{$device}text-decoration-none {
-    text-decoration: none;
-  }
-
-  %#{$device}line-through {
-    text-decoration: line-through;
-  }
-
-  %#{$device}text-overflow-ellipsis {
-    text-overflow: ellipsis;
-  }
-
-  @if $classes {
-    .#{$device}font-style-normal {
-      @extend %#{$device}font-style-normal;
+    %#{$device}font-style-normal {
+        font-style: normal;
     }
 
-    .#{$device}text-transform-none {
-      @extend %#{$device}text-transform-none;
+    %#{$device}text-transform-none {
+        text-transform: none;
     }
 
-    .#{$device}uppercase {
-      @extend %#{$device}uppercase;
+    %#{$device}uppercase {
+        text-transform: uppercase;
     }
 
-    .#{$device}lowercase {
-      @extend %#{$device}lowercase;
+    %#{$device}lowercase {
+        text-transform: lowercase;
     }
 
-    .#{$device}capitalize {
-      @extend %#{$device}capitalize;
+    %#{$device}capitalize {
+        text-transform: capitalize;
     }
 
-    .#{$device}italic {
-      @extend %#{$device}italic;
+    %#{$device}italic {
+        font-style: italic;
     }
 
-    .#{$device}ltr {
-      @extend %#{$device}ltr;
+    %#{$device}ltr {
+        direction: ltr;
     }
 
-    .#{$device}rtl {
-      @extend %#{$device}rtl;
+    %#{$device}rtl {
+        direction: rtl;
     }
 
-    .#{$device}underline {
-      @extend %#{$device}underline;
+    %#{$device}underline {
+        text-decoration: underline;
     }
 
-    .#{$device}overline {
-      @extend %#{$device}overline;
+    %#{$device}overline {
+        text-decoration: overline;
     }
 
-    .#{$device}text-decoration-none {
-      @extend %#{$device}text-decoration-none;
+    %#{$device}text-decoration-none {
+        text-decoration: none;
     }
 
-    .#{$device}line-through {
-      @extend %#{$device}line-through;
+    %#{$device}line-through {
+        text-decoration: line-through;
     }
 
-    .#{$device}text-overflow-ellipsis {
-      @extend %#{$device}text-overflow-ellipsis;
+    %#{$device}text-overflow-ellipsis {
+        text-overflow: ellipsis;
     }
-  }
+
+    @if $classes {
+        .#{$device}font-style-normal {
+            @extend %#{$device}font-style-normal;
+        }
+
+        .#{$device}text-transform-none {
+            @extend %#{$device}text-transform-none;
+        }
+
+        .#{$device}uppercase {
+            @extend %#{$device}uppercase;
+        }
+
+        .#{$device}lowercase {
+            @extend %#{$device}lowercase;
+        }
+
+        .#{$device}capitalize {
+            @extend %#{$device}capitalize;
+        }
+
+        .#{$device}italic {
+            @extend %#{$device}italic;
+        }
+
+        .#{$device}ltr {
+            @extend %#{$device}ltr;
+        }
+
+        .#{$device}rtl {
+            @extend %#{$device}rtl;
+        }
+
+        .#{$device}underline {
+            @extend %#{$device}underline;
+        }
+
+        .#{$device}overline {
+            @extend %#{$device}overline;
+        }
+
+        .#{$device}text-decoration-none {
+            @extend %#{$device}text-decoration-none;
+        }
+
+        .#{$device}line-through {
+            @extend %#{$device}line-through;
+        }
+
+        .#{$device}text-overflow-ellipsis {
+            @extend %#{$device}text-overflow-ellipsis;
+        }
+    }
 }
 
 @include font-style;
 
 @each $device, $pixels in $devices {
-  @include media($device) {
-    @include font-style($device + "-");
-  }
+    @include media($device) {
+        @include font-style($device + "-");
+    }
 }
 
 @include mobile {
-  @include font-style("mobile-");
+    @include font-style("mobile-");
 }

@@ -1,9 +1,9 @@
 %label {
-  display: $label-display;
+    display: $label-display;
 }
 
 @if $classes {
-  .label {
-    @extend %label;
-  }
+    .label {
+        @extend %label;
+    }
 }

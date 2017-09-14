@@ -1,63 +1,63 @@
 @mixin font-size($device: "") {
-  %#{$device}smallest {
-    font-size: 70%;
-  }
-
-  %#{$device}smaller {
-    font-size: 80%;
-  }
-
-  %#{$device}small {
-    font-size: 90%;
-  }
-
-  %#{$device}big {
-    font-size: 110%;
-  }
-
-  %#{$device}bigger {
-    font-size: 120%;
-  }
-
-  %#{$device}biggest {
-    font-size: 130%;
-  }
-
-  @if $classes {
-    .#{$device}smallest {
-      @extend %#{$device}smallest;
+    %#{$device}smallest {
+        font-size: 70%;
     }
 
-    .#{$device}smaller {
-      @extend %#{$device}smaller;
+    %#{$device}smaller {
+        font-size: 80%;
     }
 
-    .#{$device}small {
-      @extend %#{$device}small;
+    %#{$device}small {
+        font-size: 90%;
     }
 
-    .#{$device}big {
-      @extend %#{$device}big;
+    %#{$device}big {
+        font-size: 110%;
     }
 
-    .#{$device}bigger {
-      @extend %#{$device}bigger;
+    %#{$device}bigger {
+        font-size: 120%;
     }
 
-    .#{$device}biggest {
-      @extend %#{$device}biggest;
+    %#{$device}biggest {
+        font-size: 130%;
     }
-  }
+
+    @if $classes {
+        .#{$device}smallest {
+            @extend %#{$device}smallest;
+        }
+
+        .#{$device}smaller {
+            @extend %#{$device}smaller;
+        }
+
+        .#{$device}small {
+            @extend %#{$device}small;
+        }
+
+        .#{$device}big {
+            @extend %#{$device}big;
+        }
+
+        .#{$device}bigger {
+            @extend %#{$device}bigger;
+        }
+
+        .#{$device}biggest {
+            @extend %#{$device}biggest;
+        }
+    }
 }
 
 @include font-size;
 
 @each $device, $pixels in $devices {
-  @include media($device) {
-    @include font-size($device + "-");
-  }
+    @include media($device) {
+        @include font-size($device + "-");
+    }
 }
 
 @include mobile {
-  @include font-size("mobile-");
+    @include font-size("mobile-");
 }

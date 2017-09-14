@@ -1,83 +1,83 @@
 @mixin position($device: "") {
-  %#{$device}relative {
-    position: relative;
-  }
-
-  %#{$device}absolute {
-    position: absolute;
-  }
-
-  %#{$device}fixed {
-    position: fixed;
-  }
-
-  %#{$device}static {
-    position: static;
-  }
-
-  %#{$device}top-left {
-    top: 0;
-    left: 0;
-  }
-
-  %#{$device}top-right {
-    top: 0;
-    right: 0;
-  }
-
-  %#{$device}bottom-left {
-    bottom: 0;
-    left: 0;
-  }
-
-  %#{$device}bottom-right {
-    bottom: 0;
-    right: 0;
-  }
-
-  @if $classes {
-    .#{$device}relative {
-      @extend %#{$device}relative;
+    %#{$device}relative {
+        position: relative;
     }
 
-    .#{$device}absolute {
-      @extend %#{$device}absolute;
+    %#{$device}absolute {
+        position: absolute;
     }
 
-    .#{$device}fixed {
-      @extend %#{$device}fixed;
+    %#{$device}fixed {
+        position: fixed;
     }
 
-    .#{$device}static {
-      @extend %#{$device}static;
+    %#{$device}static {
+        position: static;
     }
 
-    .#{$device}top-left {
-      @extend %#{$device}top-left;
+    %#{$device}top-left {
+        top: 0;
+        left: 0;
     }
 
-    .#{$device}top-right {
-      @extend %#{$device}top-right;
+    %#{$device}top-right {
+        top: 0;
+        right: 0;
     }
 
-    .#{$device}bottom-left {
-      @extend %#{$device}bottom-left;
+    %#{$device}bottom-left {
+        bottom: 0;
+        left: 0;
     }
 
-    .#{$device}bottom-right {
-      @extend %#{$device}bottom-right;
+    %#{$device}bottom-right {
+        bottom: 0;
+        right: 0;
     }
-  }
+
+    @if $classes {
+        .#{$device}relative {
+            @extend %#{$device}relative;
+        }
+
+        .#{$device}absolute {
+            @extend %#{$device}absolute;
+        }
+
+        .#{$device}fixed {
+            @extend %#{$device}fixed;
+        }
+
+        .#{$device}static {
+            @extend %#{$device}static;
+        }
+
+        .#{$device}top-left {
+            @extend %#{$device}top-left;
+        }
+
+        .#{$device}top-right {
+            @extend %#{$device}top-right;
+        }
+
+        .#{$device}bottom-left {
+            @extend %#{$device}bottom-left;
+        }
+
+        .#{$device}bottom-right {
+            @extend %#{$device}bottom-right;
+        }
+    }
 }
 
 @include position;
 
 @each $device, $pixels in $devices {
-  @include media($device) {
-    @include position($device + "-");
-  }
+    @include media($device) {
+        @include position($device + "-");
+    }
 }
 
 @include mobile {
-  @include position("mobile-");
+    @include position("mobile-");
 }

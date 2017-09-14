@@ -16,7 +16,7 @@ $inherit: inherit;
 $colours: ("transparent": "transparent", "white": $white, "black": $black, "red": $red, "green": $green, "blue": $blue, "yellow": $yellow, "cyan": $cyan, "magenta": $magenta, "grey": $grey, "darkgrey": $darkgrey, "lightgrey": $lightgrey, "whitegrey": $whitegrey, "whitesmoke": $whitesmoke, "inherit": $inherit) !default;
 
 @if variable-exists(siteColours) {
-  $colours: map-merge($colours, $siteColours);
+    $colours: map-merge($colours, $siteColours);
 }
 
 $primary-colour: map-get($colours, "darkgrey") !default;

@@ -1,37 +1,37 @@
 @mixin transition($duration) {
-  -webkit-transition: #{$duration};
-  -moz-transition: #{$duration};
-  transition: #{$duration};
+    -webkit-transition: #{$duration};
+    -moz-transition: #{$duration};
+    transition: #{$duration};
 }
 
 @mixin edge-transition($device: "") {
-  %#{$device}transition {
-    @include transition($transition-duration);
-  }
-
-  %#{$device}transition-none {
-    @include transition(0s);
-  }
-
-  @if $classes {
-    .#{$device}transition {
-      @extend %#{$device}transition;
+    %#{$device}transition {
+        @include transition($transition-duration);
     }
 
-    .#{$device}transition-none {
-      @extend %#{$device}transition-none;
+    %#{$device}transition-none {
+        @include transition(0s);
     }
-  }
+
+    @if $classes {
+        .#{$device}transition {
+            @extend %#{$device}transition;
+        }
+
+        .#{$device}transition-none {
+            @extend %#{$device}transition-none;
+        }
+    }
 }
 
 @include edge-transition;
 
 @each $device, $pixels in $devices {
-  @include media($device) {
-    @include edge-transition($device + "-");
-  }
+    @include media($device) {
+        @include edge-transition($device + "-");
+    }
 }
 
 @include mobile {
-  @include edge-transition("mobile-");
+    @include edge-transition("mobile-");
 }

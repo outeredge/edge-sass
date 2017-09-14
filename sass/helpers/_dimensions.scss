@@ -1,83 +1,83 @@
 @mixin dimensions($device: "") {
-  %#{$device}height-auto {
-    height: auto;
-  }
-
-  %#{$device}min-height-auto {
-    min-height: auto;
-  }
-
-  %#{$device}max-height-auto {
-    max-height: auto;
-  }
-
-  %#{$device}width-auto {
-    width: auto;
-  }
-
-  %#{$device}min-width-auto {
-    min-width: auto;
-  }
-
-  %#{$device}max-width-auto {
-    max-width: auto;
-  }
-
-  @for $i from 0 through 100 {
-    %#{$device}height-#{$i} {
-      height: percentage($i / 100);
+    %#{$device}height-auto {
+        height: auto;
     }
 
-    %#{$device}width-#{$i} {
-      width: percentage($i / 100);
-    }
-  }
-
-  @if $classes {
-    .#{$device}height-auto {
-      @extend %#{$device}height-auto;
+    %#{$device}min-height-auto {
+        min-height: auto;
     }
 
-    .#{$device}min-height-auto {
-      @extend %#{$device}min-height-auto;
+    %#{$device}max-height-auto {
+        max-height: auto;
     }
 
-    .#{$device}max-height-auto {
-      @extend %#{$device}max-height-auto;
+    %#{$device}width-auto {
+        width: auto;
     }
 
-    .#{$device}width-auto {
-      @extend %#{$device}width-auto;
+    %#{$device}min-width-auto {
+        min-width: auto;
     }
 
-    .#{$device}min-width-auto {
-      @extend %#{$device}min-width-auto;
-    }
-
-    .#{$device}max-width-auto {
-      @extend %#{$device}max-width-auto;
+    %#{$device}max-width-auto {
+        max-width: auto;
     }
 
     @for $i from 0 through 100 {
-      .#{$device}height-#{$i} {
-        @extend %#{$device}height-#{$i};
-      }
+        %#{$device}height-#{$i} {
+            height: percentage($i / 100);
+        }
 
-      .#{$device}width-#{$i} {
-        @extend %#{$device}width-#{$i};
-      }
+        %#{$device}width-#{$i} {
+            width: percentage($i / 100);
+        }
     }
-  }
+
+    @if $classes {
+        .#{$device}height-auto {
+            @extend %#{$device}height-auto;
+        }
+
+        .#{$device}min-height-auto {
+            @extend %#{$device}min-height-auto;
+        }
+
+        .#{$device}max-height-auto {
+            @extend %#{$device}max-height-auto;
+        }
+
+        .#{$device}width-auto {
+            @extend %#{$device}width-auto;
+        }
+
+        .#{$device}min-width-auto {
+            @extend %#{$device}min-width-auto;
+        }
+
+        .#{$device}max-width-auto {
+            @extend %#{$device}max-width-auto;
+        }
+
+        @for $i from 0 through 100 {
+            .#{$device}height-#{$i} {
+                @extend %#{$device}height-#{$i};
+            }
+
+            .#{$device}width-#{$i} {
+                @extend %#{$device}width-#{$i};
+            }
+        }
+    }
 }
 
 @include dimensions;
 
 @each $device, $pixels in $devices {
-  @include media($device) {
-    @include dimensions($device + "-");
-  }
+    @include media($device) {
+        @include dimensions($device + "-");
+    }
 }
 
 @include mobile {
-  @include dimensions("mobile-");
+    @include dimensions("mobile-");
 }

@@ -1,31 +1,31 @@
 $rotations: 45 90 135 180 225 270 315 360 !default;
 
 @mixin rotate($rotation, $device: "") {
-  %#{$device}rotate-#{$rotation} {
-    @include transform(rotate(#{$rotation}deg));
-  }
-
-  @if $classes {
-    .#{$device}rotate-#{$rotation} {
-      @extend %#{$device}rotate-#{$rotation};
+    %#{$device}rotate-#{$rotation} {
+        @include transform(rotate(#{$rotation}deg));
     }
-  }
+
+    @if $classes {
+        .#{$device}rotate-#{$rotation} {
+            @extend %#{$device}rotate-#{$rotation};
+        }
+    }
 }
 
 @each $rotation in $rotations {
-  @include rotate($rotation);
+    @include rotate($rotation);
 }
 
 @each $device, $pixels in $devices {
-  @include media($device) {
-    @each $rotation in $rotations {
-      @include rotate($rotation, $device + "-");
+    @include media($device) {
+        @each $rotation in $rotations {
+            @include rotate($rotation, $device + "-");
+        }
     }
-  }
 }
 
 @include mobile {
-  @each $rotation in $rotations {
-    @include rotate($rotation, "mobile-");
-  }
+    @each $rotation in $rotations {
+        @include rotate($rotation, "mobile-");
+    }
 }

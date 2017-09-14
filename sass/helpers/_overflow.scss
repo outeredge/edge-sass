@@ -1,87 +1,87 @@
 @mixin overflow($device: "") {
-  %#{$device}scroll {
-    overflow: scroll;
-  }
-
-  %#{$device}overflow-hidden {
-    overflow: hidden;
-  }
-
-  %#{$device}overflow-auto {
-    overflow: auto;
-  }
-
-  %#{$device}scroll-x {
-    overflow-x: scroll;
-  }
-
-  %#{$device}overflow-x-hidden {
-    overflow-x: hidden;
-  }
-
-  %#{$device}overflow-x-auto {
-    overflow-x: auto;
-  }
-
-  %#{$device}scroll-y {
-    overflow-y: scroll;
-  }
-
-  %#{$device}overflow-y-hidden {
-    overflow-y: hidden;
-  }
-
-  %#{$device}overflow-y-auto {
-    overflow-y: auto;
-  }
-
-  @if $classes {
-    .#{$device}scroll {
-      @extend %#{$device}scroll;
+    %#{$device}scroll {
+        overflow: scroll;
     }
 
-    .#{$device}overflow-hidden {
-      @extend %#{$device}overflow-hidden;
+    %#{$device}overflow-hidden {
+        overflow: hidden;
     }
 
-    .#{$device}overflow-auto {
-      @extend %#{$device}overflow-auto;
+    %#{$device}overflow-auto {
+        overflow: auto;
     }
 
-    .#{$device}scroll-x {
-      @extend %#{$device}scroll-x;
+    %#{$device}scroll-x {
+        overflow-x: scroll;
     }
 
-    .#{$device}overflow-x-hidden {
-      @extend %#{$device}overflow-x-hidden;
+    %#{$device}overflow-x-hidden {
+        overflow-x: hidden;
     }
 
-    .#{$device}overflow-x-auto {
-      @extend %#{$device}overflow-x-auto;
+    %#{$device}overflow-x-auto {
+        overflow-x: auto;
     }
 
-    .#{$device}scroll-y {
-      @extend %#{$device}scroll-y;
+    %#{$device}scroll-y {
+        overflow-y: scroll;
     }
 
-    .#{$device}overflow-y-hidden {
-      @extend %#{$device}overflow-y-hidden;
+    %#{$device}overflow-y-hidden {
+        overflow-y: hidden;
     }
 
-    .#{$device}overflow-y-auto {
-      @extend %#{$device}overflow-y-auto;
+    %#{$device}overflow-y-auto {
+        overflow-y: auto;
     }
-  }
+
+    @if $classes {
+        .#{$device}scroll {
+            @extend %#{$device}scroll;
+        }
+
+        .#{$device}overflow-hidden {
+            @extend %#{$device}overflow-hidden;
+        }
+
+        .#{$device}overflow-auto {
+            @extend %#{$device}overflow-auto;
+        }
+
+        .#{$device}scroll-x {
+            @extend %#{$device}scroll-x;
+        }
+
+        .#{$device}overflow-x-hidden {
+            @extend %#{$device}overflow-x-hidden;
+        }
+
+        .#{$device}overflow-x-auto {
+            @extend %#{$device}overflow-x-auto;
+        }
+
+        .#{$device}scroll-y {
+            @extend %#{$device}scroll-y;
+        }
+
+        .#{$device}overflow-y-hidden {
+            @extend %#{$device}overflow-y-hidden;
+        }
+
+        .#{$device}overflow-y-auto {
+            @extend %#{$device}overflow-y-auto;
+        }
+    }
 }
 
 @include overflow;
 
 @each $device, $pixels in $devices {
-  @include media($device) {
-    @include overflow($device + "-");
-  }
+    @include media($device) {
+        @include overflow($device + "-");
+    }
 }
 
 @include mobile {
-  @include overflow("mobile-");
+    @include overflow("mobile-");
 }
