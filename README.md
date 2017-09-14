@@ -5,7 +5,9 @@
 
 Uses [yarn](https://yarnpkg.com/en/) to manage dependencies and [gulp](https://gulpjs.com/) to build css
 
-## Settings
+
+
+### Settings
 
 To add specific colour palette for each site, create a `$siteColours` map (name: hex, name: hex) which will be automatically added to the base colours.
 
@@ -85,7 +87,8 @@ To add specific colour palette for each site, create a `$siteColours` map (name:
 - `$primary-colour`: map-get($colours, darkgrey)
 
 
-## Icons
+
+### Icons
 
 Includes some basic icons in SVG format
 
