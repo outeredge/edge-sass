@@ -1,0 +1,20 @@
+%button {
+  background-color: $button-background-colour;
+  color: $button-text-colour;
+  border: $button-border;
+  padding: $button-padding;
+  cursor: pointer;
+  outline: none;
+
+  &:hover {
+    background-color: $button-background-colour-hover;
+    color: $button-text-colour-hover;
+    border: $button-border-hover;
+  }
+}
+
+@if $classes {
+  .button {
+    @extend %button;
+  }
+}

@@ -1,0 +1,337 @@
+@mixin edge-flex($device: "") {
+  %#{$device}flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  %#{$device}flex-inline {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -moz-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+
+  %#{$device}flex-wrap-none {
+    -webkit-flex-wrap: nowrap;
+    -moz-flex-wrap: nowrap;
+    -ms-flex-wrap: none;
+    flex-wrap: nowrap;
+  }
+
+  %#{$device}flex-wrap {
+    @include flex-wrap(wrap);
+  }
+
+  %#{$device}flex-wrap-reverse {
+    @include flex-wrap(wrap-reverse);
+  }
+
+  %#{$device}flex-row {
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  %#{$device}flex-row-reverse {
+    -webkit-box-direction: reverse;
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row-reverse;
+    -moz-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
+
+  %#{$device}flex-column {
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  %#{$device}flex-column-reverse {
+    -webkit-box-direction: reverse;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column-reverse;
+    -moz-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+
+  %#{$device}flex-horizontal-start {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    -webkit-justify-content: flex-start;
+    -moz-justify-content: flex-start;
+    justify-content: flex-start;
+  }
+
+  %#{$device}flex-horizontal-end {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    -webkit-justify-content: flex-end;
+    -moz-justify-content: flex-end;
+    justify-content: flex-end;
+  }
+
+  %#{$device}flex-horizontal-center {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+  }
+
+  %#{$device}flex-horizontal-space-between {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    justify-content: space-between;
+  }
+
+  %#{$device}flex-horizontal-space-around {
+    -ms-flex-pack: distribute;
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    justify-content: space-around;
+  }
+
+  %#{$device}flex-vertical-start {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    -webkit-align-items: flex-start;
+    -moz-align-items: flex-start;
+    align-items: flex-start;
+  }
+
+  %#{$device}flex-vertical-end {
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    -webkit-align-items: flex-end;
+    -moz-align-items: flex-end;
+    align-items: flex-end;
+  }
+
+  %#{$device}flex-vertical-center {
+    @include flex-align(center);
+  }
+
+  %#{$device}flex-vertical-stretch {
+    @include flex-align(stretch);
+  }
+
+  %#{$device}flex-vertical-baseline {
+    @include flex-align(baseline);
+  }
+
+  %#{$device}flex-align-self-start {
+    -webkit-align-self: flex-start;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+  }
+
+  %#{$device}flex-align-self-end {
+    -webkit-align-self: flex-end;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+  }
+
+  %#{$device}flex-align-self-center {
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+  }
+
+  %#{$device}flex-align-self-stretch {
+    -webkit-align-self: stretch;
+    -ms-flex-item-align: stretch;
+    align-self: stretch;
+  }
+
+  %#{$device}flex-align-self-baseline {
+    -webkit-align-self: baseline;
+    -ms-flex-item-align: baseline;
+    align-self: baseline;
+  }
+
+  %#{$device}flex-grow {
+    @include flex-grow(1);
+  }
+
+  %#{$device}flex-grow-none {
+    @include flex-grow(0);
+  }
+
+  %#{$device}flex-shrink {
+    @include flex-shrink(1);
+  }
+
+  %#{$device}flex-shrink-none {
+    @include flex-shrink(0);
+  }
+
+  %#{$device}flex-center {
+    @extend %#{$device}flex-vertical-center, %#{$device}flex-horizontal-center;
+  }
+
+  %#{$device}flex-fill {
+    > * {
+      @include flex-grow(1);
+    }
+  }
+
+  %#{$device}flex-fill-equal {
+    @extend %#{$device}flex-fill;
+
+    > * {
+      @include flex-basis(0);
+    }
+  }
+
+  @if $classes {
+    .#{$device}flex {
+      @extend %#{$device}flex;
+    }
+
+    .#{$device}flex-inline {
+      @extend %#{$device}flex-inline;
+    }
+
+    .#{$device}flex-wrap-none {
+      @extend %#{$device}flex-wrap-none;
+    }
+
+    .#{$device}flex-wrap {
+      @extend %#{$device}flex-wrap;
+    }
+
+    .#{$device}flex-wrap-reverse {
+      @extend %#{$device}flex-wrap-reverse;
+    }
+
+    .#{$device}flex-row {
+      @extend %#{$device}flex-row;
+    }
+
+    .#{$device}flex-row-reverse {
+      @extend %#{$device}flex-row-reverse;
+    }
+
+    .#{$device}flex-column {
+      @extend %#{$device}flex-column;
+    }
+
+    .#{$device}flex-column-reverse {
+      @extend %#{$device}flex-column-reverse;
+    }
+
+    .#{$device}flex-horizontal-start {
+      @extend %#{$device}flex-horizontal-start;
+    }
+
+    .#{$device}flex-horizontal-end {
+      @extend %#{$device}flex-horizontal-end;
+    }
+
+    .#{$device}flex-horizontal-center {
+      @extend %#{$device}flex-horizontal-center;
+    }
+
+    .#{$device}flex-horizontal-space-between {
+      @extend %#{$device}flex-horizontal-space-between;
+    }
+
+    .#{$device}flex-horizontal-space-around {
+      @extend %#{$device}flex-horizontal-space-around;
+    }
+
+    .#{$device}flex-vertical-start {
+      @extend %#{$device}flex-vertical-start;
+    }
+
+    .#{$device}flex-vertical-end {
+      @extend %#{$device}flex-vertical-end;
+    }
+
+    .#{$device}flex-vertical-center {
+      @extend %#{$device}flex-vertical-center;
+    }
+
+    .#{$device}flex-vertical-stretch {
+      @extend %#{$device}flex-vertical-stretch;
+    }
+
+    .#{$device}flex-vertical-baseline {
+      @extend %#{$device}flex-vertical-baseline;
+    }
+
+    .#{$device}flex-align-self-start {
+      @extend %#{$device}flex-align-self-start;
+    }
+
+    .#{$device}flex-align-self-end {
+      @extend %#{$device}flex-align-self-end;
+    }
+
+    .#{$device}flex-align-self-center {
+      @extend %#{$device}flex-align-self-center;
+    }
+
+    .#{$device}flex-align-self-stretch {
+      @extend %#{$device}flex-align-self-stretch;
+    }
+
+    .#{$device}flex-align-self-baseline {
+      @extend %#{$device}flex-align-self-baseline;
+    }
+
+    .#{$device}flex-grow {
+      @extend %#{$device}flex-grow;
+    }
+
+    .#{$device}flex-grow-none {
+      @extend %#{$device}flex-grow-none;
+    }
+
+    .#{$device}flex-shrink {
+      @extend %#{$device}flex-shrink;
+    }
+
+    .#{$device}flex-shrink-none {
+      @extend %#{$device}flex-shrink-none;
+    }
+
+    .#{$device}flex-center {
+      @extend %#{$device}flex-center;
+    }
+
+    .#{$device}flex-fill {
+      @extend %#{$device}flex-fill;
+    }
+
+    .#{$device}flex-fill-equal {
+      @extend %#{$device}flex-fill-equal;
+    }
+  }
+}
+
+@include edge-flex;
+
+@each $device, $pixels in $devices {
+  @include media($device) {
+    @include edge-flex($device + "-");
+  }
+}
+
+@include mobile {
+  @include edge-flex("mobile-");
+}

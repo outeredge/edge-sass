@@ -1,0 +1,156 @@
+@mixin margin($size: "", $selector: "", $device: "") {
+  %#{$device}#{$margin-class}#{$selector} {
+    margin: map-get($margin, $size);
+  }
+
+  %#{$device}#{$margin-class}-#{$class-left}#{$selector} {
+    margin-left: map-get($margin, $size);
+  }
+
+  %#{$device}#{$margin-class}-#{$class-right}#{$selector} {
+    margin-right: map-get($margin, $size);
+  }
+
+  %#{$device}#{$margin-class}-#{$class-top}#{$selector} {
+    margin-top: map-get($margin, $size);
+  }
+
+  %#{$device}#{$margin-class}-#{$class-bottom}#{$selector} {
+    margin-bottom: map-get($margin, $size);
+  }
+
+  %#{$device}#{$margin-class}-#{$class-vertical}#{$selector} {
+    margin-top: map-get($margin, $size);
+    margin-bottom: map-get($margin, $size);
+  }
+
+  %#{$device}#{$margin-class}-#{$class-horizontal}#{$selector} {
+    margin-left: map-get($margin, $size);
+    margin-right: map-get($margin, $size);
+  }
+
+  @if $size != "none" {
+    %#{$device}minus-#{$margin-class}#{$selector} {
+      margin: -#{map-get($margin, $size)};
+    }
+
+    %#{$device}minus-#{$margin-class}-#{$class-left}#{$selector} {
+      margin-left: -#{map-get($margin, $size)};
+    }
+
+    %#{$device}minus-#{$margin-class}-#{$class-right}#{$selector} {
+      margin-right: -#{map-get($margin, $size)};
+    }
+
+    %#{$device}minus-#{$margin-class}-#{$class-top}#{$selector} {
+      margin-top: -#{map-get($margin, $size)};
+    }
+
+    %#{$device}minus-#{$margin-class}-#{$class-bottom}#{$selector} {
+      margin-bottom: -#{map-get($margin, $size)};
+    }
+
+    %#{$device}minus-#{$margin-class}-#{$class-vertical}#{$selector} {
+      margin-top: -#{map-get($margin, $size)};
+      margin-bottom: -#{map-get($margin, $size)};
+    }
+
+    %#{$device}minus-#{$margin-class}-#{$class-horizontal}#{$selector} {
+      margin-left: -#{map-get($margin, $size)};
+      margin-right: -#{map-get($margin, $size)};
+    }
+  }
+
+  @if $classes {
+    .#{$device}#{$margin-class}#{$selector} {
+      @extend %#{$device}#{$margin-class}#{$selector};
+    }
+
+    .#{$device}#{$margin-class}-#{$class-left}#{$selector} {
+      @extend %#{$device}#{$margin-class}-#{$class-left}#{$selector};
+    }
+
+    .#{$device}#{$margin-class}-#{$class-right}#{$selector} {
+      @extend %#{$device}#{$margin-class}-#{$class-right}#{$selector};
+    }
+
+    .#{$device}#{$margin-class}-#{$class-top}#{$selector} {
+      @extend %#{$device}#{$margin-class}-#{$class-top}#{$selector};
+    }
+
+    .#{$device}#{$margin-class}-#{$class-bottom}#{$selector} {
+      @extend %#{$device}#{$margin-class}-#{$class-bottom}#{$selector};
+    }
+
+    .#{$device}#{$margin-class}-#{$class-vertical}#{$selector} {
+      @extend %#{$device}#{$margin-class}-#{$class-vertical}#{$selector};
+    }
+
+    .#{$device}#{$margin-class}-#{$class-horizontal}#{$selector} {
+      @extend %#{$device}#{$margin-class}-#{$class-horizontal}#{$selector};
+    }
+
+    @if $size != "none" {
+      .#{$device}minus-#{$margin-class}#{$selector} {
+        @extend %#{$device}minus-#{$margin-class}#{$selector};
+      }
+
+      .#{$device}minus-#{$margin-class}-#{$class-left}#{$selector} {
+        @extend %#{$device}minus-#{$margin-class}-#{$class-left}#{$selector};
+      }
+
+      .#{$device}minus-#{$margin-class}-#{$class-right}#{$selector} {
+        @extend %#{$device}minus-#{$margin-class}-#{$class-right}#{$selector};
+      }
+
+      .#{$device}minus-#{$margin-class}-#{$class-top}#{$selector} {
+        @extend %#{$device}minus-#{$margin-class}-#{$class-top}#{$selector};
+      }
+
+      .#{$device}minus-#{$margin-class}-#{$class-bottom}#{$selector} {
+        @extend %#{$device}minus-#{$margin-class}-#{$class-bottom}#{$selector};
+      }
+
+      .#{$device}minus-#{$margin-class}-#{$class-vertical}#{$selector} {
+        @extend %#{$device}minus-#{$margin-class}-#{$class-vertical}#{$selector};
+      }
+
+      .#{$device}minus-#{$margin-class}-#{$class-horizontal}#{$selector} {
+        @extend %#{$device}minus-#{$margin-class}-#{$class-horizontal}#{$selector};
+      }
+    }
+  }
+}
+
+@each $size, $pixels in $margin {
+  @if $size == default {
+    @include margin($size);
+  }
+  @else {
+    @include margin($size, "-" + $size);
+  }
+}
+
+@each $device, $pixels in $devices {
+  @include media($device) {
+    @each $size, $pixels in $margin {
+      @if $size == default {
+        @include margin($size, "", $device + "-");
+      }
+      @else {
+        @include margin($size, "-" + $size, $device + "-");
+      }
+    }
+  }
+}
+
+@include mobile {
+  @each $size, $pixels in $margin {
+    @if $size == default {
+      @include margin($size, "", "mobile-");
+    }
+    @else {
+      @include margin($size, "-" + $size, "mobile-");
+    }
+  }
+}

@@ -1,0 +1,8 @@
+$classes: true !default;
+
+$global-line-height: 100% !default;
+
+$body-background-colour: map-get($colours, "white") !default;
+$body-text-colour: map-get($colours, "darkgrey") !default;
+$body-font-size: 12px !default;
+$body-font-family: Arial, Helvetica, sans-serif !default;

@@ -6,7 +6,7 @@ var gulp        = require('gulp'),
     cssmin      = require('gulp-cssmin');
 
 gulp.task('css', function() {
-    return gulp.src('sass/**/*.sass')
+    return gulp.src('sass/**/*.scss')
         .pipe(sass({
             errLogToConsole: true
         }))
@@ -24,7 +24,7 @@ gulp.task('css', function() {
 });
 
 gulp.task('watch', ['css'], function(){
-    gulp.watch('sass/**/*.sass', ['css']);
+    gulp.watch('sass/**/*.scss', ['css']);
 });
 
 gulp.task('default', ['css']);

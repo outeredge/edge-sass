@@ -1,0 +1,95 @@
+@mixin display($device: "") {
+  %#{$device}hide {
+    display: none;
+  }
+
+  %#{$device}block {
+    display: block;
+  }
+
+  %#{$device}inline-block {
+    display: inline-block;
+  }
+
+  %#{$device}inline {
+    display: inline;
+  }
+
+  %#{$device}table {
+    display: table;
+  }
+
+  %#{$device}table-header {
+    display: table-header-group;
+  }
+
+  %#{$device}table-footer {
+    display: table-footer-group;
+  }
+
+  %#{$device}table-body {
+    display: table-row-group;
+  }
+
+  %#{$device}table-row {
+    display: table-row;
+  }
+
+  %#{$device}table-cell {
+    display: table-cell;
+  }
+
+  @if $classes {
+    .#{$device}hide {
+      @extend %#{$device}hide;
+    }
+
+    .#{$device}block {
+      @extend %#{$device}block;
+    }
+
+    .#{$device}inline-block {
+      @extend %#{$device}inline-block;
+    }
+
+    .#{$device}inline {
+      @extend %#{$device}inline;
+    }
+
+    .#{$device}table {
+      @extend %#{$device}table;
+    }
+
+    .#{$device}table-header {
+      @extend %#{$device}table-header;
+    }
+
+    .#{$device}table-footer {
+      @extend %#{$device}table-footer;
+    }
+
+    .#{$device}table-body {
+      @extend %#{$device}table-body;
+    }
+
+    .#{$device}table-row {
+      @extend %#{$device}table-row;
+    }
+
+    .#{$device}table-cell {
+      @extend %#{$device}table-cell;
+    }
+  }
+}
+
+@include display;
+
+@each $device, $pixels in $devices {
+  @include media($device) {
+    @include display($device + "-");
+  }
+}
+
+@include mobile {
+  @include display("mobile-");
+}

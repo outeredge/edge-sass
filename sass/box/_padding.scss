@@ -1,0 +1,94 @@
+@mixin padding($size: "", $selector: "", $device: "") {
+  %#{$device}#{$padding-class}#{$selector} {
+    padding: map-get($padding, $size);
+  }
+
+  %#{$device}#{$padding-class}-#{$class-left}#{$selector} {
+    padding-left: map-get($padding, $size);
+  }
+
+  %#{$device}#{$padding-class}-#{$class-right}#{$selector} {
+    padding-right: map-get($padding, $size);
+  }
+
+  %#{$device}#{$padding-class}-#{$class-top}#{$selector} {
+    padding-top: map-get($padding, $size);
+  }
+
+  %#{$device}#{$padding-class}-#{$class-bottom}#{$selector} {
+    padding-bottom: map-get($padding, $size);
+  }
+
+  %#{$device}#{$padding-class}-#{$class-vertical}#{$selector} {
+    padding-top: map-get($padding, $size);
+    padding-bottom: map-get($padding, $size);
+  }
+
+  %#{$device}#{$padding-class}-#{$class-horizontal}#{$selector} {
+    padding-left: map-get($padding, $size);
+    padding-right: map-get($padding, $size);
+  }
+
+  @if $classes {
+    .#{$device}#{$padding-class}#{$selector} {
+      @extend %#{$device}#{$padding-class}#{$selector};
+    }
+
+    .#{$device}#{$padding-class}-#{$class-left}#{$selector} {
+      @extend %#{$device}#{$padding-class}-#{$class-left}#{$selector};
+    }
+
+    .#{$device}#{$padding-class}-#{$class-right}#{$selector} {
+      @extend %#{$device}#{$padding-class}-#{$class-right}#{$selector};
+    }
+
+    .#{$device}#{$padding-class}-#{$class-top}#{$selector} {
+      @extend %#{$device}#{$padding-class}-#{$class-top}#{$selector};
+    }
+
+    .#{$device}#{$padding-class}-#{$class-bottom}#{$selector} {
+      @extend %#{$device}#{$padding-class}-#{$class-bottom}#{$selector};
+    }
+
+    .#{$device}#{$padding-class}-#{$class-vertical}#{$selector} {
+      @extend %#{$device}#{$padding-class}-#{$class-vertical}#{$selector};
+    }
+
+    .#{$device}#{$padding-class}-#{$class-horizontal}#{$selector} {
+      @extend %#{$device}#{$padding-class}-#{$class-horizontal}#{$selector};
+    }
+  }
+}
+
+@each $size, $pixels in $padding {
+  @if $size == default {
+    @include padding($size);
+  }
+  @else {
+    @include padding($size, "-" + $size);
+  }
+}
+
+@each $device, $pixels in $devices {
+  @include media($device) {
+    @each $size, $pixels in $padding {
+      @if $size == default {
+        @include padding($size, "", $device + "-");
+      }
+      @else {
+        @include padding($size, "-" + $size, $device + "-");
+      }
+    }
+  }
+}
+
+@include mobile {
+  @each $size, $pixels in $padding {
+    @if $size == default {
+      @include padding($size, "", "mobile-");
+    }
+    @else {
+      @include padding($size, "-" + $size, "mobile-");
+    }
+  }
+}

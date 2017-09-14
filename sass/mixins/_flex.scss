@@ -1,0 +1,52 @@
+@mixin flex($flex-options) {
+  -webkit-box-flex: #{$flex-options};
+  -moz-box-flex: #{$flex-options};
+  -webkit-flex: #{$flex-options};
+  -ms-flex: #{$flex-options};
+  flex: #{$flex-options};
+}
+
+@mixin flex-grow($flex-grow) {
+  -webkit-box-flex: #{$flex-grow};
+  -webkit-flex-grow: #{$flex-grow};
+  -moz-flex-grow: #{$flex-grow};
+  -ms-flex-positive: #{$flex-grow};
+  flex-grow: #{$flex-grow};
+}
+
+@mixin flex-shrink($flex-shrink) {
+  -webkit-flex-shrink: #{$flex-shrink};
+  -moz-flex-shrink: #{$flex-shrink};
+  -ms-flex-negative: #{$flex-shrink};
+  flex-shrink: #{$flex-shrink};
+}
+
+@mixin flex-order($flex-order) {
+  -webkit-box-ordinal-group: #{$flex-order};
+  -webkit-order: #{$flex-order};
+  -moz-order: #{$flex-order};
+  -ms-flex-order: #{$flex-order};
+  order: #{$flex-order};
+}
+
+@mixin flex-basis($flex-basis) {
+  -webkit-flex-basis: #{$flex-basis};
+  -moz-flex-basis: #{$flex-basis};
+  -ms-flex-preferred-size: #{$flex-basis};
+  flex-basis: #{$flex-basis};
+}
+
+@mixin flex-wrap($flex-wrap) {
+  -webkit-flex-wrap: #{$flex-wrap};
+  -moz-flex-wrap: #{$flex-wrap};
+  -ms-flex-wrap: #{$flex-wrap};
+  flex-wrap: #{$flex-wrap};
+}
+
+@mixin flex-align($flex-align) {
+  -webkit-box-align: #{$flex-align};
+  -ms-flex-align: #{$flex-align};
+  -webkit-align-items: #{$flex-align};
+  -moz-align-items: #{$flex-align};
+  align-items: #{$flex-align};
+}

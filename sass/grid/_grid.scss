@@ -1,0 +1,86 @@
+%row {
+  width: 100%;
+  max-width: $grid-width;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+
+  @extend %clearfix;
+}
+
+@if $classes {
+  .row {
+    @extend %row;
+  }
+}
+
+@mixin column($device, $column) {
+  %#{$device}-#{$column} {
+    float: left;
+    width: calc(100% / (#{$grid-columns} / #{$column}));
+  }
+
+  %#{$device}-prepend-#{$column} {
+    margin-left: calc(100% / (#{$grid-columns} / #{$column}));
+  }
+
+  %#{$device}-append-#{$column} {
+    margin-right: calc(100% / (#{$grid-columns} / #{$column}));
+  }
+
+  @if $classes {
+    .#{$device}-#{$column} {
+      @extend %#{$device}-#{$column};
+    }
+
+    .#{$device}-prepend-#{$column} {
+      @extend %#{$device}-prepend-#{$column};
+    }
+
+    .#{$device}-append-#{$column} {
+      @extend %#{$device}-append-#{$column};
+    }
+  }
+}
+
+@mixin row($device: "") {
+  %#{$device}row {
+    width: 100%;
+    max-width: $grid-width;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+    @extend %#{$device}clearfix;
+  }
+
+  @if $classes {
+    .#{$device}row {
+      @extend %#{$device}row;
+    }
+  }
+}
+
+@for $column from 1 through $grid-columns {
+  @include column("column", $column);
+}
+
+@include row;
+
+@each $device, $pixels in $devices {
+  @include media($device) {
+    @for $column from 1 through $grid-columns {
+      @include column($device, $column);
+    }
+
+    @include row($device + "-");
+  }
+}
+
+@include mobile {
+  @for $column from 1 through $grid-columns {
+    @include column("mobile", $column);
+  }
+
+  @include row("mobile-");
+}
