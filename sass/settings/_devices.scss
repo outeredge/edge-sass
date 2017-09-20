@@ -17,7 +17,7 @@ $devices: (tablet: 541px, desktop: 1025px) !default;
     $smallest: 100000000;
 
     @each $device, $pixels in $devices {
-        @if $pixels < $smallest {
+        @if $pixels < $smallest and $device != "print" {
             $smallest: $pixels;
         }
     }
