@@ -3,7 +3,7 @@
 
 [![Build Status](https://travis-ci.org/outeredge/sass.svg?branch=master)](https://travis-ci.org/outeredge/sass)
 
-Uses [yarn](https://yarnpkg.com/en/) to manage dependencies and [gulp](https://gulpjs.com/) to build css
+Uses [gulp](https://gulpjs.com/) to build css
 
 
 
