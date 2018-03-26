@@ -29,7 +29,6 @@ $animate-delay: 0s;
 }
 
 @mixin animate($properties: $animate-properties, $duration: $animate-duration, $function: $animate-function, $delay: $animate-delay) {
-    will-change: $properties;
     -webkit-transition-property: $properties;
     -moz-transition-property: $properties;
     -o-transition-property: $properties;
